@@ -9,11 +9,13 @@ from tqdm import tqdm
 import json
 
 
-def preprocess_input(metadata):
+def preprocess_instance(metadata):
 
+    # Outputs
     transaction_total = metadata["valid total"]
     succeeded_after_year = int(metadata["duration"]) > 365
 
+    # Inputs
     average_duration = metadata["average duration"]
     category = metadata["Business Type"]
     isHighschool = metadata["Middle/High School"] == "High"
