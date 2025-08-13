@@ -24,6 +24,8 @@ def preprocess_instance(instance, categories):
     operating_time_tensor = torch.tensor([int(bit) for bit in format(operating_time, '032b')])
     num_of_transactions_tensor = torch.tensor([int(bit) for bit in format(num_of_transactions, '032b')])
     succeeded_after_year_tensor = torch.tensor([1.0 if succeeded_after_year else 0.0])
+
+    output_tensor = torch.cat((transaction_total_tensor, operating_time_tensor, num_of_transactions_tensor, succeeded_after_year_tensor), dim=0)
     
     # Inputs
     average_duration = metadata["average duration"]
@@ -36,4 +38,7 @@ def preprocess_instance(instance, categories):
     launch_month_tensor = torch.tensor([(1.0 if launch_month == num else 0.0) for num in range(1,13)])
     isHighschool_tensor = torch.tensor([1.0 if isHighschool else 0.0])
 
-    input_tensor = torch.cat(average_duration_tensor, category_tensor, launch_month_tensor, isHighschool_tensor )
+    input_tensor = torch.cat((average_duration_tensor, category_tensor, launch_month_tensor, isHighschool_tensor), dim=0)
+
+    return input_tensor, output_tensor
+
