@@ -9,11 +9,16 @@ from tqdm import tqdm
 import json
 
 
-def preprocess_instance(metadata):
+def preprocess_instance(instance):
+
+    metadata = instance["metadata"]
+    transactions = instance["transactions"]
 
     # Outputs
     transaction_total = metadata["valid total"]
     succeeded_after_year = int(metadata["duration"]) > 365
+    operating_time = int(metadata["duration"])
+    num_of_transactions = metadata["num valid transactions"]
 
     # Inputs
     average_duration = metadata["average duration"]

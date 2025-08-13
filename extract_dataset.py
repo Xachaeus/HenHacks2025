@@ -149,6 +149,7 @@ for location, data in dataset.items():
     valid_transactions = dates = [transaction for transaction in data["transactions"] if (datetime.strptime(transaction["date"], "%Y-%m-%d") if '/' not in transaction["date"] else datetime.strptime(transaction["date"], "%m/%d/%Y"))]
     valid_total = sum([float(x["amount"].replace('$','').replace(',','')) for x in valid_transactions])
     dataset[location]["metadata"].update({"valid total": valid_total})
+    dataset[location]["metadata"].update({"num valid transactions": len(valid_transactions)})
 
     total = sum([float(x["amount"].replace('$','').replace(',','')) for x in data["transactions"]])
     dataset[location]["metadata"].update({"total profit": total})
