@@ -2,52 +2,77 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
+import pandas as pd
+import json
+from datetime import datetime
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
-import pandas as pd
+from dateutil import parser
 
-np.random.seed(42)
-n_samples = 500
-school_levels_unique = ["middle", "high"]
-school_businesses_unique = ["apparel", "food", "services"]
 
-# ----- Dummy Data -----
-school_levels = np.random.choice(school_levels_unique, n_samples)
-business_types = np.random.choice(school_businesses_unique, n_samples)
-avg_operating_time = np.random.uniform(0, 500, n_samples)  # days
+def parse_amount(a):
+    return float(a.replace("$","").replace(",","").strip())
 
-# Revenue depends on school type and business type
-revenue_base = np.array([3, 2, 1])  # base multiplier
-revenue_school = np.array([1.0, 1.0])  # middle/high
-type_idx = np.array([{"apparel":0,"food":1,"services":2}[t] for t in business_types])
-school_idx = np.array([{"middle":0,"high":1}[s] for s in school_levels])
-annual_revenue = avg_operating_time * revenue_base[type_idx] * revenue_school[school_idx]
-annual_revenue += np.random.normal(100, 5000, n_samples)  # realistic noise
+# ----- Load JSON & preprocess -----
+def load_data(filename):
+    data = json.load(open(filename))
+    rows = []
 
-# ----- Normalize revenue to 0–1 -----
-rev_min, rev_max = annual_revenue.min(), annual_revenue.max()
-y_revenue_norm = ((annual_revenue - rev_min) / (rev_max - rev_min)).astype(np.float32).reshape(-1,1)
+    for loc_id, loc_data in data.items():
+        meta = loc_data["metadata"]
+        transactions = loc_data.get("transactions", [])
+        if not transactions:
+            continue
 
-# ----- Stochastic survival labels -----
-prob_1m = np.clip(0.2 + 0.6 * (avg_operating_time / 30), 0, 1)
-prob_3m = np.clip(0.1 + 0.5 * (avg_operating_time / 120), 0, 1)
-prob_1y = np.clip(0.05 + 0.3 * (avg_operating_time / 365), 0, 1)
+        amounts = np.array([parse_amount(t["amount"]) for t in transactions])
+        dates = [parser.parse(t["date"]) for t in transactions]
 
-survive_1m = np.random.binomial(1, prob_1m)
-survive_3m = np.random.binomial(1, prob_3m)
-survive_1y = np.random.binomial(1, prob_1y)
-y_survival = np.column_stack([survive_1m, survive_3m, survive_1y]).astype(np.float32)
+        total_revenue = amounts.sum()
+        first_date, last_date = min(dates), max(dates)
+        avg_operating_time = (last_date - first_date).days + 1
 
-# ----- Preprocessing -----
+        months_active = len(set((d.year, d.month) for d in dates))
+        survive_1mo = float(months_active >= 1)
+        survive_3mo = float(months_active >= 3)
+        survive_1yr = float(months_active >= 12)
+
+        rows.append({
+            "school_level": meta.get("Middle/High School", "High").lower(),
+            "business_type": meta.get("Business Type", "Other").lower(),
+            "avg_operating_time": avg_operating_time,
+            "annual_revenue": total_revenue,
+            "survive_1mo": survive_1mo,
+            "survive_3mo": survive_3mo,
+            "survive_1yr": survive_1yr
+        })
+
+    df = pd.DataFrame(rows)
+    return df
+
+# Load your real JSON
+df = load_data("raw_dataset.json")
+
+# ----- Features and targets -----
+X_cat = df[["school_level", "business_type"]].values
+X_num = df[["avg_operating_time"]].values.astype(float)
+y_revenue = df["annual_revenue"].values.astype(float).reshape(-1,1)
+y_survival = df[["survive_1mo","survive_3mo","survive_1yr"]].values.astype(float)
+
+# Normalize revenue
+rev_min, rev_max = y_revenue.min(), y_revenue.max()
+y_revenue_norm = (y_revenue - rev_min) / (rev_max - rev_min)
+
+# Encode categorical features
 encoder = OneHotEncoder(sparse_output=False)
-X_cat = encoder.fit_transform(np.column_stack([school_levels, business_types]))
-X_num = avg_operating_time.reshape(-1,1)
-X = np.hstack([X_cat, X_num])
+X_cat_enc = encoder.fit_transform(X_cat)
+X = np.hstack([X_cat_enc, X_num])
 
+# Split train/test
 X_train, X_test, y_rev_train, y_rev_test, y_surv_train, y_surv_test = train_test_split(
     X, y_revenue_norm, y_survival, test_size=0.2, random_state=42
 )
 
+# Convert to tensors
 X_train = torch.tensor(X_train, dtype=torch.float32)
 X_test = torch.tensor(X_test, dtype=torch.float32)
 y_rev_train = torch.tensor(y_rev_train, dtype=torch.float32)
@@ -55,7 +80,7 @@ y_rev_test = torch.tensor(y_rev_test, dtype=torch.float32)
 y_surv_train = torch.tensor(y_surv_train, dtype=torch.float32)
 y_surv_test = torch.tensor(y_surv_test, dtype=torch.float32)
 
-# ----- Multi-task Model -----
+# ----- Multi-task model -----
 class MultiTaskModel(nn.Module):
     def __init__(self, input_dim):
         super().__init__()
@@ -81,7 +106,7 @@ model = MultiTaskModel(input_dim=X_train.shape[1])
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.01)
-loss_weight_rev = 0.1  # reduce revenue contribution
+loss_weight_rev = 0.1
 
 for epoch in range(100):
     optimizer.zero_grad()
@@ -96,33 +121,20 @@ for epoch in range(100):
             test_loss = loss_weight_rev * criterion_rev(rev_test, y_rev_test) + criterion_surv(surv_test, y_surv_test)
         print(f"Epoch {epoch+1}/100, Train Loss: {loss.item():.4f}, Test Loss: {test_loss.item():.4f}")
 
-# ----- Example Prediction -----
-with torch.no_grad():
-    example = np.array([["high","food",120]])
-    example_cat = encoder.transform(example[:,:2])
-    example_num = example[:,2:].astype(float)
-    example_feat = np.hstack([example_cat, example_num])
-    example_tensor = torch.tensor(example_feat, dtype=torch.float32)
-    
-    rev_pred, surv_pred = model(example_tensor)
-    rev_rescaled = rev_pred.item() * (rev_max - rev_min) + rev_min
-    print(f"\nPredicted Annual Revenue: ${rev_rescaled:.2f}")
-    print(f"Predicted Survival ≥1mo: {surv_pred[0,0].item()*100:.1f}%")
-    print(f"Predicted Survival ≥3mo: {surv_pred[0,1].item()*100:.1f}%")
-    print(f"Predicted Survival ≥1yr: {surv_pred[0,2].item()*100:.1f}%")
-
+# ----- Generate predictions table -----
 rows = []
 with torch.no_grad():
-    for school in school_levels_unique:
-        for btype in school_businesses_unique:
+    for school in df["school_level"].unique():
+        for btype in df["business_type"].unique():
+            avg_time = df["avg_operating_time"].mean()  # average operating time for predictions
             ex_cat = encoder.transform([[school, btype]])
-            ex_num = np.array([[120]]).astype(float)  # fixed operating time
+            ex_num = np.array([[avg_time]])
             ex_feat = np.hstack([ex_cat, ex_num])
             ex_tensor = torch.tensor(ex_feat, dtype=torch.float32)
-            
+
             rev_pred, surv_pred = model(ex_tensor)
             rev_rescaled = rev_pred.item() * (rev_max - rev_min) + rev_min
-            
+
             rows.append({
                 "School": school,
                 "Business Type": btype,
@@ -132,5 +144,5 @@ with torch.no_grad():
                 "Survival ≥1yr (%)": surv_pred[0,2].item()*100
             })
 
-df = pd.DataFrame(rows)
-print(df)
+pred_df = pd.DataFrame(rows)
+print(pred_df)
