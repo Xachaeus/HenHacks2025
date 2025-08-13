@@ -8,6 +8,7 @@ from datetime import datetime
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 from dateutil import parser
+import joblib
 
 
 def parse_amount(a):
@@ -24,29 +25,39 @@ def load_data(filename):
         if not transactions:
             continue
 
+        # Parse amounts and dates
+        # amounts = np.array([parse_amount(t["amount"]) for t in transactions if parse_amount(t["amount"]) < 100000])
         amounts = np.array([parse_amount(t["amount"]) for t in transactions])
-        dates = [parser.parse(t["date"]) for t in transactions]
+        
+        dates = [parser.parse(t["date"]) for t in transactions] 
 
         total_revenue = amounts.sum()
         first_date, last_date = min(dates), max(dates)
         avg_operating_time = (last_date - first_date).days + 1
 
+        # Annualize revenue
+        annual_revenue = total_revenue / (avg_operating_time / 365)
+
         months_active = len(set((d.year, d.month) for d in dates))
         survive_1mo = float(months_active >= 1)
         survive_3mo = float(months_active >= 3)
         survive_1yr = float(months_active >= 12)
-
-        rows.append({
-            "school_level": meta.get("Middle/High School", "High").lower(),
-            "business_type": meta.get("Business Type", "Other").lower(),
-            "avg_operating_time": avg_operating_time,
-            "annual_revenue": total_revenue,
-            "survive_1mo": survive_1mo,
-            "survive_3mo": survive_3mo,
-            "survive_1yr": survive_1yr
-        })
+        
+        
+        if annual_revenue < 1000000:
+            rows.append({
+                "school_level": meta.get("Middle/High School", "High").lower(),
+                "business_type": meta.get("Business Type", "Other").lower(),
+                "avg_operating_time": avg_operating_time,
+                "annual_revenue": annual_revenue,
+                "survive_1mo": survive_1mo,
+                "survive_3mo": survive_3mo,
+                "survive_1yr": survive_1yr
+            })
 
     df = pd.DataFrame(rows)
+    df = df[df["school_level"].str.lower().isin(["middle", "high"])]
+    df.reset_index(drop=True, inplace=True)
     return df
 
 # Load your real JSON
@@ -105,21 +116,32 @@ model = MultiTaskModel(input_dim=X_train.shape[1])
 # ----- Training -----
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.01)
+optimizer = optim.Adam(model.parameters(), lr=0.001)
 loss_weight_rev = 0.1
 
-for epoch in range(100):
+# ----- Training with Cosine Annealing -----
+optimizer = optim.Adam(model.parameters(), lr=0.001)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
+    optimizer, T_max=1000, eta_min=1e-4
+)
+
+loss_weight_rev = 0.1
+num_epochs = 1000
+
+for epoch in range(num_epochs):
     optimizer.zero_grad()
     rev_pred, surv_pred = model(X_train)
     loss = loss_weight_rev * criterion_rev(rev_pred, y_rev_train) + criterion_surv(surv_pred, y_surv_train)
     loss.backward()
     optimizer.step()
+    scheduler.step()
 
-    if (epoch+1) % 10 == 0:
+    if (epoch + 1) % 10 == 0:
         with torch.no_grad():
             rev_test, surv_test = model(X_test)
             test_loss = loss_weight_rev * criterion_rev(rev_test, y_rev_test) + criterion_surv(surv_test, y_surv_test)
-        print(f"Epoch {epoch+1}/100, Train Loss: {loss.item():.4f}, Test Loss: {test_loss.item():.4f}")
+        print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {loss.item():.4f}, "
+              f"Test Loss: {test_loss.item():.4f}, LR: {scheduler.get_last_lr()[0]:.6f}")
 
 # ----- Generate predictions table -----
 rows = []
@@ -146,3 +168,6 @@ with torch.no_grad():
 
 pred_df = pd.DataFrame(rows)
 print(pred_df)
+
+joblib.dump(model, "model.pkl")
+print("Model saved to model.pkl")
