@@ -1,0 +1,832 @@
+Date,Time,Time Zone,Gross Sales,Discounts,Service Charges,Net Sales,Gift Card Sales,Tax,Tip,Partial Refunds,Total Collected,Source,Card,Card Entry Methods,Cash,Square Gift Card,Other Tender,Other Tender Type,Tender Note,Fees,Net Total,Transaction ID,Payment ID,Card Brand,PAN Suffix,Device Name,Staff Name,Staff ID,Details,Description,Event Type,Location,Dining Option,Customer ID,Customer Name,Customer Reference ID,Device Nickname,Third Party Fees,Deposit ID,Deposit Date,Deposit Details,Fee Percentage Rate,Fee Fixed Rate,Refund Reason,Discount Name,Transaction Status,Cash App,Order Reference ID,Fulfillment Note,Free Processing Applied,Channel,Unattributed Tips,Table Info
+2024-06-05,11:40:34,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$0.00,N/A,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,Hbq8TeVc9Wkq7izDuxz2Mar2VxTZY,ZKBDdSWlDKt1Wq9Pd0GmDptMqbeZY,,,,,,https://app.squareup.com/dashboard/sales/transactions/Hbq8TeVc9Wkq7izDuxz2Mar2VxTZY/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (Medium) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"",17AC6YEBTXY6QE5500GDAH2E40,Autumn Austin,"","",$0.00,3ZZ5E0EEQCA92MV1AFP511WB1YB9,2024-06-06,https://app.squareup.com/dashboard/sales/deposits/3ZZ5E0EEQCA92MV1AFP511WB1YB9/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$20.00,11ef2351a9018763a99eac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-24,12:21:08,Eastern Time (US & Canada),-$40.00,$0.00,$0.00,-$40.00,$0.00,$0.00,$0.00,$0.00,-$40.00,Point of Sale,-$40.00,Keyed,$0.00,$0.00,$0.00,"","",$0.00,-$40.00,jmfzP3BPwOM7s2kgNDQ9NMueV,5w6Ob4g8hvdfdMg1YRbVYd18nV8YY,Visa,3998,,,,https://app.squareup.com/dashboard/sales/transactions/jmfzP3BPwOM7s2kgNDQ9NMueV/by-unit/LFDE7RKHB5KYY,"Blue Jay T-shirt (Yellow, Large) - 100% Cotton T-shirt, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Large, White) - Fabric:
+5.3 oz., 100% USA cotton",Refund,Seaford Blue Jays,"","","","","",$0.00,3ZTYK6AEPCX97993D03A4QGAMTYD,2024-05-24,https://app.squareup.com/dashboard/sales/deposits/3ZTYK6AEPCX97993D03A4QGAMTYD/by-unit/LFDE7RKHB5KYY,2.9,$0.30,Canceled order,"",Complete,$0.00,"","",$0.00,Seaford Blue Jays,,
+2024-05-22,13:43:54,Eastern Time (US & Canada),$25.00,$0.00,$0.00,$25.00,$0.00,$0.00,$0.00,$0.00,$25.00,Register,$25.00,Dipped,$0.00,$0.00,$0.00,"","",-$0.75,$24.25,ZwqxDONP9TuRQtGbvd2F8tgjkBcZY,FacEQLlpZYK86cUJ4nXaq3g1FgOZY,MasterCard,1332,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/ZwqxDONP9TuRQtGbvd2F8tgjkBcZY/by-unit/LFDE7RKHB5KYY,"Fleece Jackets (3XL) - With aged-to-perfection color, this soft, comfortable sweatshirt is essential and authentic.",Payment,Seaford Blue Jays,"",AT2BJ8CYBXGTS8XHD1Q7ZSS6RM,Samantha Mitchell,"","",$0.00,3ZA2KJQZ1H650Q1E2K33WB0BHAQ1,2024-05-23,https://app.squareup.com/dashboard/sales/deposits/3ZA2KJQZ1H650Q1E2K33WB0BHAQ1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-22,13:27:28,Eastern Time (US & Canada),$11.00,$0.00,$0.00,$11.00,$0.00,$0.00,$0.00,$0.00,$11.00,Register,$11.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.39,$10.61,XR39QDDNHQBUqtIjsFUSsmVwg0LZY,NQHNewoTexJ7KnAYrDBj0KfzFJKZY,MasterCard,9275,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/XR39QDDNHQBUqtIjsFUSsmVwg0LZY/by-unit/LFDE7RKHB5KYY,Custom Amount,Payment,Seaford Blue Jays,"",3QQSG5P8PBCZ2E175WWN6B4EBR,"","","",$0.00,3ZA2KJQZ1H650Q1E2K33WB0BHAQ1,2024-05-23,https://app.squareup.com/dashboard/sales/deposits/3ZA2KJQZ1H650Q1E2K33WB0BHAQ1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-22,13:21:58,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Register,$18.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.57,$17.43,L1UT3ICLoRq6JVOcS3YQZTlqP7eZY,fTgdh9r33iHX6FiLq4cc62bc65RZY,Visa,1507,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/L1UT3ICLoRq6JVOcS3YQZTlqP7eZY/by-unit/LFDE7RKHB5KYY,Custom Amount,Payment,Seaford Blue Jays,"",SM4C0Z5RTX1JD0N71P9CAB5FCR,Alexis Lattimer,"","",$0.00,3ZA2KJQZ1H650Q1E2K33WB0BHAQ1,2024-05-23,https://app.squareup.com/dashboard/sales/deposits/3ZA2KJQZ1H650Q1E2K33WB0BHAQ1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-22,13:20:00,Eastern Time (US & Canada),$32.00,-$4.80,$0.00,$27.20,$0.00,$0.00,$0.00,$0.00,$27.20,Register,$0.00,N/A,$27.20,$0.00,$0.00,"","",$0.00,$27.20,Vw7vdd1DMdORqB1HaPr0AlwRckIZY,TblAVelcVmXbC4FBWhWE1uyX2YFZY,,,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/Vw7vdd1DMdORqB1HaPr0AlwRckIZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (Small) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc.",Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","",Employee Discount ,Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-22,13:18:53,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Register,$20.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.62,$19.38,9Mj5CqvbMR0qQ6fmJb0fpRAbUvEZY,fpXv9MX2SLMDL4nk1g3SyJUPKH7YY,Visa,3773,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/9Mj5CqvbMR0qQ6fmJb0fpRAbUvEZY/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (Small) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"","","","","",$0.00,3ZA2KJQZ1H650Q1E2K33WB0BHAQ1,2024-05-23,https://app.squareup.com/dashboard/sales/deposits/3ZA2KJQZ1H650Q1E2K33WB0BHAQ1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-17,11:53:41,Eastern Time (US & Canada),$15.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$0.00,$15.00,Register,$15.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.49,$14.51,vBxL0SpctrcLDvELUoY24AHrPpHZY,B21LBRqc8GU99rSSdEeqoB9OojcZY,Visa,1764,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/vBxL0SpctrcLDvELUoY24AHrPpHZY/by-unit/LFDE7RKHB5KYY,Custom Amount,Payment,Seaford Blue Jays,"","","","","",$0.00,3Z153ZSS44FN36DB05Z40JZC71F5,2024-05-18,https://app.squareup.com/dashboard/sales/deposits/3Z153ZSS44FN36DB05Z40JZC71F5/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-07,12:10:27,Eastern Time (US & Canada),$15.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$0.00,$15.00,Point of Sale,$15.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.49,$14.51,9yCpz0DD9KPH9qaGDCd0RMaXKzOZY,JciZtjwk6RVsjDnmf3BdQYXKm5eZY,Visa,8284,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/9yCpz0DD9KPH9qaGDCd0RMaXKzOZY/by-unit/LFDE7RKHB5KYY,"Gildan Youth Tee (Youth XL Yellow) - Fabric:
+4.2 oz., 100% heirloom combed and ringspun cotton",Payment,Seaford Blue Jays,"",347DSMGKMEQ9VK9X7WZQZXGKPC,"","","",$0.00,3ZF694DY3E716AQB65A24773XQE1,2024-05-08,https://app.squareup.com/dashboard/sales/deposits/3ZF694DY3E716AQB65A24773XQE1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-03,11:52:55,Eastern Time (US & Canada),$25.00,-$15.88,$0.00,$9.12,$0.00,$0.00,$0.00,$0.00,$9.12,Point of Sale,$9.12,Tapped,$0.00,$0.00,$0.00,"","",-$0.34,$8.78,B5HijKTJuRZrorbkOmBSgrjeV,DPLAX2EFyoBMeti0g0Vb3rZ5uaB,Visa,8210,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/B5HijKTJuRZrorbkOmBSgrjeV/by-unit/LFDE7RKHB5KYY,T-shirt (2XL),Payment,Seaford Blue Jays,"","","","","",$0.00,3Z3SRG6VWGFN39ZA7QH3BEA03BH9,2024-05-03,https://app.squareup.com/dashboard/sales/deposits/3Z3SRG6VWGFN39ZA7QH3BEA03BH9/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","Store Employee, Employee Discount , Clearance",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-03,11:50:42,Eastern Time (US & Canada),$0.00,$0.00,$0.00,$0.00,$0.00,$0.00,$0.00,$0.00,$0.00,Point of Sale,$0.00,N/A,$0.00,$0.00,$0.00,"","",$0.00,$0.00,VzZ1E7qdRBDfanbnUsVVNM8eV,LlwsmaEXrw5ec1ElxPTCVSurvaB,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/VzZ1E7qdRBDfanbnUsVVNM8eV/by-unit/LFDE7RKHB5KYY,"",Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-03,11:29:58,Eastern Time (US & Canada),$20.00,-$11.00,$0.00,$9.00,$0.00,$0.00,$0.00,$0.00,$9.00,Point of Sale,$9.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.33,$8.67,7GVH8aJhv3Yxw0kFRjeRoHveV,VMrrVbT2qz27gqH7rlspNVP5vaB,Visa,1764,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/7GVH8aJhv3Yxw0kFRjeRoHveV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"","","","","",$0.00,3Z3SRG6VWGFN39ZA7QH3BEA03BH9,2024-05-03,https://app.squareup.com/dashboard/sales/deposits/3Z3SRG6VWGFN39ZA7QH3BEA03BH9/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","Employee Discount , Clearances ",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-05-02,12:06:03,Eastern Time (US & Canada),$60.00,-$20.40,$0.00,$39.60,$0.00,$0.00,$0.00,$0.00,$39.60,Point of Sale,$39.60,Dipped,$0.00,$0.00,$0.00,"","",-$1.13,$38.47,ZSTXSD7VKOWHH5DhpMPXQFhxUt8YY,50ckGWVOg0u9C1aB6pU9RTw0mOfZY,Visa,6458,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/ZSTXSD7VKOWHH5DhpMPXQFhxUt8YY/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately, 2 x Cropped Blue Jay T-Shirt (Small) - Fabric:3.7 oz., 65% polyester, 35% viscose, 32 singles
+
+Features:Flowy fit
+Sideseamed
+Tailored sleeve
+Modest crop
+BELLA+CANVAS uses sustainable manufacturing processes with Blue Sign certified dyes, efficient dye houses that adhere to the state of California’s EPA regulations around waste water treatment and usage, and cutting facilities in Los Angeles that run on partial solar power with comprehensive recycling programs for paper waste and fabric scraps.",Payment,Seaford Blue Jays,"",NAKVAQS2ZKYAMWXAZFWZ069JMM,Elyssa Bivens,"","",$0.00,3Z3SRG6VWGFN39ZA7QH3BEA03BH9,2024-05-03,https://app.squareup.com/dashboard/sales/deposits/3Z3SRG6VWGFN39ZA7QH3BEA03BH9/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","Store Employee, Employee Discount , Clearances ",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-28,10:25:08,Eastern Time (US & Canada),$25.00,$0.00,$0.00,$25.00,$0.00,$0.00,$0.00,$0.00,$25.00,Register,$25.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.75,$24.25,rnLQAwltmYHNUgWStHE3QDHWNFYZY,fVRzeoXtiVuA3o8IYen3ROP7JuFZY,MasterCard,4358,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/rnLQAwltmYHNUgWStHE3QDHWNFYZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Small/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",1ZF2Z38DP82F1BYTET9809557R,"","",Seaford Blue Jays,$0.00,3ZAH9J4ZEG813016N8ECR6F50R8D,2024-03-29,https://app.squareup.com/dashboard/sales/deposits/3ZAH9J4ZEG813016N8ECR6F50R8D/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-28,10:24:15,Eastern Time (US & Canada),$25.00,$0.00,$0.00,$25.00,$0.00,$0.00,$0.00,$0.00,$25.00,Register,$25.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.75,$24.25,JgEqUCiMRcmNwshtRmH4EDpzOYQZY,Fi2d1W5cmYGMiGUHq4wDOOsXhPdZY,MasterCard,2051,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/JgEqUCiMRcmNwshtRmH4EDpzOYQZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Large/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3ZAH9J4ZEG813016N8ECR6F50R8D,2024-03-29,https://app.squareup.com/dashboard/sales/deposits/3ZAH9J4ZEG813016N8ECR6F50R8D/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-28,08:38:07,Eastern Time (US & Canada),$60.00,$0.00,$0.00,$60.00,$0.00,$0.00,$0.00,$0.00,$60.00,Register,$0.00,N/A,$60.00,$0.00,$0.00,"","",$0.00,$60.00,nhJA1iP8b7v2aQ3FRvbQPZaMJ36YY,RizN3jFG8RS9eiYboXjV3zdFp5HZY,,,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/nhJA1iP8b7v2aQ3FRvbQPZaMJ36YY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Large/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton, Harriton Adult Packable Nylon Jacket (XL) - Fabric:
+100% nylon
+Water-resistant
+Feature:
+Lightweight packable hooded pullover with quarter-zip entry
+Drawstring hood
+Front welt pockets
+Center-zip pocket
+Can be easily attached to belt when stored in pouch
+Full elastic cuffs
+Hem casing with drawcord
+Deco Eligible",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-28,08:37:02,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Register,$30.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,Lh84TFDvEUmJw3uxMxgYEi5o5fBZY,L56eZhtRiqGludUOL1eTtpnpty6YY,Visa,5616,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/Lh84TFDvEUmJw3uxMxgYEi5o5fBZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Small/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3ZAH9J4ZEG813016N8ECR6F50R8D,2024-03-29,https://app.squareup.com/dashboard/sales/deposits/3ZAH9J4ZEG813016N8ECR6F50R8D/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-26,10:41:30,Eastern Time (US & Canada),$42.00,$0.00,$0.00,$42.00,$0.00,$0.00,$0.00,$0.00,$42.00,Register,$42.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.19,$40.81,3Xq91u8khOnjZ3d5t55STATzPXUZY,TByfI1GxOQGy8B4dZ7T2aIocex9YY,Visa,6458,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/3Xq91u8khOnjZ3d5t55STATzPXUZY/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (Medium) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Medium, Navy) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",NAKVAQS2ZKYAMWXAZFWZ069JMM,Elyssa Bivens,"",Seaford Blue Jays,$0.00,3ZPZ4TBM535N7GH0ZDPN3EDSGEV1,2024-03-26,https://app.squareup.com/dashboard/sales/deposits/3ZPZ4TBM535N7GH0ZDPN3EDSGEV1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-25,11:13:20,Eastern Time (US & Canada),$22.00,$0.00,$0.00,$22.00,$0.00,$0.00,$0.00,$0.00,$22.00,Register,$22.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.67,$21.33,5ubkALlBIdiaeTiS883gICGA3cLZY,RWBDFNYm71hHJudb6GEIykcxaTWZY,Visa,7117,,Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/5ubkALlBIdiaeTiS883gICGA3cLZY/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Yellow) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3ZPZ4TBM535N7GH0ZDPN3EDSGEV1,2024-03-26,https://app.squareup.com/dashboard/sales/deposits/3ZPZ4TBM535N7GH0ZDPN3EDSGEV1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-19,10:17:49,Eastern Time (US & Canada),-$20.00,$0.00,$0.00,-$20.00,$0.00,$0.00,$0.00,$0.00,-$20.00,Point of Sale,-$20.00,Dipped,$0.00,$0.00,$0.00,"","",$0.00,-$20.00,FL5zH3ikBFY7bobeXAzBy2ieV,jJswq9ENHzANYDhdUZObQ0C6vaB,Visa,8704,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/FL5zH3ikBFY7bobeXAzBy2ieV/by-unit/LFDE7RKHB5KYY,"Blue Jay Beanie Pom Pom Hat (O) - Cuffed Knit Beanie With Pom Pom Hat
+Material:
+100% hypoallergenic acrylic
+Feature:
+Approx length 12""
+Super dense knit for easy embroidery
+Uncuffed length approx 12""
+Hand washable",Refund,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z0J5G6RFMSX4MS0QMATHKA0QVJS,2024-03-19,https://app.squareup.com/dashboard/sales/deposits/3Z0J5G6RFMSX4MS0QMATHKA0QVJS/by-unit/LFDE7RKHB5KYY,2.6,$0.10,Returned goods,"",Complete,$0.00,"","",$0.00,Seaford Blue Jays,,
+2024-03-18,09:26:21,Eastern Time (US & Canada),$40.00,$0.00,$0.00,$40.00,$0.00,$0.00,$0.00,$0.00,$40.00,Register,$40.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.14,$38.86,v2A1TsrydIsLQRvC2mFbUR5eV,jJswq9ENHzANYDhdUZObQ0C6vaB,Visa,8704,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/v2A1TsrydIsLQRvC2mFbUR5eV/by-unit/LFDE7RKHB5KYY,"2 x Blue Jay Beanie Pom Pom Hat (O) - Cuffed Knit Beanie With Pom Pom Hat
+Material:
+100% hypoallergenic acrylic
+Feature:
+Approx length 12""
+Super dense knit for easy embroidery
+Uncuffed length approx 12""
+Hand washable",Payment,Seaford Blue Jays,"",WV9M619Q89PV7X4EY6REK6RGB4,Michelle Henry,"",Seaford Blue Jays,$0.00,3Z0J5G6RFMSX4MS0QMATHKA0QVJS,2024-03-19,https://app.squareup.com/dashboard/sales/deposits/3Z0J5G6RFMSX4MS0QMATHKA0QVJS/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-14,13:56:59,Eastern Time (US & Canada),$40.00,$0.00,$0.00,$40.00,$0.00,$0.00,$0.00,$0.00,$40.00,Register,$40.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.14,$38.86,9jHtY5DBhXJh9babmiaUMSueV,RSnVsBgiEx7K0VWj3ZuG6MB7uaB,Visa,6452,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/9jHtY5DBhXJh9babmiaUMSueV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (Large) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately, Tie-Dye Blue Jay T-Shirt (XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"",YT7VH22HFMK924JW8W5KR0QPK0,"","",Seaford Blue Jays,$0.00,3Z2NBN48THB946734E65VGP0YP0H,2024-03-15,https://app.squareup.com/dashboard/sales/deposits/3Z2NBN48THB946734E65VGP0YP0H/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-08,14:57:10,Eastern Time (US & Canada),$60.00,-$9.00,$0.00,$51.00,$0.00,$0.00,$0.00,$0.00,$51.00,Register,$51.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.43,$49.57,JhhKvNiGNu1dugD9qiYLEG5eV,7btjiefbblN44pPtkRP64gA9uaB,Visa,1875,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/JhhKvNiGNu1dugD9qiYLEG5eV/by-unit/LFDE7RKHB5KYY,"Gildan Youth Hooded Sweatshirt W/ Jays Design (YXL) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn, Gildan Youth Hooded Sweatshirt W/ Jays Design (YL) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn, Gildan Youth Hooded Sweatshirt W/ Jays Design (YXL) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn",Payment,Seaford Blue Jays,"",82HM19C39TD196RWH7V5G20054,"","",Seaford Blue Jays,$0.00,3Z5VE3XCKQ8D3DS45JX3PF49XXC5,2024-03-08,https://app.squareup.com/dashboard/sales/deposits/3Z5VE3XCKQ8D3DS45JX3PF49XXC5/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"",Employee Discount ,Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-08,14:53:57,Eastern Time (US & Canada),$68.00,$0.00,$0.00,$68.00,$0.00,$0.00,$0.00,$0.00,$68.00,Register,$68.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.87,$66.13,1PZaAvIz68nEM0iRjbVoXGpeV,D3DeLd83GZpEUWB5ZuJl59AbuaB,MasterCard,4017,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/1PZaAvIz68nEM0iRjbVoXGpeV/by-unit/LFDE7RKHB5KYY,"Bella + Canvas Ladies' Cropped Fleece Hoodie (Small) - Fabric:
+7 oz., 52% airlume combed and ring-spun cotton, 48% poly fleece, Gildan Youth Hooded Sweatshirt W/ Jays Design (YL) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn, Blue Jay T-shirt (Navy, 2XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",4YG97C8EJSGTCZ3A9TGV23RSWC,Luis Maldonado,"",Seaford Blue Jays,$0.00,3Z5VE3XCKQ8D3DS45JX3PF49XXC5,2024-03-08,https://app.squareup.com/dashboard/sales/deposits/3Z5VE3XCKQ8D3DS45JX3PF49XXC5/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-08,11:51:02,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Register,$18.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.57,$17.43,1x8Z3tWpF3kxQGPGsOtoDsneV,X9vrYE9LrLEpztwemnVaS3Q2uaB,Visa,8519,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/1x8Z3tWpF3kxQGPGsOtoDsneV/by-unit/LFDE7RKHB5KYY,"Blue Jay T-shirt (Yellow, Small) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",JV1W0DKV61733CFTVJ1XJV32YG,Aaron Salisbury,"",Seaford Blue Jays,$0.00,3Z5VE3XCKQ8D3DS45JX3PF49XXC5,2024-03-08,https://app.squareup.com/dashboard/sales/deposits/3Z5VE3XCKQ8D3DS45JX3PF49XXC5/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-03-07,14:12:25,Eastern Time (US & Canada),$44.00,$0.00,$0.00,$44.00,$0.00,$0.00,$0.00,$0.00,$44.00,Register,$0.00,N/A,$0.00,$0.00,$0.00,"","",-$1.24,$42.76,7MqiVoKL7vawMJdXzU6VpIzeV,BkEp2B9W4TbWjf6OI8w96zVkvaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/7MqiVoKL7vawMJdXzU6VpIzeV/by-unit/LFDE7RKHB5KYY,"2 x Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Large, Navy) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",05BDE8FFXH0CRS5EYSZCA1034R,"","",Seaford Blue Jays,$0.00,3Z5VE3XCKQ8D3DS45JX3PF49XXC5,2024-03-08,https://app.squareup.com/dashboard/sales/deposits/3Z5VE3XCKQ8D3DS45JX3PF49XXC5/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$44.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-02-22,12:41:18,Eastern Time (US & Canada),$100.00,$0.00,$0.00,$100.00,$0.00,$0.00,$0.00,$0.00,$100.00,Point of Sale,$0.00,N/A,$100.00,$0.00,$0.00,"","",$0.00,$100.00,RgUFWqgO96RQRAMtiY6Dq6U1fcDZY,d8TIl2pP24kMd7F6q1hDN3VW3OZZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/RgUFWqgO96RQRAMtiY6Dq6U1fcDZY/by-unit/LFDE7RKHB5KYY,"Joggers (2XL) - Soft, and comfortable, Tri Dri Leggings (XL) - Fabric:
+7.67 oz., 90% recycled polyester, 10% elastane
+Feature:
+Elasticated waistband
+Side pockets
+Soft-stretch fabric
+Full-length compression legging
+Tear away label, Burnside Performance Hooded Sweatshirt (2XL) - Fabric:6 oz. 100% polyester
+
+Features:Contrast raglan sleeves
+Front pouch pockets 
+Overlock stitching detail
+Hem bottom & cuffs
+Nylon zipper
+Black drawcord",Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-02-13,10:50:01,Eastern Time (US & Canada),$50.00,-$5.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Point of Sale,$45.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,xAWceCbE35L5Em1jV5qIJISSaaaZY,DHf45iX9AmdSUJ2rkIWhGeqo08fZY,Visa,4860,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/xAWceCbE35L5Em1jV5qIJISSaaaZY/by-unit/LFDE7RKHB5KYY,"Gildan Youth Hooded Sweatshirt W/ Jays Design (YM) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn, Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (2XL/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",BW6XYPNXRVSMRKP2RXSK8DX2Z8,David Lee,"","",$0.00,3ZQMAWPXTG4966D5S4TPHGWBZQSN,2024-02-13,https://app.squareup.com/dashboard/sales/deposits/3ZQMAWPXTG4966D5S4TPHGWBZQSN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"",Store Employee,Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-02-12,15:24:26,Eastern Time (US & Canada),$67.00,$0.00,$0.00,$67.00,$0.00,$0.00,$0.00,$0.00,$67.00,Register,$67.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.84,$65.16,1TDuS4Si7TScjEjTZvqAoMveV,5k8wQVvzpvxrbWdzrdbYaeDauaB,Visa,7196,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/1TDuS4Si7TScjEjTZvqAoMveV/by-unit/LFDE7RKHB5KYY,"X22 Long Sleeve Pullover (XL) - Body: 100% premium polyester fabric
+Mesh: 80% premium polyester fabric / 20% spandex fabric
+Custom left chest, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Grey) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3ZQMAWPXTG4966D5S4TPHGWBZQSN,2024-02-13,https://app.squareup.com/dashboard/sales/deposits/3ZQMAWPXTG4966D5S4TPHGWBZQSN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-02-09,11:45:37,Eastern Time (US & Canada),$88.00,$0.00,$0.00,$88.00,$0.00,$0.00,$0.00,$0.00,$88.00,Register,$88.00,Tapped,$0.00,$0.00,$0.00,"","",-$2.39,$85.61,htLfHtyvrXKt7DBlWocD0u0eV,tCquEtsrEIWXeGuz5JlnU4SnuaB,Visa,9066,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/htLfHtyvrXKt7DBlWocD0u0eV/by-unit/LFDE7RKHB5KYY,"Harriton Adult Packable Nylon Jacket (Large) - Fabric:
+100% nylon
+Water-resistant
+Feature:
+Lightweight packable hooded pullover with quarter-zip entry
+Drawstring hood
+Front welt pockets
+Center-zip pocket
+Can be easily attached to belt when stored in pouch
+Full elastic cuffs
+Hem casing with drawcord
+Deco Eligible, Blue Jay T-shirt (Navy, Large) - 100% Cotton T-shirt, Blue Jay T-shirt (White, Large) - 100% Cotton T-shirt, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Large, Yellow) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3ZSVJDEQJNMN3HB3ZHHEMFRBTSYH,2024-02-10,https://app.squareup.com/dashboard/sales/deposits/3ZSVJDEQJNMN3HB3ZHHEMFRBTSYH/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-02-07,08:59:16,Eastern Time (US & Canada),$114.00,$0.00,$0.00,$114.00,$0.00,$0.00,$0.00,$0.00,$114.00,Point of Sale,$114.00,Swiped,$0.00,$0.00,$0.00,"","",-$3.06,$110.94,ZM2u8nhj7roDxCWrO8LYwrNh38UZY,1ofCZBhaIDd1tZuFwkW8nTdOlBLZY,Visa,6021,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/ZM2u8nhj7roDxCWrO8LYwrNh38UZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Large/Charcoal) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Yellow) - Fabric:
+5.3 oz., 100% USA cotton, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, White) - Fabric:
+5.3 oz., 100% USA cotton, 2 x T-Shirt (Youth XL) - Personalized basketball t-shirts, long sleeve shirts, sweatshirts and more. Sizes available in adult, youth and toddler.",Payment,Seaford Blue Jays,"",4PJ9VAC2YZ7K5V915FMF9E28AW,Sonid Thomas,"","",$0.00,3ZGGJ2PB969D1WX5CMHGXA40AR31,2024-02-08,https://app.squareup.com/dashboard/sales/deposits/3ZGGJ2PB969D1WX5CMHGXA40AR31/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-02-01,13:02:38,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,fdNSRwd01Mst68OdyT6zzdnYhcWZY,FcRGGU3xjDkYMj064ZPzpbOBIWXZY,Visa,5120,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/fdNSRwd01Mst68OdyT6zzdnYhcWZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Medium/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",KV3PC7Q61W97BTDS9RJHG879ZW,"","","",$0.00,3ZSE8ZK6Q8AX7XN075NZ08AB9JNS,2024-02-02,https://app.squareup.com/dashboard/sales/deposits/3ZSE8ZK6Q8AX7XN075NZ08AB9JNS/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-01-26,13:59:23,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Point of Sale,$20.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.62,$19.38,r1ENIx8GRlZq1UDV0Lq43oPzn8WZY,1kTVlfiH6x5en5C9NFnZyiAe94JZY,Visa,0413,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/r1ENIx8GRlZq1UDV0Lq43oPzn8WZY/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"",7YA98HSZ550YDC3QRKZ3GZP474,Michele Elliott,"","",$0.00,3ZYYF261H63S2Y34JSSTHXFSJP31,2024-01-27,https://app.squareup.com/dashboard/sales/deposits/3ZYYF261H63S2Y34JSSTHXFSJP31/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-01-26,13:56:56,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Point of Sale,$0.00,N/A,$0.00,$0.00,$20.00,Custom,Venmo,$0.00,$20.00,VakzaTCY190YbbCrp3X5eI0u9YdZY,527pdIhEKlJrm4vIGX9UNbncmPAZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/VakzaTCY190YbbCrp3X5eI0u9YdZY/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-01-26,12:32:08,Eastern Time (US & Canada),$30.00,-$3.00,$0.00,$27.00,$0.00,$0.00,$0.00,$0.00,$27.00,Point of Sale,$0.00,N/A,$27.00,$0.00,$0.00,"","",$0.00,$27.00,hyzEALEHVjIzQxWL33nrzdv8KhJZY,Td2wFgH7vC7FX2J8TLYGAkt6ppSZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/hyzEALEHVjIzQxWL33nrzdv8KhJZY/by-unit/LFDE7RKHB5KYY,"Harriton Adult Packable Nylon Jacket (Large) - Fabric:
+100% nylon
+Water-resistant
+Feature:
+Lightweight packable hooded pullover with quarter-zip entry
+Drawstring hood
+Front welt pockets
+Center-zip pocket
+Can be easily attached to belt when stored in pouch
+Full elastic cuffs
+Hem casing with drawcord
+Deco Eligible",Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","",Store Employee,Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-01-23,13:16:19,Eastern Time (US & Canada),$25.00,-$2.50,$0.00,$22.50,$0.00,$0.00,$0.00,$0.00,$22.50,Point of Sale,$22.50,Swiped,$0.00,$0.00,$0.00,"","",-$0.69,$21.81,7vtPmftNWKagHV3PGbbegyldEHKZY,JCfmlb5wwEdaTlrLF97xEtROzDYZY,MasterCard,0540,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/7vtPmftNWKagHV3PGbbegyldEHKZY/by-unit/LFDE7RKHB5KYY,"LAT Ladies' Gameday Mash-Up Long Sleeve Fine Jersey T-Shirt (Small) - Fabric:
+4.5 oz., 60% combed ringspun cotton/ 40% polyester fine jersey
+4.5 oz., 100% combed ringspun cotton jersey
+Feature:
+Easytear™ label
+contrasting topstitched self-fabric sleeve stripes
+double-needle hemmed sleeves and rounded bottom
+side seam construction
+fit: ladies' modern - semi-fitted
+taped neck
+v-notch with raw serge finished edge
+Deco Eligible",Payment,Seaford Blue Jays,"",BA17MAJZGYGG1YGK1NQS60V65R,Dorothea Rollwagen,"","",$0.00,3ZA6B2VN31NH3N1E211RJ0JNFJJ1,2024-01-23,https://app.squareup.com/dashboard/sales/deposits/3ZA6B2VN31NH3N1E211RJ0JNFJJ1/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"",Store Employee,Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2024-01-23,09:42:24,Eastern Time (US & Canada),-$30.00,$0.00,$0.00,-$30.00,$0.00,$0.00,$0.00,$0.00,-$30.00,eCommerce Integrations,-$30.00,Keyed,$0.00,$0.00,$0.00,"","",$0.00,-$30.00,DRIBoFSfLQqBo2uvEDYSfuiOi8QZY,9mUG3gOXp4oLSOXLxtQOOs7r83CZY,Visa,6207,,,,https://app.squareup.com/dashboard/sales/transactions/DRIBoFSfLQqBo2uvEDYSfuiOi8QZY/by-unit/LFDE7RKHB5KYY,"Hooded Sweatshirts (2XL) - Hooded Sweatshirt is made from a comfortable Poly Cotton blend, for ultimate comfort.",Refund,Seaford Blue Jays,"","","","","",$0.00,3ZA6B2VN31NH3N1E211RJ0JNFJJ1,2024-01-23,https://app.squareup.com/dashboard/sales/deposits/3ZA6B2VN31NH3N1E211RJ0JNFJJ1/by-unit/LFDE7RKHB5KYY,2.9,$0.30,Refund via API,"",Complete,$0.00,"","",$0.00,Seaford Blue Jays,,
+2024-01-23,04:40:45,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Square Online,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.17,$28.83,RMku93IWRcZXPLho5fU7jzOPvxRZY,9mUG3gOXp4oLSOXLxtQOOs7r83CZY,Visa,6207,,,,https://app.squareup.com/dashboard/sales/transactions/RMku93IWRcZXPLho5fU7jzOPvxRZY/by-unit/LFDE7RKHB5KYY,"Hooded Sweatshirts (2XL) - Hooded Sweatshirt is made from a comfortable Poly Cotton blend, for ultimate comfort.",Payment,Seaford Blue Jays,"",6A434BCZX1T16NJ9HJQ2VW4MQM,Victoria Pressley,"","",$0.00,3ZA6B2VN31NH3N1E211RJ0JNFJJ1,2024-01-23,https://app.squareup.com/dashboard/sales/deposits/3ZA6B2VN31NH3N1E211RJ0JNFJJ1/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11eeb9d2f82bb6e29e35ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2024-01-22,23:12:45,Eastern Time (US & Canada),$32.00,$0.00,$0.00,$32.00,$0.00,$0.00,$0.00,$0.00,$32.00,Square Online,$32.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.23,$30.77,rj3jMtkXodc0EeHxziLIpCZYOQFZY,tWG9XNEJRlxWZKL41TGIzSaKNFPZY,MasterCard,8231,,,,https://app.squareup.com/dashboard/sales/transactions/rj3jMtkXodc0EeHxziLIpCZYOQFZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (Small) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc.",Payment,Seaford Blue Jays,"",V65H1F2M43JFKC81ZCM5D2NJBC,Ashley Kuhn.,"","",$0.00,3ZA6B2VN31NH3N1E211RJ0JNFJJ1,2024-01-23,https://app.squareup.com/dashboard/sales/deposits/3ZA6B2VN31NH3N1E211RJ0JNFJJ1/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11eeb9a39ea3195e9e35ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2024-01-12,13:00:10,Eastern Time (US & Canada),$35.00,-$3.50,$0.00,$31.50,$0.00,$0.00,$0.00,$0.00,$31.50,Register,$0.00,N/A,$31.50,$0.00,$0.00,"","",$0.00,$31.50,fe6QChVulUjOlsJzfkZ0dEkeV,rtgkdIn2ozkdyewdQuDLwTH6vaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/fe6QChVulUjOlsJzfkZ0dEkeV/by-unit/LFDE7RKHB5KYY,"Burnside Performance Hooded Sweatshirt (2XL) - Fabric:6 oz. 100% polyester
+
+Features:Contrast raglan sleeves
+Front pouch pockets 
+Overlock stitching detail
+Hem bottom & cuffs
+Nylon zipper
+Black drawcord",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,"","","","","","",Store Employee,Complete,$0.00,"","",$0.00,"",$0.00,""
+2024-01-11,17:14:05,Eastern Time (US & Canada),$22.00,$0.00,$0.00,$22.00,$0.00,$0.00,$0.00,$0.00,$22.00,Point of Sale,$22.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.67,$21.33,RQWYtCUsSuUDu76yjHSYmTnmUGaZY,zfZ1hgI5Ye9aJQ1hp7QvbLAmCqSZY,Visa,3356,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/RQWYtCUsSuUDu76yjHSYmTnmUGaZY/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Yellow) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",J99KS7STXQEM3GYNVA0AQTJHSR,Kim West,"","",$0.00,3Z7N735ZHEEX5KVAB05004JYFZW5,2024-01-12,https://app.squareup.com/dashboard/sales/deposits/3Z7N735ZHEEX5KVAB05004JYFZW5/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-12-21,14:04:55,Eastern Time (US & Canada),$50.00,$0.00,$0.00,$50.00,$0.00,$0.00,$0.00,$0.00,$50.00,Register,$50.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.40,$48.60,pZf3ft3OTYOCUxounbaT7G4eV,7dsGWRyBTA8xF9CDHNyqLXBKuaB,MasterCard,0513,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/pZf3ft3OTYOCUxounbaT7G4eV/by-unit/LFDE7RKHB5KYY,"Gildan Youth Hooded Sweatshirt W/ Jays Design (YL) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn, Tri Dri Leggings (Large) - Fabric:
+7.67 oz., 90% recycled polyester, 10% elastane
+Feature:
+Elasticated waistband
+Side pockets
+Soft-stretch fabric
+Full-length compression legging
+Tear away label",Payment,Seaford Blue Jays,"",Z1X7K64073N58K0RP32WKVDBP0,Kira Bryan,"",Seaford Blue Jays,$0.00,3Z3SKGD0CSPD577BD9JCHF06F5VD,2023-12-22,https://app.squareup.com/dashboard/sales/deposits/3Z3SKGD0CSPD577BD9JCHF06F5VD/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-12-21,14:02:13,Eastern Time (US & Canada),$58.00,$0.00,$0.00,$58.00,$0.00,$0.00,$0.00,$0.00,$58.00,Register,$58.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.61,$56.39,TeXnpGXSCEWwEXztpZlWYvneV,ZkalPGbQIcFpxP6HUNayhX13vaB,Visa,3925,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/TeXnpGXSCEWwEXztpZlWYvneV/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (XL/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton, Team 365 Zone Performance Polo (2XL) - Fabric:3.5 oz./yd2 / 130 gsm, 100% polyester interlock
+Moisture-wicking and UV protection performance
+
+Features:Dyed-to-match buttons
+Team fit
+Three-button placket
+Cationic dyes for superior brightness and excellent colorfastness
+Transitioning from heat-seal label to tear away label. Inventory may be mixed",Payment,Seaford Blue Jays,"",K7N2RW4J6H4AFDPFFW03MS8KDG,Darrynn Harris,"",Seaford Blue Jays,$0.00,3Z3SKGD0CSPD577BD9JCHF06F5VD,2023-12-22,https://app.squareup.com/dashboard/sales/deposits/3Z3SKGD0CSPD577BD9JCHF06F5VD/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-12-21,10:59:35,Eastern Time (US & Canada),$48.00,$0.00,$0.00,$48.00,$0.00,$0.00,$0.00,$0.00,$48.00,Register,$48.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.35,$46.65,1lo6daEFeOMNKNZ2vyOLSekeV,bvRYUULPqlTApxB7oBW16YeXuaB,Visa,4453,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/1lo6daEFeOMNKNZ2vyOLSekeV/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Large/Navy) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton, Blue Jay T-shirt (Yellow, XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",1W37DCWAK5PW77N7F8CNRB35V0,"","",Seaford Blue Jays,$0.00,3Z3SKGD0CSPD577BD9JCHF06F5VD,2023-12-22,https://app.squareup.com/dashboard/sales/deposits/3Z3SKGD0CSPD577BD9JCHF06F5VD/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-12-06,21:06:27,Eastern Time (US & Canada),$25.00,$0.00,$0.00,$25.00,$0.00,$0.00,$0.00,$0.00,$25.00,Square Online,$25.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.03,$23.97,zzTYDmALkXs9SurLA1CQTC5s4DfZY,5sYIMaQ9WYHMdzkZvOxfH3Bz8QQZY,Visa,8852,,,,https://app.squareup.com/dashboard/sales/transactions/zzTYDmALkXs9SurLA1CQTC5s4DfZY/by-unit/LFDE7RKHB5KYY,"Fleece Jackets (Large) - With aged-to-perfection color, this soft, comfortable sweatshirt is essential and authentic.",Payment,Seaford Blue Jays,"",GYH7F8EMM45T026D7C1BX1W0T4,Amy Willey,"","",$0.00,3Z3SKGD0CSPD577BD9JCHF06F5VD,2023-12-22,https://app.squareup.com/dashboard/sales/deposits/3Z3SKGD0CSPD577BD9JCHF06F5VD/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee94a4c5bd4e6d9369ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-28,17:56:18,Eastern Time (US & Canada),-$45.00,$0.00,$0.00,-$45.00,$0.00,$0.00,$0.00,$0.00,-$45.00,Point of Sale,-$45.00,Keyed,$0.00,$0.00,$0.00,"","",$0.00,-$45.00,lNWDEo1kyZG6ecYmb9hRmm4eV,5w6Ob4g8hvdfdMg1YRbVYd18nV8YY,Visa,3998,,,,https://app.squareup.com/dashboard/sales/transactions/lNWDEo1kyZG6ecYmb9hRmm4eV/by-unit/LFDE7RKHB5KYY,"X21 Quarter Zip Hoodie (Large) - - 100% Premium Polyester Fabric
+- Hooded Garment
+IMPORTANT WASHING INSTRUCTIONS:
+Machine wash cold on gentle cycle. Fasten all closures. Wash and dry inside out with like colors. Do not use softeners. Do not allow to lay on itself when wet. Do not bleach. Tumble dry low. Do not iron. Do not dry clean.",Refund,Seaford Blue Jays,"","","","","",$0.00,3Z6EK2XPWED88YX346BY12E701TS,2023-11-28,https://app.squareup.com/dashboard/sales/deposits/3Z6EK2XPWED88YX346BY12E701TS/by-unit/LFDE7RKHB5KYY,2.9,$0.30,Item not available,"",Complete,$0.00,"","",$0.00,"",,
+2023-11-16,11:31:22,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Point of Sale,$20.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.62,$19.38,TpOq4pp5iTapOK8C0vvA2ssZGBRZY,HHeOKdrZRh9JGcNQRLoEJBPVN9LZY,Visa,2125,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/TpOq4pp5iTapOK8C0vvA2ssZGBRZY/by-unit/LFDE7RKHB5KYY,"Gildan Youth Hooded Sweatshirt W/ Jays Design (YXL) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn",Payment,Seaford Blue Jays,"",4PRSJN13YD6J9AAVE42V5MS53R,Lynn Schofer,"","",$0.00,3Z655TMGFYC50GS2T7ZATRQ3QNDX,2023-11-16,https://app.squareup.com/dashboard/sales/deposits/3Z655TMGFYC50GS2T7ZATRQ3QNDX/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-16,11:30:08,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Point of Sale,$45.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,DFU4gew8Dz0WYNq3DCkMRIwNGDDZY,FEtOcwutPJJhtEnzjc78L1Wf0tPZY,Visa,0072,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/DFU4gew8Dz0WYNq3DCkMRIwNGDDZY/by-unit/LFDE7RKHB5KYY,"LAT Ladies' Gameday Mash-Up Long Sleeve Fine Jersey T-Shirt (Medium) - Fabric:
+4.5 oz., 60% combed ringspun cotton/ 40% polyester fine jersey
+4.5 oz., 100% combed ringspun cotton jersey
+Feature:
+Easytear™ label
+contrasting topstitched self-fabric sleeve stripes
+double-needle hemmed sleeves and rounded bottom
+side seam construction
+fit: ladies' modern - semi-fitted
+taped neck
+v-notch with raw serge finished edge
+Deco Eligible, Tie-Dye Blue Jay T-Shirt (Medium) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"",J0725H98DZW3DM1TGARGCCKYBG,Theresa Craig,"","",$0.00,3Z655TMGFYC50GS2T7ZATRQ3QNDX,2023-11-16,https://app.squareup.com/dashboard/sales/deposits/3Z655TMGFYC50GS2T7ZATRQ3QNDX/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-16,11:15:47,Eastern Time (US & Canada),$22.00,$0.00,$0.00,$22.00,$0.00,$0.00,$0.00,$0.00,$22.00,Point of Sale,$22.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.67,$21.33,ftvpmAlGCaWI6GGpeZ2PTf84JQHZY,Nk7Qt272KEGixsrhUWAvjdEi4UYZY,Visa,7880,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/ftvpmAlGCaWI6GGpeZ2PTf84JQHZY/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Large, Grey) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",3JY7GH0RSW26P4T3GYRK2HYWP4,Leah Dickerson,"","",$0.00,3Z655TMGFYC50GS2T7ZATRQ3QNDX,2023-11-16,https://app.squareup.com/dashboard/sales/deposits/3Z655TMGFYC50GS2T7ZATRQ3QNDX/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-16,09:08:22,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Square Online,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.17,$28.83,Zm5Pv5eCX3uzk6sFllpNcZB5FIGZY,zpqdKevB7pyGzqUwAaJrR2ElrwAZY,Visa,5716,,,,https://app.squareup.com/dashboard/sales/transactions/Zm5Pv5eCX3uzk6sFllpNcZB5FIGZY/by-unit/LFDE7RKHB5KYY,"Tri Dri Leggings (Small) - Fabric:
+7.67 oz., 90% recycled polyester, 10% elastane
+Feature:
+Elasticated waistband
+Side pockets
+Soft-stretch fabric
+Full-length compression legging
+Tear away label",Payment,Seaford Blue Jays,"",Q0BMKBVA6N1PFEABEBEH0FZHDM,Sheryl Glocker,"","",$0.00,3Z655TMGFYC50GS2T7ZATRQ3QNDX,2023-11-16,https://app.squareup.com/dashboard/sales/deposits/3Z655TMGFYC50GS2T7ZATRQ3QNDX/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee8489849c1bd2b8aaac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-15,12:00:32,Eastern Time (US & Canada),$22.00,$0.00,$0.00,$22.00,$0.00,$0.00,$0.00,$0.00,$22.00,Point of Sale,$22.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.67,$21.33,f912UW4XZ8c6qBRPLBBxjT81cSUZY,pilNPsOBrmS0TpmexNuuRz0zx0UZY,Visa,4426,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/f912UW4XZ8c6qBRPLBBxjT81cSUZY/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Medium, White) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"","","","","",$0.00,3Z655TMGFYC50GS2T7ZATRQ3QNDX,2023-11-16,https://app.squareup.com/dashboard/sales/deposits/3Z655TMGFYC50GS2T7ZATRQ3QNDX/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-07,13:44:29,Eastern Time (US & Canada),$35.00,-$3.50,$0.00,$31.50,$0.00,$0.00,$0.00,$0.00,$31.50,Point of Sale,$31.50,Swiped,$0.00,$0.00,$0.00,"","",-$0.92,$30.58,PJFVysdVzqCLARcfD6dhK0Hz8HMZY,ZCFtgGMNlKSB1pAfzV0WQL8uCEFZY,Visa,9509,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/PJFVysdVzqCLARcfD6dhK0Hz8HMZY/by-unit/LFDE7RKHB5KYY,"Joggers (XL) - Soft, and comfortable",Payment,Seaford Blue Jays,"","","","","",$0.00,3ZCG0SCWHZXS3EB9SE654XDQ0H6S,2023-11-08,https://app.squareup.com/dashboard/sales/deposits/3ZCG0SCWHZXS3EB9SE654XDQ0H6S/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"",Store Employee,Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-07,13:40:11,Eastern Time (US & Canada),$0.00,$0.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$15.00,Point of Sale,$0.00,N/A,$15.00,$0.00,$0.00,"","",$0.00,$15.00,HFNnn5m8kfbJDVkIwcg18d9g44SZY,bbVRh8SNTs0ryydBBNpsHaHermcZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/HFNnn5m8kfbJDVkIwcg18d9g44SZY/by-unit/LFDE7RKHB5KYY,Gift Card,Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-07,13:39:53,Eastern Time (US & Canada),$0.00,$0.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$15.00,Point of Sale,$0.00,N/A,$15.00,$0.00,$0.00,"","",$0.00,$15.00,3Z5AADBe6A8QDpSw0VvhQsNvjuWZY,lwlhtRMG05IIFzaUwV7lQKPTLSRZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/3Z5AADBe6A8QDpSw0VvhQsNvjuWZY/by-unit/LFDE7RKHB5KYY,Gift Card,Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-07,13:38:22,Eastern Time (US & Canada),$0.00,$0.00,$0.00,$0.00,$10.00,$0.00,$0.00,$0.00,$10.00,Point of Sale,$0.00,N/A,$10.00,$0.00,$0.00,"","",$0.00,$10.00,vltETZ3L4bU518uLtww21CpTGA8YY,F8LnAo437AAFqgcfSiALvoQyOzdZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/vltETZ3L4bU518uLtww21CpTGA8YY/by-unit/LFDE7RKHB5KYY,Gift Card,Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,18:22:16,Eastern Time (US & Canada),$35.00,$0.00,$0.00,$35.00,$0.00,$0.00,$0.00,$0.00,$35.00,Point of Sale,$35.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.01,$33.99,Hzsd4N0It1zGT4Xic0FWXKaHKoaZY,xoyZewJkbxwU9WiYMlcpkKkPgwLZY,Visa,8800,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/Hzsd4N0It1zGT4Xic0FWXKaHKoaZY/by-unit/LFDE7RKHB5KYY,"Burnside Performance Hooded Sweatshirt (2XL) - Fabric:6 oz. 100% polyester
+
+Features:Contrast raglan sleeves
+Front pouch pockets 
+Overlock stitching detail
+Hem bottom & cuffs
+Nylon zipper
+Black drawcord",Payment,Seaford Blue Jays,"",1Y1W4N194WTTH6G1BDEHJDXG1C,"","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,18:04:39,Eastern Time (US & Canada),$28.00,$0.00,$0.00,$28.00,$0.00,$0.00,$0.00,$0.00,$28.00,Point of Sale,$28.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.83,$27.17,DvjNb1Arm5oWHG5kM6gwz61V2vdZY,VEb3oOMBJF1GdUS676onJTfufkeZY,Discover,6365,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/DvjNb1Arm5oWHG5kM6gwz61V2vdZY/by-unit/LFDE7RKHB5KYY,"Team 365 Zone Performance Polo (XL) - Fabric:3.5 oz./yd2 / 130 gsm, 100% polyester interlock
+Moisture-wicking and UV protection performance
+
+Features:Dyed-to-match buttons
+Team fit
+Three-button placket
+Cationic dyes for superior brightness and excellent colorfastness
+Transitioning from heat-seal label to tear away label. Inventory may be mixed",Payment,Seaford Blue Jays,"",3KAX84EYFKC9ECJ6BHXTR5C104,Trevor Holmes,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:57:54,Eastern Time (US & Canada),$28.00,$0.00,$0.00,$28.00,$0.00,$0.00,$0.00,$0.00,$28.00,Point of Sale,$0.00,N/A,$28.00,$0.00,$0.00,"","",$0.00,$28.00,V6UNJybAL0MYPBJ4H9FUC5EHu0RZY,xCJ03b13Gzq5izp9R22H5TRjMNQZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/V6UNJybAL0MYPBJ4H9FUC5EHu0RZY/by-unit/LFDE7RKHB5KYY,"Blue Jay's Crewneck (XL) - Fabric:8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton
+
+Features:Pill-resistant air jet yarn
+Double-needle stitching throughout
+Set-in sleeves
+1x1 ribbed collar, cuffs and waistband with spandex
+Safety Orange is compliant with ANSI - ISEA 107 High-visibility Standards
+Gildan's manufacturing process utilizes 45% renewable energy
+Gildan’s Community Investment Program supports education, the environment, humanitarian aid and active living in the communities we do business in",Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:52:21,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,7he7bKlrxbfyfODBngTwz9dSE3OZY,tGgokpGh9kE7AsGlxCI3JgVYDHCZY,Visa,7442,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/7he7bKlrxbfyfODBngTwz9dSE3OZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Small) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",B8QJF1V54S5E5CXY4HJSB0WWQM,Kristin Brent,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:50:27,Eastern Time (US & Canada),$52.00,$0.00,$0.00,$52.00,$0.00,$0.00,$0.00,$0.00,$52.00,Point of Sale,$52.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.45,$50.55,ZwihbFX4I91WPHQ7mUwhPozWgnAZY,5C5naM8rshAfN8WnCkYLokoODpXZY,Visa,3356,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/ZwihbFX4I91WPHQ7mUwhPozWgnAZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (2XL) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Yellow) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",J99KS7STXQEM3GYNVA0AQTJHSR,Kim West,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:46:51,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$0.00,N/A,$30.00,$0.00,$0.00,"","",$0.00,$30.00,tKY636xtafc0baLiPSLmzBNl6SIZY,tMLIydMNsoxNa3yQ8cVzekqiNbFZY,,,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/tKY636xtafc0baLiPSLmzBNl6SIZY/by-unit/LFDE7RKHB5KYY,"Flexfit Adult Premium 210 Fitted® Cap (S/M) - Fabric:83% acrylic, 15% wool, 2% spandex
+White is 98% acrylic, 2% spandex
+
+
+Features:3¾"" crown; 6-panel, structured, high-profile
+Flat visor with matching color undervisor
+Matching fabric sweatband
+Moisture absorbent inside band
+Bottom stitched for durability; 210 inside taping
+S/M: 6 7/8"" - 7 1/4""
+L/XL: 7 1/4"" - 7 5/8""",Payment,Seaford Blue Jays,"","","","","",$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:41:43,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,pYiFUSpbslpf3Pz7zmupISUoR7ZZY,ViCf0ZO2vFlcwbaGKyA7r0eGuBJZY,Visa,8689,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/pYiFUSpbslpf3Pz7zmupISUoR7ZZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (XL) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",NSSDSYWF96XDHERR5EK4FD3W2R,Kirsten Jenn,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:37:31,Eastern Time (US & Canada),$62.00,$0.00,$0.00,$62.00,$0.00,$0.00,$0.00,$0.00,$62.00,Point of Sale,$62.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.71,$60.29,PLEQPtU7Me0Rh3o6JJsDSFzf6ceZY,JyJ1sdX9bZ7hndalH97NffLMaZXZY,Visa,3904,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/PLEQPtU7Me0Rh3o6JJsDSFzf6ceZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (XL) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton, Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (XL) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc.",Payment,Seaford Blue Jays,"",DTP07MER4EDXQ0H312V4A12J2G,April Stanley,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:35:18,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,V85T8Tln1dMJg7fWGp33fbtD4JTZY,Ro6jB1aZg4yB5YmHU9UZwohHH4KZY,Visa,4948,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/V85T8Tln1dMJg7fWGp33fbtD4JTZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Medium) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",THW48N57WY0WPEQDS3NZVAVX30,W Rice,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:26:26,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,loXv3j3BemxAozmwMNxlWtRbU1WZY,7PR8USrQpQeHiEm8q6C0Ret2GaEZY,Visa,1768,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/loXv3j3BemxAozmwMNxlWtRbU1WZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Large) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",SM4C0Z5RTX1JD0N71P9CAB5FCR,Alexis Lattimer,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:25:26,Eastern Time (US & Canada),$28.00,$0.00,$0.00,$28.00,$0.00,$0.00,$0.00,$0.00,$28.00,Point of Sale,$28.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.83,$27.17,xEuTwiEYjja53dyzWYfPfMWNYzGZY,rfr74YKRxKbhPfcTDqvhstlj0tIZY,Visa,7672,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/xEuTwiEYjja53dyzWYfPfMWNYzGZY/by-unit/LFDE7RKHB5KYY,"Team 365 Zone Performance Polo (2XL) - Fabric:3.5 oz./yd2 / 130 gsm, 100% polyester interlock
+Moisture-wicking and UV protection performance
+
+Features:Dyed-to-match buttons
+Team fit
+Three-button placket
+Cationic dyes for superior brightness and excellent colorfastness
+Transitioning from heat-seal label to tear away label. Inventory may be mixed",Payment,Seaford Blue Jays,"",QB0NEXFRGX0KFZVBKM36R49228,Douglas Henry,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:23:20,Eastern Time (US & Canada),$35.00,$0.00,$0.00,$35.00,$0.00,$0.00,$0.00,$0.00,$35.00,Point of Sale,$35.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.01,$33.99,FSyw1nqnyC5DNtWYwOvKc03ZIfNZY,vJ1a68kThEgJ5nlsVMztcA0qn6WZY,Visa,4364,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/FSyw1nqnyC5DNtWYwOvKc03ZIfNZY/by-unit/LFDE7RKHB5KYY,"Burnside Performance Hooded Sweatshirt (Small) - Fabric:6 oz. 100% polyester
+
+Features:Contrast raglan sleeves
+Front pouch pockets 
+Overlock stitching detail
+Hem bottom & cuffs
+Nylon zipper
+Black drawcord",Payment,Seaford Blue Jays,"",RW2MD3MRWX7GQ81H0CCYKW164G,Vicki Di Vittorio,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:21:39,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,fv45kYJWFknFMSLaqDlxYa98UoCZY,VUDvcoXEWCQDvZ2pbAvjhQ2X9JLZY,Visa,8074,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/fv45kYJWFknFMSLaqDlxYa98UoCZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Medium) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",1EER1EY8MJKH1NBER0CB8W3C1W,Ashley Melson,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:20:35,Eastern Time (US & Canada),$93.00,$0.00,$0.00,$93.00,$0.00,$0.00,$0.00,$0.00,$93.00,Point of Sale,$93.00,Swiped,$0.00,$0.00,$0.00,"","",-$2.52,$90.48,JuhP7FD6Low2OugtK9bhLgMSiaZZY,NwzXUYehtYol9PBENBn0heIUgABZY,Visa,0540,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/JuhP7FD6Low2OugtK9bhLgMSiaZZY/by-unit/LFDE7RKHB5KYY,"Blue Jay T-shirt (Yellow, Small) - 100% Cotton T-shirt, Augusta Sportswear Adult Stoked Tonal Heather Hoodie (Small) - Fabric:
+7.1 oz., 100% polyester tonal performance wicking fleece
+100% polyester performance wicking fleece solid contrast inserts and pocket welts
+Wicks moisture away from the body, Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Small) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",60ZE1HENVGQ1J269299A90NSZG,Daniya Dashiell,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:18:44,Eastern Time (US & Canada),$67.00,$0.00,$0.00,$67.00,$0.00,$0.00,$0.00,$0.00,$67.00,Point of Sale,$67.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.84,$65.16,vtNqEXVbJkC0ImZ7NMjRwRWOm0YZY,zzdsayWnYKBLlxNS45Bq6B7YW4DZY,Visa,8362,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/vtNqEXVbJkC0ImZ7NMjRwRWOm0YZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (Large) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc., Joggers (Large) - Soft, and comfortable",Payment,Seaford Blue Jays,"",C4D4R25T0JS66GX1CS14DAND84,"","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:18:07,Eastern Time (US & Canada),$28.00,$0.00,$0.00,$28.00,$0.00,$0.00,$0.00,$0.00,$28.00,Point of Sale,$28.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.13,$26.87,jPJWQF0fLsj1MLmqzjFNUtSgKQIZY,psO5EyfY4UXzZbNPyX4NcovffiTZY,MasterCard,3617,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/jPJWQF0fLsj1MLmqzjFNUtSgKQIZY/by-unit/LFDE7RKHB5KYY,"Blue Jay's Crewneck (2 XL) - Fabric:8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton
+
+Features:Pill-resistant air jet yarn
+Double-needle stitching throughout
+Set-in sleeves
+1x1 ribbed collar, cuffs and waistband with spandex
+Safety Orange is compliant with ANSI - ISEA 107 High-visibility Standards
+Gildan's manufacturing process utilizes 45% renewable energy
+Gildan’s Community Investment Program supports education, the environment, humanitarian aid and active living in the communities we do business in",Payment,Seaford Blue Jays,"","","","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,3.5,$0.15,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:17:10,Eastern Time (US & Canada),$75.00,$0.00,$0.00,$75.00,$0.00,$0.00,$0.00,$0.00,$75.00,Point of Sale,$75.00,Swiped,$0.00,$0.00,$0.00,"","",-$2.05,$72.95,D1KzX8BJnRuqCRDCF5GGNGIqu9XZY,VsNstvQtrZW3b7W3CzWijfdvuTEZY,Visa,3354,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/D1KzX8BJnRuqCRDCF5GGNGIqu9XZY/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (Medium) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem., Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Small) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",K67XFCHYGQDS6AZNPJ18F06074,Michelle Smith-Dixon,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:14:21,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Point of Sale,$45.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,r1yW3YqK0VWJBl51zXpGQEFOt9dZY,ZQK6xHmGfbLOuK7gWe5Z9qZfmwRZY,Visa,7519,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/r1yW3YqK0VWJBl51zXpGQEFOt9dZY/by-unit/LFDE7RKHB5KYY,"Augusta Sportswear Adult Stoked Tonal Heather Hoodie (Medium) - Fabric:
+7.1 oz., 100% polyester tonal performance wicking fleece
+100% polyester performance wicking fleece solid contrast inserts and pocket welts
+Wicks moisture away from the body",Payment,Seaford Blue Jays,"",TE70CCCMEH85SKJZYKJ85NPRZ4,"","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:13:26,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,1Yvz09r9c9QHSuAZSApdHodh8p7YY,d0dJyo0WJQTrVkVZHN7iAIXTqwNZY,Visa,2297,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/1Yvz09r9c9QHSuAZSApdHodh8p7YY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Medium) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",8KMH91EERFRDFXVK3ZKWYJ0FGM,Kaitlyn Oaks,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:11:35,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.20,$28.80,jTVrnVyErS6o3FjYqzsSWm9wRt7YY,z5gEuY9vKI15bHIjF9ZZ7S3kcTEZY,MasterCard,0184,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/jTVrnVyErS6o3FjYqzsSWm9wRt7YY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (Large) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"",0B54XR6C9J4WCRKB1B471EMB1C,"","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,3.5,$0.15,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:10:30,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.20,$28.80,P7wWi6vSb01PC53ZrDnTzEs9BZBZY,92GfNcjlvhv2czZPHKGQwXM0nhdZY,Visa,5045,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/P7wWi6vSb01PC53ZrDnTzEs9BZBZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (2XL) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"","","","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,3.5,$0.15,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:09:16,Eastern Time (US & Canada),$35.00,$0.00,$0.00,$35.00,$0.00,$0.00,$0.00,$0.00,$35.00,Point of Sale,$35.00,Swiped,$0.00,$0.00,$0.00,"","",-$1.01,$33.99,B0uF3Ohw9IsDcjgexiqQdUloGyVZY,7n7FLZWnMxfvE2T3aLx5jIhKHodZY,MasterCard,6325,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/B0uF3Ohw9IsDcjgexiqQdUloGyVZY/by-unit/LFDE7RKHB5KYY,"Burnside Performance Hooded Sweatshirt (3XL) - Fabric:6 oz. 100% polyester
+
+Features:Contrast raglan sleeves
+Front pouch pockets 
+Overlock stitching detail
+Hem bottom & cuffs
+Nylon zipper
+Black drawcord",Payment,Seaford Blue Jays,"",GTNM64ZC43Y1F801J4TVAXJPJ8,Candice Russ,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:08:33,Eastern Time (US & Canada),$88.00,$0.00,$0.00,$88.00,$0.00,$0.00,$0.00,$0.00,$88.00,Point of Sale,$88.00,Swiped,$0.00,$0.00,$0.00,"","",-$2.39,$85.61,PLgmGx1ZCqpAVr7rmodLNoiOD0LZY,Fo9vnXDnk5XapArFUJi2nsPrnPPZY,Visa,1147,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/PLgmGx1ZCqpAVr7rmodLNoiOD0LZY/by-unit/LFDE7RKHB5KYY,"Burnside Performance Hooded Sweatshirt (Small) - Fabric:6 oz. 100% polyester
+
+Features:Contrast raglan sleeves
+Front pouch pockets 
+Overlock stitching detail
+Hem bottom & cuffs
+Nylon zipper
+Black drawcord, Blue Jay T-shirt (Navy, XL) - 100% Cotton T-shirt, Joggers (Medium) - Soft, and comfortable",Payment,Seaford Blue Jays,"",4011F10NVX68H2H86GKQXDYKSR,Lorraine Morton,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:06:47,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.20,$28.80,XzUt1Df2dv1wviyGFtuFApVrJy7YY,zN83bUJsjxEjiu3QRlgpR8aR3ZMZY,Visa,9923,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/XzUt1Df2dv1wviyGFtuFApVrJy7YY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (2XL) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"","","","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,3.5,$0.15,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-03,17:06:02,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.20,$28.80,lwT7Q9Yv3v0piODFYoFHrEwOyK6YY,XH20mDgQj8E7oF5gkWXdVjF8thMZY,Visa,9923,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/lwT7Q9Yv3v0piODFYoFHrEwOyK6YY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult NuBlend® Quarter-Zip Cadet Collar Sweatshirt (2XL) - Fabric:8 oz., 50% cotton, 50% polyester
+Oxford is 49% cotton; 51% polyester
+Made with sustainably sourced USA grown cotton",Payment,Seaford Blue Jays,"","","","","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,3.5,$0.15,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-11-02,13:35:55,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Point of Sale,$30.00,Swiped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,bLFcXHYVIS46u47XkEmNcaY98HbZY,temfLgFYUugNUBTqivJR8MwIiaKZY,Visa,5407,H98DVLU0Q1GC,,,https://app.squareup.com/dashboard/sales/transactions/bLFcXHYVIS46u47XkEmNcaY98HbZY/by-unit/LFDE7RKHB5KYY,"Harriton Adult Packable Nylon Jacket (Large) - Fabric:
+100% nylon
+Water-resistant
+Feature:
+Lightweight packable hooded pullover with quarter-zip entry
+Drawstring hood
+Front welt pockets
+Center-zip pocket
+Can be easily attached to belt when stored in pouch
+Full elastic cuffs
+Hem casing with drawcord
+Deco Eligible",Payment,Seaford Blue Jays,"",66938W14HX67Z5D0PFDWJWXP1G,Juwan Mullen,"","",$0.00,3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN,2023-11-03,https://app.squareup.com/dashboard/sales/deposits/3ZWAZ23ZGYKX5P70EGEA6VZQ2MNN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-30,15:18:37,Eastern Time (US & Canada),$74.00,$0.00,$0.00,$74.00,$0.00,$0.00,$0.00,$0.00,$74.00,Square Online,$74.00,Keyed,$0.00,$0.00,$0.00,"","",-$2.45,$71.55,L1GOSDVhJTC5O2ZKSUq9viWd8XPZY,hKB8ZaIWhVCAetDQYNzF36mmcIHZY,Visa,2966,,,,https://app.squareup.com/dashboard/sales/transactions/L1GOSDVhJTC5O2ZKSUq9viWd8XPZY/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Small, Yellow) - Fabric:
+5.3 oz., 100% USA cotton, Harriton Adult Packable Nylon Jacket (Medium) - Fabric:
+100% nylon
+Water-resistant
+Feature:
+Lightweight packable hooded pullover with quarter-zip entry
+Drawstring hood
+Front welt pockets
+Center-zip pocket
+Can be easily attached to belt when stored in pouch
+Full elastic cuffs
+Hem casing with drawcord
+Deco Eligible, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Small, White) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",2FWWEQK89RXE571ZKKEFTSDEYW,April Albury-Harmon,"","",$0.00,3Z13SERRGKBN3MKEDQTM4TGHWZ3H,2023-10-31,https://app.squareup.com/dashboard/sales/deposits/3Z13SERRGKBN3MKEDQTM4TGHWZ3H/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee77584d1820d0b8aaac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-20,08:48:28,Eastern Time (US & Canada),-$45.00,$0.00,$0.00,-$45.00,$0.00,$0.00,$0.00,$0.00,-$45.00,Point of Sale,-$45.00,Keyed,$0.00,$0.00,$0.00,"","",$0.00,-$45.00,v8PtS1AiErtmcuOHfiCg3d6eV,fNvYOlKQNQXbVQa9hrayUqYbjP9YY,Visa,9352,,,,https://app.squareup.com/dashboard/sales/transactions/v8PtS1AiErtmcuOHfiCg3d6eV/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (3XL) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Refund,Seaford Blue Jays,"","","","","",$0.00,3Z6402CM018N16D9KR5DCYJS4JWS,2023-10-20,https://app.squareup.com/dashboard/sales/deposits/3Z6402CM018N16D9KR5DCYJS4JWS/by-unit/LFDE7RKHB5KYY,2.9,$0.30,Returned goods,"",Complete,$0.00,"","",$0.00,"",,
+2023-10-19,07:52:42,Eastern Time (US & Canada),$96.00,$0.00,$0.00,$96.00,$0.00,$0.00,$0.00,$0.00,$96.00,Square Online,$96.00,Keyed,$0.00,$0.00,$0.00,"","",-$3.08,$92.92,1mwI0No3XWTVtY4G14MJhsNa6pVZY,5kE2XGSfZIbBArZ2yZeO2PoVl6XZY,Visa,9024,,,,https://app.squareup.com/dashboard/sales/transactions/1mwI0No3XWTVtY4G14MJhsNa6pVZY/by-unit/LFDE7RKHB5KYY,"Toddler Tee (5/6T) - Personalized basketball t-shirts, long sleeve shirts, sweatshirts and more. Sizes available in adult, youth and toddler., Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (XL) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc., Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Yellow) - Fabric:
+5.3 oz., 100% USA cotton, Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Navy) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",41QP3RBV4S14RM69N2QYAMNZ34,Alvin Woodhouse,"","",$0.00,3ZKKD10SRQGS2514SR49F6VFQ4G5,2023-10-19,https://app.squareup.com/dashboard/sales/deposits/3ZKKD10SRQGS2514SR49F6VFQ4G5/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee6e75775ac552b8aaac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-19,05:42:01,Eastern Time (US & Canada),$64.00,$0.00,$0.00,$64.00,$0.00,$0.00,$0.00,$0.00,$64.00,Square Online,$64.00,Keyed,$0.00,$0.00,$0.00,"","",-$2.16,$61.84,vFVAL3KCVSGQKzHQKjROQJ6MpmDZY,nzCTNq2W5BKpqoJU2jlzkggxIxZZY,MasterCard,7345,,,,https://app.squareup.com/dashboard/sales/transactions/vFVAL3KCVSGQKzHQKjROQJ6MpmDZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (Large) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc., Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (Small) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc.",Payment,Seaford Blue Jays,"",K67XFCHYGQDS6AZNPJ18F06074,Michelle Smith-Dixon,"","",$0.00,3ZKKD10SRQGS2514SR49F6VFQ4G5,2023-10-19,https://app.squareup.com/dashboard/sales/deposits/3ZKKD10SRQGS2514SR49F6VFQ4G5/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee6e637d9ec259b8aaac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-18,12:55:05,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Square Online,$45.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.61,$43.39,n3q5BN7992JF9gf4lsJe6ijNHV7YY,fNvYOlKQNQXbVQa9hrayUqYbjP9YY,Visa,9352,,,,https://app.squareup.com/dashboard/sales/transactions/n3q5BN7992JF9gf4lsJe6ijNHV7YY/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (3XL) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"",JV1W0DKV61733CFTVJ1XJV32YG,Aaron Salisbury,"","",$0.00,3ZKKD10SRQGS2514SR49F6VFQ4G5,2023-10-19,https://app.squareup.com/dashboard/sales/deposits/3ZKKD10SRQGS2514SR49F6VFQ4G5/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee6dd6c834f45cb8aaac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-08,18:16:49,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Square Online,$18.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.82,$17.18,nfe7E6VlcWkB1uJs2bPFbZIzbnaZY,RIqVo21KxO0g3Uns09qpljH70TNZY,Visa,0388,,,,https://app.squareup.com/dashboard/sales/transactions/nfe7E6VlcWkB1uJs2bPFbZIzbnaZY/by-unit/LFDE7RKHB5KYY,"Blue Jay T-shirt (Navy, Small) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",JF3JCA3N80PQRP5ZPGHG4HNYJG,Kasey Lynn-Gadzinski,"","",$0.00,3ZER5XTWJHZX0JD1DPKM7BEQMJHD,2023-10-09,https://app.squareup.com/dashboard/sales/deposits/3ZER5XTWJHZX0JD1DPKM7BEQMJHD/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee6627901594cbb018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-06,15:31:43,Eastern Time (US & Canada),$15.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$0.00,$15.00,Square Online,$15.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.74,$14.26,tARdGFxpEY63ZIlzaVZSVuelcEQZY,XTkQwQHJjnVIgMsbJB12pm3LE6WZY,Visa,5114,,,,https://app.squareup.com/dashboard/sales/transactions/tARdGFxpEY63ZIlzaVZSVuelcEQZY/by-unit/LFDE7RKHB5KYY,"Gildan Youth Tee (Youth Small Yellow) - Fabric:
+4.2 oz., 100% heirloom combed and ringspun cotton",Payment,Seaford Blue Jays,"",H242NV52VX4SZDS2PB6G1CW638,KIARA BRIGGS,"","",$0.00,3ZV4P75X6JE92P585XW3ZQNFDR95,2023-10-07,https://app.squareup.com/dashboard/sales/deposits/3ZV4P75X6JE92P585XW3ZQNFDR95/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee647eaec7377fb018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-06,07:33:35,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,1WMU51EClf2DcPg8Ezs1wQSK3nDZY,pIaitAXEwUZW6ob9qVvan3QsC8LZY,Visa,0850,,,,https://app.squareup.com/dashboard/sales/transactions/1WMU51EClf2DcPg8Ezs1wQSK3nDZY/by-unit/LFDE7RKHB5KYY,"Rabbit Skins Toddler Pullover Fleece Hoodie W/ Jays Design (4T, Navy) - Fabric:
+7.5 oz., 60/40 combed ringspun cotton/polyester fleece",Payment,Seaford Blue Jays,"",W8AWFBK85EVET3VWE6VA05KA2G,Marie Ricks,"","",$0.00,3ZV4P75X6JE92P585XW3ZQNFDR95,2023-10-07,https://app.squareup.com/dashboard/sales/deposits/3ZV4P75X6JE92P585XW3ZQNFDR95/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee643c15cdc95cb018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-05,15:04:09,Eastern Time (US & Canada),$53.00,$0.00,$0.00,$53.00,$0.00,$0.00,$0.00,$0.00,$53.00,Square Online,$53.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.84,$51.16,5g2LZ6NS9YgeyPcau5xeafKxM7RZY,D1OKOLFbmjjwvkdniPgcgdGVy3UZY,Visa,2646,,,,https://app.squareup.com/dashboard/sales/transactions/5g2LZ6NS9YgeyPcau5xeafKxM7RZY/by-unit/LFDE7RKHB5KYY,"Gildan Youth Tee (YS, Yellow) - Fabric:
+5.3 oz., 100% USA cotton, Gildan Youth Hooded Sweatshirt W/ Jays Design (YL) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn, Blue Jay T-shirt (Yellow, 2XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",NBSE1BTHYWYT5F5BCKDK3W54T8,Brandis Thompson,"","",$0.00,3ZMB21J7VZRH6BN1JXST9XDDT4YN,2023-10-05,https://app.squareup.com/dashboard/sales/deposits/3ZMB21J7VZRH6BN1JXST9XDDT4YN/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee63b19f66cbc5b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-05,15:00:16,Eastern Time (US & Canada),$15.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$0.00,$15.00,Square Online,$15.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.74,$14.26,TlCXBHWKUbOgVeBSDT901FMuxgWZY,rVSjLjDvhXMYhEsfQynffr9fWrIZY,Visa,7336,,,,https://app.squareup.com/dashboard/sales/transactions/TlCXBHWKUbOgVeBSDT901FMuxgWZY/by-unit/LFDE7RKHB5KYY,"Rabbit Skins Toddler Cotton Jersey T-Shirt W/ Jays Design (4T, Navy) - Fabric:
+5.5 oz., 100% cotton jersey (Ash is 99/1; Heather is 90/10 cotton/polyester)
+Ash and White are sewn with 100% cotton thread",Payment,Seaford Blue Jays,"",EEBSDDPJHWYRDAV8EA23C882P0,Tiffany Savage,"","",$0.00,3ZMB21J7VZRH6BN1JXST9XDDT4YN,2023-10-05,https://app.squareup.com/dashboard/sales/deposits/3ZMB21J7VZRH6BN1JXST9XDDT4YN/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee63b148e124ecb018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-03,23:32:32,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$0.00,N/A,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,brFoBje9qb34N3ej0VmBOVlnp98YY,HNB0ptG8zorSRnVSNy2psGmEIDgZY,,,,,,https://app.squareup.com/dashboard/sales/transactions/brFoBje9qb34N3ej0VmBOVlnp98YY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (2XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",WZFR1AADZ4JV1Q09NFXRGHR23W,Michelle Cook,"","",$0.00,3ZMB21J7VZRH6BN1JXST9XDDT4YN,2023-10-05,https://app.squareup.com/dashboard/sales/deposits/3ZMB21J7VZRH6BN1JXST9XDDT4YN/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$20.00,11ee62667599e092b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-03,20:20:10,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,1CCmmJ1KwkgwOlT9XYFTVbAAWzUZY,33gvpJ4kjN9n1azFQwybjSuZ5xfZY,Visa,3303,,,,https://app.squareup.com/dashboard/sales/transactions/1CCmmJ1KwkgwOlT9XYFTVbAAWzUZY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",6F88K8QPKC31SZKY62DFHNRX9C,Lisa Dee,"","",$0.00,3ZMB21J7VZRH6BN1JXST9XDDT4YN,2023-10-05,https://app.squareup.com/dashboard/sales/deposits/3ZMB21J7VZRH6BN1JXST9XDDT4YN/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee624b79d57a90b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-03,08:11:53,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,5uPwXqDquADZ0s1OEpglF54TLj8YY,Zk2zreoW7sTqP28uSbSky1Ng4f6YY,Discover,9438,,,,https://app.squareup.com/dashboard/sales/transactions/5uPwXqDquADZ0s1OEpglF54TLj8YY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",J4K8QCEM5NZ18JSQRW9MTPP5TG,Susan Johnston - McMullen,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee61e586bda4eab018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-03,07:50:29,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,xaF1EfH46L3Lof3JvfyuzRccdf8YY,bd6npLsy1L8yTo4Kx1xBFuix5r8YY,Visa,5946,,,,https://app.squareup.com/dashboard/sales/transactions/xaF1EfH46L3Lof3JvfyuzRccdf8YY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (2XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",841JGH2MKBTPWEYQYQBZ1MFNPG,Wanda Cannon,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee61e26beacb36b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-02,20:45:50,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,9A3Aprjy8p27qF6mbZu8o79Nd16YY,fjodvaOBa47n6lLPU4kKqfORDOLZY,Visa,7335,,,,https://app.squareup.com/dashboard/sales/transactions/9A3Aprjy8p27qF6mbZu8o79Nd16YY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",YGJ099FDFBZ56G1M99N37DKTTW,Christine Lewis,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee6185db4af8beb018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-02,19:45:54,Eastern Time (US & Canada),$40.00,$0.00,$0.00,$40.00,$0.00,$0.00,$0.00,$0.00,$40.00,Square Online,$40.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.46,$38.54,ZOLIauTY6BCHql8WIfOBXCMoc7HZY,rJUJohdy0nW4ihSeVwcUqTLIgpBZY,Visa,9329,,,,https://app.squareup.com/dashboard/sales/transactions/ZOLIauTY6BCHql8WIfOBXCMoc7HZY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (Small) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton, Class of 1983 Sweatshirts (Medium) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",YGAT2R9HX7G46NPPC0B3XNK8ZG,Valerie Roth,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee617d58f19f7bb018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-02,17:03:09,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,TzFbegoxOWnIgitiHMlFUGtgaMPZY,jDVSQXlwHqsjvFXLE115nOYuGGVZY,Visa,4843,,,,https://app.squareup.com/dashboard/sales/transactions/TzFbegoxOWnIgitiHMlFUGtgaMPZY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (Medium) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",AQDX9Y3FQ23NPE14DZH7P5PWA4,Whitney Pogwist,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee6166e4d05727b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-02,14:16:24,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,jxmMD1h6kxEbpl42YBFcHQsMCbbZY,ZK9V72NorKSFHnZmqrNYqFNClC9YY,Discover,8652,,,,https://app.squareup.com/dashboard/sales/transactions/jxmMD1h6kxEbpl42YBFcHQsMCbbZY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",PNM3D19308W9HBXHGVXJ0FXJWM,Julia Beachboard,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee614fa1e501f3b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-02,14:11:35,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,FiKu71arOvBM5SB5K2P74FjPMseZY,XpdvAUE3IieesdcyEPRrXg2PJX9YY,MasterCard,7069,,,,https://app.squareup.com/dashboard/sales/transactions/FiKu71arOvBM5SB5K2P74FjPMseZY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (2XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",PW9Y735RS3HNJS9PHYB8FBRNN8,Paula Smith,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee614eb774a9cab018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-02,13:22:13,Eastern Time (US & Canada),$90.00,$0.00,$0.00,$90.00,$0.00,$0.00,$0.00,$0.00,$90.00,Square Online,$90.00,Keyed,$0.00,$0.00,$0.00,"","",-$2.91,$87.09,Df3bYeDe4CsDgHnQJM5ZCimGj0AZY,Pp5yFVmTODQ6ISqsy34xZKXYDWZZY,Visa,8101,,,,https://app.squareup.com/dashboard/sales/transactions/Df3bYeDe4CsDgHnQJM5ZCimGj0AZY/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (Large) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem., X21 Blue Jays Hoodie (Small) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"",52EYH1PRT4HT391KB2D77MDXW8,Megan Keglovits,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee614772f60ce3b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-10-02,11:04:57,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Square Online,$20.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.88,$19.12,V6yEc8UE7slf2CzwUukaNrXrgAdZY,ffIscdQFwTuqT77H91TyCMH5bUcZY,Visa,1400,,,,https://app.squareup.com/dashboard/sales/transactions/V6yEc8UE7slf2CzwUukaNrXrgAdZY/by-unit/LFDE7RKHB5KYY,"Class of 1983 Sweatshirts (2XL) - Preorder Class of 1983 40th Reunion Sweatshirts. Available in sizes S-2XL
+Material:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton",Payment,Seaford Blue Jays,"",RR18Z66FK5MFD88QKED41QWVP4,Desiree Moore,"","",$0.00,3Z77XGXDVSZN2YN3MPANTJ2N7445,2023-10-03,https://app.squareup.com/dashboard/sales/deposits/3Z77XGXDVSZN2YN3MPANTJ2N7445/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee6134b3002163b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-28,13:45:22,Eastern Time (US & Canada),$35.00,$0.00,$0.00,$35.00,$0.00,$0.00,$0.00,$0.00,$35.00,Square Online,$35.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.32,$33.68,lE1pQ5OOgakBwzOQ4bEjSLDH42XZY,rDzuO1cRSzwRHrwxaM9zdDHbDVPZY,MasterCard,0021,,,,https://app.squareup.com/dashboard/sales/transactions/lE1pQ5OOgakBwzOQ4bEjSLDH42XZY/by-unit/LFDE7RKHB5KYY,"Gildan Youth Tee (Youth Small Yellow) - Fabric:
+4.2 oz., 100% heirloom combed and ringspun cotton, Gildan Youth Hooded Sweatshirt W/ Jays Design (YS) - Fabric:
+8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn",Payment,Seaford Blue Jays,"",WQZB7ZNP9CQXBE056FX3X4XMQC,Tammy Jones,"","",$0.00,3ZG293Q29PPX43ZDSE93MQ99SWZX,2023-09-29,https://app.squareup.com/dashboard/sales/deposits/3ZG293Q29PPX43ZDSE93MQ99SWZX/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee5e267520d707b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-22,12:30:55,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Square Online,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.17,$28.83,jFgIT2uHzbpLQrKGAGEdCNmTDedZY,JSr0DXHTG8pliPJgNUypc2W7Ip5YY,Visa,1750,,,,https://app.squareup.com/dashboard/sales/transactions/jFgIT2uHzbpLQrKGAGEdCNmTDedZY/by-unit/LFDE7RKHB5KYY,T-shirt (Medium),Payment,Seaford Blue Jays,"",JA888X45GXYTKB2CZTX89HZ3GM,Erin Miller,"","",$0.00,3ZJ21HH3TE8543Z0RGDH7TQ5KCAN,2023-09-23,https://app.squareup.com/dashboard/sales/deposits/3ZJ21HH3TE8543Z0RGDH7TQ5KCAN/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee59654ee4750db018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-22,12:26:14,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Square Online,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.17,$28.83,98Ne4uJOXBBk9cEWYC6ldMLiZYYZY,HHykwrifI5PpDGrnb5Vbtw8mtrKZY,Visa,0316,,,,https://app.squareup.com/dashboard/sales/transactions/98Ne4uJOXBBk9cEWYC6ldMLiZYYZY/by-unit/LFDE7RKHB5KYY,Sweatshirt (Small),Payment,Seaford Blue Jays,"",P9YBMZWK3QZDD144ZHA4CBAXDG,Natasha Holland,"","",$0.00,3ZJ21HH3TE8543Z0RGDH7TQ5KCAN,2023-09-23,https://app.squareup.com/dashboard/sales/deposits/3ZJ21HH3TE8543Z0RGDH7TQ5KCAN/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee596460fbfa00b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-16,21:05:22,Eastern Time (US & Canada),$15.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$0.00,$15.00,Square Online,$15.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.74,$14.26,BUWrNLNHnWi8heIcXueo2Weip7dZY,BeX6byHUypG4Yn8IKEVRQNlI9bdZY,Visa,5155,,,,https://app.squareup.com/dashboard/sales/transactions/BUWrNLNHnWi8heIcXueo2Weip7dZY/by-unit/LFDE7RKHB5KYY,"Gildan Youth Tee (Youth Medium Navy) - Fabric:
+4.2 oz., 100% heirloom combed and ringspun cotton",Payment,Seaford Blue Jays,"",7GRN6GYPT3A2VCWAG6F3ZYYS3G,Kerriann Beyer,"","",$0.00,3ZGT11C19JTN0TXCH8W7DG5F4HK1,2023-09-18,https://app.squareup.com/dashboard/sales/deposits/3ZGT11C19JTN0TXCH8W7DG5F4HK1/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee54f5ee032807b018ac1f6bbba82c,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-11,14:01:02,Eastern Time (US & Canada),$50.00,$0.00,$0.00,$50.00,$0.00,$0.00,$0.00,$0.00,$50.00,Square Online,$50.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.75,$48.25,rn7QkA3YuiC40EOc6cS3hFWIN7OZY,RU2GhLPWzxgFT9d6p6hBGGbjcBYZY,Visa,2966,,,,https://app.squareup.com/dashboard/sales/transactions/rn7QkA3YuiC40EOc6cS3hFWIN7OZY/by-unit/LFDE7RKHB5KYY,"Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (Small) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc., Blue Jay T-shirt (Navy, Small) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",2FWWEQK89RXE571ZKKEFTSDEYW,April Albury-Harmon,"","",$0.00,3Z84MAXY7K6D4RV5M0XN945KEANH,2023-09-12,https://app.squareup.com/dashboard/sales/deposits/3Z84MAXY7K6D4RV5M0XN945KEANH/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee50c2dc6e4b549387ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-11,09:44:22,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Square Online,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.17,$28.83,9uoTwrqpflpcGNhN9E1zIQwYOqaZY,BaBOoP8xIHXI7uwFGS1IOnSZjV7YY,MasterCard,6122,,,,https://app.squareup.com/dashboard/sales/transactions/9uoTwrqpflpcGNhN9E1zIQwYOqaZY/by-unit/LFDE7RKHB5KYY,Bella+Canvas Unisex Sponge Fleece Crewneck Sweatshirt (Large) - Dark Gray Marble,Payment,Seaford Blue Jays,"",7Y404GWH8SC3GQBBN59CASAWK8,Gary Zoll,"","",$0.00,3Z84MAXY7K6D4RV5M0XN945KEANH,2023-09-12,https://app.squareup.com/dashboard/sales/deposits/3Z84MAXY7K6D4RV5M0XN945KEANH/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee50a91fcd2d139387ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-08,12:05:52,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Register,$18.00,Keyed,$0.00,$0.00,$0.00,"","",-$0.78,$17.22,5Tm6XMohwCFB8zEETZmgKVweV,VMDHbS1JnwHh8eLSsf1KkyNqvaB,Visa,0052,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/5Tm6XMohwCFB8zEETZmgKVweV/by-unit/LFDE7RKHB5KYY,"Blue Jay T-shirt (White, 2XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3ZQQ41Y90JCN4AK7S48TYTDZKZRH,2023-09-08,https://app.squareup.com/dashboard/sales/deposits/3ZQQ41Y90JCN4AK7S48TYTDZKZRH/by-unit/LFDE7RKHB5KYY,3.5,$0.15,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-09-08,10:34:50,Eastern Time (US & Canada),$32.00,$0.00,$0.00,$32.00,$0.00,$0.00,$0.00,$0.00,$32.00,Square Online,$32.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.23,$30.77,xgKeobp9dXiKnDLt6zFCquHUuIBZY,jLXBKqE1fc2kHoIEMyDDAwYy96JZY,Visa,3925,,,,https://app.squareup.com/dashboard/sales/transactions/xgKeobp9dXiKnDLt6zFCquHUuIBZY/by-unit/LFDE7RKHB5KYY,Quarter Zip Jacket (XL) - 100% polyester quarter zip pullover style.,Payment,Seaford Blue Jays,"",K7N2RW4J6H4AFDPFFW03MS8KDG,Darrynn Harris,"","",$0.00,3ZQQ41Y90JCN4AK7S48TYTDZKZRH,2023-09-08,https://app.squareup.com/dashboard/sales/deposits/3ZQQ41Y90JCN4AK7S48TYTDZKZRH/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee4e54a98779fc9387ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-09-06,13:57:51,Eastern Time (US & Canada),$75.00,$0.00,$0.00,$75.00,$0.00,$0.00,$0.00,$0.00,$75.00,Square Online,$75.00,Keyed,$0.00,$0.00,$0.00,"","",-$2.48,$72.52,V8JhhGMKiYvcKZJhZ3YpMYHZBXUZY,HlnvMN1H7V9DmILuFrhSAq3IcvPZY,Visa,7971,,,,https://app.squareup.com/dashboard/sales/transactions/V8JhhGMKiYvcKZJhZ3YpMYHZBXUZY/by-unit/LFDE7RKHB5KYY,"X21 Full Zip Hoodie (2XL) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem., Bella + Canvas Ladies' Cropped Fleece Hoodie (2XL) - Fabric:
+7 oz., 52% airlume combed and ring-spun cotton, 48% poly fleece",Payment,Seaford Blue Jays,"",VJJF8CQ7FFG2VX2ZB7GKRHY6F8,kimberly layfield,"","",$0.00,3ZNSWRJ12G5D0GH17ZSYY96DW3N1,2023-09-07,https://app.squareup.com/dashboard/sales/deposits/3ZNSWRJ12G5D0GH17ZSYY96DW3N1/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee4cdd2ea583e29387ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-08-30,09:21:53,Eastern Time (US & Canada),$85.00,$0.00,$0.00,$85.00,$0.00,$0.00,$0.00,$0.00,$85.00,Square Online,$85.00,Keyed,$0.00,$0.00,$0.00,"","",-$2.77,$82.23,vzsYZwiFj6BSEpjOqqSXybXRmYWZY,5w6Ob4g8hvdfdMg1YRbVYd18nV8YY,Visa,3998,,,,https://app.squareup.com/dashboard/sales/transactions/vzsYZwiFj6BSEpjOqqSXybXRmYWZY/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Large, White) - Fabric:
+5.3 oz., 100% USA cotton, X21 Quarter Zip Hoodie (Large) - - 100% Premium Polyester Fabric
+- Hooded Garment
+IMPORTANT WASHING INSTRUCTIONS:
+Machine wash cold on gentle cycle. Fasten all closures. Wash and dry inside out with like colors. Do not use softeners. Do not allow to lay on itself when wet. Do not bleach. Tumble dry low. Do not iron. Do not dry clean., Blue Jay T-shirt (Yellow, Large) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",VH4R0XNHPGY9X37JH4T2NF07WM,Erica Morton,"","",$0.00,3ZTQ0D1W7J9D2TXFMVWMK9D41NJH,2023-08-31,https://app.squareup.com/dashboard/sales/deposits/3ZTQ0D1W7J9D2TXFMVWMK9D41NJH/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee4737c27b17d29387ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-08-28,06:50:52,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Square Online,$45.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.61,$43.39,DFmxYUvKCmr6VgusFfiyffP5SlNZY,NiYjtToiYFjFOjGS3dknDt4RwdSZY,Visa,6754,,,,https://app.squareup.com/dashboard/sales/transactions/DFmxYUvKCmr6VgusFfiyffP5SlNZY/by-unit/LFDE7RKHB5KYY,"X21 Full Zip Hoodie (Small) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"",RVGHQ4T4J0NSNW0E8E93TF2CZ8,Anna Klimitchev,"","",$0.00,3ZSZPSFJPMMX05SAW7R32JHWH6C5,2023-08-29,https://app.squareup.com/dashboard/sales/deposits/3ZSZPSFJPMMX05SAW7R32JHWH6C5/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee45908df59e8c9387ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
+2023-08-24,10:49:30,Eastern Time (US & Canada),$28.00,$0.00,$0.00,$28.00,$0.00,$0.00,$0.00,$0.00,$28.00,Register,$28.00,Dipped,$0.00,$0.00,$0.00,"","",-$0.83,$27.17,tVOC6u5hEiv72UDR9ttT2hweV,puNK3ZCqgURJF2q94AIkd8M4vaB,Visa,7186,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/tVOC6u5hEiv72UDR9ttT2hweV/by-unit/LFDE7RKHB5KYY,"Blue Jay's Crewneck (3 XL) - Fabric:8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton
+
+Features:Pill-resistant air jet yarn
+Double-needle stitching throughout
+Set-in sleeves
+1x1 ribbed collar, cuffs and waistband with spandex
+Safety Orange is compliant with ANSI - ISEA 107 High-visibility Standards
+Gildan's manufacturing process utilizes 45% renewable energy
+Gildan’s Community Investment Program supports education, the environment, humanitarian aid and active living in the communities we do business in",Payment,Seaford Blue Jays,"",53NV7DKCH3ADR1PC3PJY5XEJ40,Luann Holden,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:39:19,Eastern Time (US & Canada),$22.00,$0.00,$0.00,$22.00,$0.00,$0.00,$0.00,$0.00,$22.00,Register,$22.00,Dipped,$0.00,$0.00,$0.00,"","",-$0.67,$21.33,lzPScZjjCRodC8Zo15YhmP1eV,LTnEWwEPb50QPQMplliscAdeuaB,Visa,3591,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/lzPScZjjCRodC8Zo15YhmP1eV/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Large, Navy) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"",6H8X4X1PD95K18EYX3RKZFK2G0,Melody Kimbler,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:36:57,Eastern Time (US & Canada),$68.00,$0.00,$0.00,$68.00,$0.00,$0.00,$0.00,$0.00,$68.00,Register,$68.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.87,$66.13,tNGQmqq3S9RFh3uh03D4aYueV,fttVFJT41f2NMk0c0gekvPCdvaB,Visa,9469,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/tNGQmqq3S9RFh3uh03D4aYueV/by-unit/LFDE7RKHB5KYY,"Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (Small) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc., Blue Jay T-shirt (Navy, Small) - 100% Cotton T-shirt, Liberty Bags Value Drawstring Backpack (Digital Camo) - Fabric:
+210-denier nylon
+Feature:
+Reinforced corners
+Black cord drawstring
+14"" x 18""",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:29:28,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Register,$30.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.88,$29.12,TelIE70N1jEcNuzhyREUF1feV,7RqyrpCXq4yRjh2zxlRfz9B5vaB,MasterCard,8231,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/TelIE70N1jEcNuzhyREUF1feV/by-unit/LFDE7RKHB5KYY,"Hooded Sweatshirts (Small) - Hooded Sweatshirt is made from a comfortable Poly Cotton blend, for ultimate comfort.",Payment,Seaford Blue Jays,"",V65H1F2M43JFKC81ZCM5D2NJBC,Ashley Kuhn.,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:29:01,Eastern Time (US & Canada),$15.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$0.00,$15.00,Register,$0.00,N/A,$15.00,$0.00,$0.00,"","",$0.00,$15.00,1rlTLCs4HIeNZ2pCjQJTmw2eV,lqOtGmdmULIcBNorznJF5vaTvaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/1rlTLCs4HIeNZ2pCjQJTmw2eV/by-unit/LFDE7RKHB5KYY,T-shirt Dress (2XL-3XL) - 100% Cotton Comfortable T-shirt Dress for Women,Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:27:42,Eastern Time (US & Canada),$76.00,$0.00,$0.00,$76.00,$0.00,$0.00,$0.00,$0.00,$76.00,Register,$0.00,N/A,$76.00,$0.00,$0.00,"","",$0.00,$76.00,XsH6SPPihVmbjMNmiccW4Z0eV,ZIaS2IvwsAuyfiNuiOP90SK6uaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/XsH6SPPihVmbjMNmiccW4Z0eV/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (XL, Navy) - Fabric:
+5.3 oz., 100% USA cotton, Blue Jay T-shirt (Navy, Medium) - 100% Cotton T-shirt, Blue Jay T-shirt (Yellow, Large) - 100% Cotton T-shirt, Blue Jay T-shirt (Yellow, XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:25:52,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Register,$18.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.57,$17.43,dtykM7SdDVB9Fo6VVR2LQ4leV,77vwyHoMbI1xWMk0BjwzRYdnvaB,Visa,5261,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/dtykM7SdDVB9Fo6VVR2LQ4leV/by-unit/LFDE7RKHB5KYY,"Long Sleeve T-shirts (XL) - With long sleeves for added coverage, this extra soft tee has a truly vintage look and feel.",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:25:13,Eastern Time (US & Canada),$28.00,$0.00,$0.00,$28.00,$0.00,$0.00,$0.00,$0.00,$28.00,Register,$28.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.83,$27.17,zitB1nOAgUGwk61fzaM3Mu6eV,N4TDH4jSPiqSL6onvJalHPpBwaB,Visa,6696,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/zitB1nOAgUGwk61fzaM3Mu6eV/by-unit/LFDE7RKHB5KYY,"Blue Jay's Crewneck (Large) - Fabric:8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton
+
+Features:Pill-resistant air jet yarn
+Double-needle stitching throughout
+Set-in sleeves
+1x1 ribbed collar, cuffs and waistband with spandex
+Safety Orange is compliant with ANSI - ISEA 107 High-visibility Standards
+Gildan's manufacturing process utilizes 45% renewable energy
+Gildan’s Community Investment Program supports education, the environment, humanitarian aid and active living in the communities we do business in",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:24:33,Eastern Time (US & Canada),$22.00,$0.00,$0.00,$22.00,$0.00,$0.00,$0.00,$0.00,$22.00,Register,$22.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.67,$21.33,Tk6bN5WCrGdtjlxDQZ7b7hkeV,NMHOIrfta8GUqxYZ71jJU7yyuaB,MasterCard,3459,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/Tk6bN5WCrGdtjlxDQZ7b7hkeV/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Medium, Navy) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:24:08,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,3wNYm9u3IWTRksYaXm52aRpeV,v34syxG3inFS3zDcZjBexUajuaB,Visa,8677,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/3wNYm9u3IWTRksYaXm52aRpeV/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (2XL) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:20:12,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,NxC7RdYBDZvgHUR4iig75l4eV,LbBtDpH8499MSwSEMzsWdgsCuaB,Visa,1848,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/NxC7RdYBDZvgHUR4iig75l4eV/by-unit/LFDE7RKHB5KYY,"Augusta Sportswear Adult Stoked Tonal Heather Hoodie (Large) - Fabric:
+7.1 oz., 100% polyester tonal performance wicking fleece
+100% polyester performance wicking fleece solid contrast inserts and pocket welts
+Wicks moisture away from the body",Payment,Seaford Blue Jays,"",NGYJ7GNMZY6KX4YDPH5Z9QZ1R8,"","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:14:45,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Register,$20.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.62,$19.38,JhzJsCGtjg5bZlMCQkWbtaseV,bLVTgEAUcrHbZTW3LJlTkhWnvaB,Visa,2181,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/JhzJsCGtjg5bZlMCQkWbtaseV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (Small) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"",ZBSJ7FAGP94EW31EXXNB7M5H60,"","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:11:12,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,XIfFBxLkqdPItmdHwKAxomqeV,3lfDDUJzk7EtkcLzjfYQKxARuaB,Visa,1524,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/XIfFBxLkqdPItmdHwKAxomqeV/by-unit/LFDE7RKHB5KYY,"X21 Full Zip Hoodie (XL) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"",AMHTW10A5C84QXTQKMDBR0WQBG,Miosoty Santiago,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:10:30,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,59XwX2mcWvEqGy0xdxtrtU9eV,RwsgWyewYN2sotZKWunrJRrluaB,Visa,0611,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/59XwX2mcWvEqGy0xdxtrtU9eV/by-unit/LFDE7RKHB5KYY,"X21 Full Zip Hoodie (2XL) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:04:15,Eastern Time (US & Canada),$22.00,$0.00,$0.00,$22.00,$0.00,$0.00,$0.00,$0.00,$22.00,Register,$0.00,N/A,$22.00,$0.00,$0.00,"","",$0.00,$22.00,TMOjFBZxI5oFKATGJPdw9aweV,rZmYFJ3g1rodm3fxzcHaU3TnvaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/TMOjFBZxI5oFKATGJPdw9aweV/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Large, Navy) - Fabric:
+5.3 oz., 100% USA cotton",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:03:22,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,pfCFY2tBn629tT6o4VfjHoseV,hODYLQQPlMIQcsk0yDuq4V4XuaB,Visa,2290,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/pfCFY2tBn629tT6o4VfjHoseV/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (XL) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:02:25,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Register,$18.00,Dipped,$0.00,$0.00,$0.00,"","",-$0.57,$17.43,xplNg8dOWCxPnETj8gq5vqneV,rbL2bLKucEAl9hGtGlJPcTgRuaB,Visa,9545,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/xplNg8dOWCxPnETj8gq5vqneV/by-unit/LFDE7RKHB5KYY,"Ladies Vertical Texture Full-Zip Jacket (3XL) - True Navy/ Iron Grey
+With an inviting vertical texture, soft cotton interior and durable polyester exterior, this easy-to-layer style will have you thinking beyond a sweater for workdays or the weekend.",Payment,Seaford Blue Jays,"",981RQNCFH940V5R5F2NW80ZXTC,Kim Holmes,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:01:18,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,r4mdcNGG8yFnZqS93Yp2XZmeV,1KGlVtdFvBdMv1OgJaXBBxiyvaB,Visa,6225,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/r4mdcNGG8yFnZqS93Yp2XZmeV/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (Large) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,10:00:51,Eastern Time (US & Canada),$15.00,$0.00,$0.00,$15.00,$0.00,$0.00,$0.00,$0.00,$15.00,Register,$15.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.49,$14.51,rswtwzznuukYFOZ7MG1K95geV,pooj8nL8mMYWF5IfcNsehiDtuaB,Visa,4914,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/rswtwzznuukYFOZ7MG1K95geV/by-unit/LFDE7RKHB5KYY,"Rabbit Skins Toddler Cotton Jersey T-Shirt W/ Jays Design (5/6, Navy) - Fabric:
+5.5 oz., 100% cotton jersey (Ash is 99/1; Heather is 90/10 cotton/polyester)
+Ash and White are sewn with 100% cotton thread",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:59:34,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,nQ1q4upz8fnjeGdancDoRqveV,BSVo37Ci09E9TYCW5lJuxY3pvaB,Visa,6434,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/nQ1q4upz8fnjeGdancDoRqveV/by-unit/LFDE7RKHB5KYY,"Augusta Sportswear Adult Stoked Tonal Heather Hoodie (Medium) - Fabric:
+7.1 oz., 100% polyester tonal performance wicking fleece
+100% polyester performance wicking fleece solid contrast inserts and pocket welts
+Wicks moisture away from the body",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:58:54,Eastern Time (US & Canada),$42.00,$0.00,$0.00,$42.00,$0.00,$0.00,$0.00,$0.00,$42.00,Register,$42.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.19,$40.81,3E7isIVm5m6quW1HTaJNJyzeV,LB0DseuhOBXnr6lf6ywHOoXMvaB,American Express,5016,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/3E7isIVm5m6quW1HTaJNJyzeV/by-unit/LFDE7RKHB5KYY,"Gildan Adult Heavy Cotton™ Long-Sleeve T-Shirt (Medium, Yellow) - Fabric:
+5.3 oz., 100% USA cotton, Tie-Dye Blue Jay T-Shirt (Small) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"",RW2MD3MRWX7GQ81H0CCYKW164G,Vicki Di Vittorio,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:57:35,Eastern Time (US & Canada),$52.00,$0.00,$0.00,$52.00,$0.00,$0.00,$0.00,$0.00,$52.00,Register,$52.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.45,$50.55,lXH7XVpSX0zoVUpmIOfPXM1eV,HRx5meTrpE9uz0asVBKHECpKuaB,Visa,1417,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/lXH7XVpSX0zoVUpmIOfPXM1eV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (2 XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately, Jerzees Adult 8 Oz. NuBlend® Colorblock Raglan Pullover Hooded Sweatshirt (XL) - Fabric:
+8 oz., 50% cotton, 50% polyester
+Made with sustainably sourced USA grown cotton
+Feature:
+Virtually pill-free
+Two-ply lined hood
+Contrasting hood lining, neck tape, flat drawcord and exposed zipper
+Double-needle coverstitching on hood, armhole, media pocket and waistband
+Double-needle coverstitching on front pouch pockets
+Front media pocket; 1x1 ribbed cuffs and waistband
+Jerzees styles are manufactured using sustainable protocols which are measured and reported annually by Fruit of the Loom, Inc.
+Jerzees styles are manufactured with the commitment to enriching lives for people and communities which is measured and reported annually by Fruit of the Loom, Inc.",Payment,Seaford Blue Jays,"",WS7R2MJTD15CS71J7A5W7HXEG8,Stephanie Hill,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:55:58,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Register,$0.00,N/A,$20.00,$0.00,$0.00,"","",$0.00,$20.00,fewHQZpmvMEl4I1bUg2YIzjeV,Xprsppp4YrbEfvD6NpZIdT8svaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/fewHQZpmvMEl4I1bUg2YIzjeV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:55:24,Eastern Time (US & Canada),$63.00,$0.00,$0.00,$63.00,$0.00,$0.00,$0.00,$0.00,$63.00,Register,$63.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.74,$61.26,pn86BwHT6DvwzNELV4LcMZjeV,fzOm8SQec33mTJE3tmrVdrZ1vaB,Visa,2290,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/pn86BwHT6DvwzNELV4LcMZjeV/by-unit/LFDE7RKHB5KYY,"Augusta Sportswear Adult Stoked Tonal Heather Hoodie (Large) - Fabric:
+7.1 oz., 100% polyester tonal performance wicking fleece
+100% polyester performance wicking fleece solid contrast inserts and pocket welts
+Wicks moisture away from the body, Blue Jay T-shirt (Yellow, XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:54:09,Eastern Time (US & Canada),$25.00,$0.00,$0.00,$25.00,$0.00,$0.00,$0.00,$0.00,$25.00,Register,$9.00,Dipped,$16.00,$0.00,$0.00,"","",-$0.33,$24.67,76jXDKwc0cbknEKuu5bxkIreV,"btAE0dYti0Z84EvYX93RYunsvaB, di6wkQOBTieih9vF7171gf7yuaB",Visa,2000,"","Adrianna Cain, Adrianna Cain",,https://app.squareup.com/dashboard/sales/transactions/76jXDKwc0cbknEKuu5bxkIreV/by-unit/LFDE7RKHB5KYY,"Fleece Jackets (3XL) - With aged-to-perfection color, this soft, comfortable sweatshirt is essential and authentic.",Payment,Seaford Blue Jays,"",", H92FF7MAXS1GVF7JF9Z7VSV3NW",", Alisha Broughton",", ",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:52:37,Eastern Time (US & Canada),$36.00,$0.00,$0.00,$36.00,$0.00,$0.00,$0.00,$0.00,$36.00,Register,$0.00,N/A,$36.00,$0.00,$0.00,"","",$0.00,$36.00,J9bKEBSriTrzyRn8YOxMR1xeV,dUZvsHHZPXtvpmUHKnuYcGM6vaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/J9bKEBSriTrzyRn8YOxMR1xeV/by-unit/LFDE7RKHB5KYY,"Blue Jay T-shirt (Yellow, 3XL) - 100% Cotton T-shirt, Blue Jay T-shirt (Navy, 3XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,"","","","","","","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:50:33,Eastern Time (US & Canada),$35.00,$0.00,$0.00,$35.00,$0.00,$0.00,$0.00,$0.00,$35.00,Register,$35.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.01,$33.99,VLBJBUIgbxWS4ZI3JJ2SrzveV,nlBqXq4OAwuDZ6DvAjWE5Ug5vaB,Visa,8286,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/VLBJBUIgbxWS4ZI3JJ2SrzveV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (XL) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately, Scarf (Regular) - Cozy 100% cotton scarf with vibrant yellow, navy and Blue Jay logo.",Payment,Seaford Blue Jays,"",A23YFCC27CTRBKY5A8GE8DSDX4,Judith Bruns,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:49:33,Eastern Time (US & Canada),$75.00,$0.00,$0.00,$75.00,$0.00,$0.00,$0.00,$0.00,$75.00,Register,$75.00,Dipped,$0.00,$0.00,$0.00,"","",-$2.05,$72.95,X4RCvMtX3ZX5IVVCe24CVJfeV,RAOp4GRa43AOH8QtysdU2nD7uaB,MasterCard,5806,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/X4RCvMtX3ZX5IVVCe24CVJfeV/by-unit/LFDE7RKHB5KYY,"X21 Blue Jays Hoodie (Small) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem., Bella+Canvas Unisex Sponge Fleece Crewneck Sweatshirt (Small) - Dark Gray Marble",Payment,Seaford Blue Jays,"",XV9HSRVFMR0VFTPGZ9SJW7A084,Cindy Lynch,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:48:38,Eastern Time (US & Canada),$45.00,$0.00,$0.00,$45.00,$0.00,$0.00,$0.00,$0.00,$45.00,Register,$45.00,Dipped,$0.00,$0.00,$0.00,"","",-$1.27,$43.73,R32Cw52DhpXuOVkm0o4eMFleV,pAg1CF8xiDHFT496gV1hlCQgvaB,Visa,7047,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/R32Cw52DhpXuOVkm0o4eMFleV/by-unit/LFDE7RKHB5KYY,"X21 Full Zip Hoodie (Medium) - - 100% Premium Polyester Fabric
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold inside out. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem.",Payment,Seaford Blue Jays,"",NT4BRXWX1WY09BHWZKDJVG99E0,Lori Ballard,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:47:56,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Register,$18.00,Dipped,$0.00,$0.00,$0.00,"","",-$0.57,$17.43,dJWNvPvIVi9alvmEBK2cg36eV,73fD16Gfi2rgBVc9S0IQcRPDwaB,Visa,4416,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/dJWNvPvIVi9alvmEBK2cg36eV/by-unit/LFDE7RKHB5KYY,"Blue Jay T-shirt (Yellow, Medium) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"",7YFK5D03SS0EVF83NTEJD3R9RM,Ruth Carfagno,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:44:04,Eastern Time (US & Canada),$105.00,$0.00,$0.00,$105.00,$0.00,$0.00,$0.00,$0.00,$105.00,Register,$105.00,Tapped,$0.00,$0.00,$0.00,"","",-$2.83,$102.17,nSayfWQvOWczzvjDn7bdh28eV,1cHPqUtw25nPX4QwNGrx56xzuaB,Visa,2274,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/nSayfWQvOWczzvjDn7bdh28eV/by-unit/LFDE7RKHB5KYY,"X22 Short Sleeve Pullover (2XL) - - Body: 100% Polyester
+- Back Mesh: 80% Polyester & 20% Spandex
+- Lightweight, thin material and slightly see-through.
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem., X22 Short Sleeve Pullover (2XL) - - Body: 100% Polyester
+- Back Mesh: 80% Polyester & 20% Spandex
+- Lightweight, thin material and slightly see-through.
+IMPORTANT WASHING INSTRUCTIONS: 
+Machine wash cold. Do not allow to lay on itself when wet. Tumble dry low. Do not bleach. Do no dry clean. Do not iron on print or emblem., Flexfit Adult Premium 210 Fitted® Cap (L/XL) - Fabric:83% acrylic, 15% wool, 2% spandex
+White is 98% acrylic, 2% spandex
+
+
+Features:3¾"" crown; 6-panel, structured, high-profile
+Flat visor with matching color undervisor
+Matching fabric sweatband
+Moisture absorbent inside band
+Bottom stitched for durability; 210 inside taping
+S/M: 6 7/8"" - 7 1/4""
+L/XL: 7 1/4"" - 7 5/8""",Payment,Seaford Blue Jays,"",BW6XYPNXRVSMRKP2RXSK8DX2Z8,David Lee,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,09:00:44,Eastern Time (US & Canada),$66.00,$0.00,$0.00,$66.00,$0.00,$0.00,$0.00,$0.00,$66.00,Register,$0.00,N/A,$0.00,$0.00,$0.00,"","",-$1.82,$64.18,RRdbiZNm2GMkIaudy9I9wrmeV,dsx3nsnfdvbUvgdq4G5AfgMgvaB,,,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/RRdbiZNm2GMkIaudy9I9wrmeV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (Large) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately, Blue Jay T-shirt (Yellow, Large) - 100% Cotton T-shirt, Blue Jay's Crewneck (Large) - Fabric:8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton
+
+Features:Pill-resistant air jet yarn
+Double-needle stitching throughout
+Set-in sleeves
+1x1 ribbed collar, cuffs and waistband with spandex
+Safety Orange is compliant with ANSI - ISEA 107 High-visibility Standards
+Gildan's manufacturing process utilizes 45% renewable energy
+Gildan’s Community Investment Program supports education, the environment, humanitarian aid and active living in the communities we do business in",Payment,Seaford Blue Jays,"",A62H17F45DM10PCAH53M6NSD4M,"","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$66.00,"","",$0.00,"",$0.00,""
+2023-08-24,08:59:17,Eastern Time (US & Canada),$20.00,$0.00,$0.00,$20.00,$0.00,$0.00,$0.00,$0.00,$20.00,Register,$20.00,Dipped,$0.00,$0.00,$0.00,"","",-$0.62,$19.38,7AcyxvV7RhzFH7xasq4rLlweV,x2DIH0g2JNUHSCqnNZpHpfpqvaB,Visa,2348,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/7AcyxvV7RhzFH7xasq4rLlweV/by-unit/LFDE7RKHB5KYY,"Tie-Dye Blue Jay T-Shirt (Large) - Fabric:100% cotton
+
+Features:No two patterns are exactly alike
+Double-needle white stitching throughout
+Seamless rib at neck
+Shoulder-to shoulder tape
+Wash separately",Payment,Seaford Blue Jays,"",AB6G65RNNS79QCCM9STD4ZATT4,Sabrina Knight,"",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,08:57:19,Eastern Time (US & Canada),$18.00,$0.00,$0.00,$18.00,$0.00,$0.00,$0.00,$0.00,$18.00,Register,$18.00,Tapped,$0.00,$0.00,$0.00,"","",-$0.57,$17.43,lBmKYr50Us3t8sN0gDFLTeueV,bvxyd8CflSdsGaqwAAFPdoXluaB,MasterCard,2180,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/lBmKYr50Us3t8sN0gDFLTeueV/by-unit/LFDE7RKHB5KYY,"Ladies Vertical Texture Full-Zip Jacket (Medium) - True Navy/ Iron Grey
+With an inviting vertical texture, soft cotton interior and durable polyester exterior, this easy-to-layer style will have you thinking beyond a sweater for workdays or the weekend.",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-24,08:53:38,Eastern Time (US & Canada),$64.00,$0.00,$0.00,$64.00,$0.00,$0.00,$0.00,$0.00,$64.00,Register,$64.00,Tapped,$0.00,$0.00,$0.00,"","",-$1.76,$62.24,F5iwJbef7rPkzdtnzEu2Q5xeV,tcTAQO8nPxrtcX9X83p2MF3ZvaB,Visa,5867,"",Adrianna Cain,,https://app.squareup.com/dashboard/sales/transactions/F5iwJbef7rPkzdtnzEu2Q5xeV/by-unit/LFDE7RKHB5KYY,"Blue Jay's Crewneck (2 XL) - Fabric:8 oz., 50% USA cotton, 50% polyester
+Pill-resistant air jet yarn
+Made with 50% sustainably and fairly grown USA cotton
+
+Features:Pill-resistant air jet yarn
+Double-needle stitching throughout
+Set-in sleeves
+1x1 ribbed collar, cuffs and waistband with spandex
+Safety Orange is compliant with ANSI - ISEA 107 High-visibility Standards
+Gildan's manufacturing process utilizes 45% renewable energy
+Gildan’s Community Investment Program supports education, the environment, humanitarian aid and active living in the communities we do business in, Long Sleeve T-shirts (2XL) - With long sleeves for added coverage, this extra soft tee has a truly vintage look and feel., Blue Jay T-shirt (Navy, 3XL) - 100% Cotton T-shirt",Payment,Seaford Blue Jays,"","","","",Seaford Blue Jays,$0.00,3Z82C77C40453PBCHK4DVEK2DRKN,2023-08-25,https://app.squareup.com/dashboard/sales/deposits/3Z82C77C40453PBCHK4DVEK2DRKN/by-unit/LFDE7RKHB5KYY,2.6,$0.10,"","",Complete,$0.00,"","",$0.00,"",$0.00,""
+2023-08-20,14:11:48,Eastern Time (US & Canada),$30.00,$0.00,$0.00,$30.00,$0.00,$0.00,$0.00,$0.00,$30.00,Square Online,$30.00,Keyed,$0.00,$0.00,$0.00,"","",-$1.17,$28.83,hsw4ePtsAbUNKVZRZBn6oNxNe6XZY,pOrpvryAzcV90ODo2oqiqZJQNGaZY,Visa,5914,,,,https://app.squareup.com/dashboard/sales/transactions/hsw4ePtsAbUNKVZRZBn6oNxNe6XZY/by-unit/LFDE7RKHB5KYY,"Bella + Canvas Ladies' Cropped Fleece Hoodie (Medium) - Fabric:
+7 oz., 52% airlume combed and ring-spun cotton, 48% poly fleece",Payment,Seaford Blue Jays,"",7YFK5D03SS0EVF83NTEJD3R9RM,Ruth Carfagno,"","",$0.00,3ZKRGHF1PV7129QCAY51QHJPAMMN,2023-08-21,https://app.squareup.com/dashboard/sales/deposits/3ZKRGHF1PV7129QCAY51QHJPAMMN/by-unit/LFDE7RKHB5KYY,2.9,$0.30,"","",Complete,$0.00,11ee3f84eb1b2bee9387ac1f6bbbd01e,"",$0.00,Seaford Blue Jays,$0.00,""
