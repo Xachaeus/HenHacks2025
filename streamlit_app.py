@@ -4,19 +4,9 @@ import numpy as np
 import pandas as pd
 import joblib
 from MLP import MLP
+import xgboost as xgb
 
-# Load saved encoder and model
-encoder = joblib.load("MLP_model\\encoder.pkl")
 
-# Input dimension from encoder + numeric feature
-input_dim = encoder.transform([["middle", "club fundraiser"]]).shape[1] + 1
-model = MLP(input_dim=input_dim)
-model.load_state_dict(torch.load("MLP_model\\model.pth"))
-model.eval()
-
-# Load revenue scaling
-rev_min, rev_max = joblib.load("MLP_model\\rev_min_max.pkl")
-daily_rev_min, daily_rev_max = joblib.load("MLP_model\\rev_min_max.pkl")
 
 st.title("School-Business Revenue & Survival Predictor")
 
@@ -31,6 +21,19 @@ predictive_model = st.selectbox("Select Predictive Model", ["MLP", "Linear Regre
 
 if st.button("Predict"):
     if predictive_model == "MLP":
+        # Load saved encoder and model
+        encoder = joblib.load("MLP_model\\encoder.pkl")
+
+        # Input dimension from encoder + numeric feature
+        input_dim = encoder.transform([["middle", "club fundraiser"]]).shape[1] + 1
+        model = MLP(input_dim=input_dim)
+        model.load_state_dict(torch.load("MLP_model\\model.pth"))
+        model.eval()
+
+        # Load revenue scaling
+        rev_min, rev_max = joblib.load("MLP_model\\rev_min_max.pkl")
+        daily_rev_min, daily_rev_max = joblib.load("MLP_model\\rev_min_max.pkl")
+        
         # Encode categorical inputs
         cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
         num_input = np.array([[avg_operating_time]])
@@ -52,4 +55,20 @@ if st.button("Predict"):
         st.write(f"Currently Not Implemented")
         
     if predictive_model == "XGBoost":
-        st.write(f"Currently Not Implemented")
+        encoder = joblib.load("XGB_model/encoder.pkl")
+        rev_min, rev_max = joblib.load("XGB_model/rev_min_max.pkl")
+        xgb_model = xgb.XGBRegressor()
+        xgb_model.load_model("XGB_model/model.json")
+        
+        cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
+        num_input = np.array([[avg_operating_time]])
+        x_input = np.hstack([cat_input, num_input])
+        x_tensor = torch.tensor(x_input, dtype=torch.float32)
+
+        # Predict
+        rev_pred_norm = xgb_model.predict(x_tensor)[0]
+        rev_pred = rev_pred_norm * (rev_max - rev_min) + rev_min
+        daily_pred = rev_pred / 365
+
+        st.write(f"**Predicted Annual Revenue ($):** {rev_pred:,.2f}")
+        st.write(f"**Predicted Daily Revenue ($):** {daily_pred:,.2f}")
