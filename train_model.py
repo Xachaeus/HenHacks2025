@@ -6,9 +6,10 @@ from torch.utils.data import DataLoader
 import torchvision.datasets as datasets
 from tqdm import tqdm
 import json
+import math
 
 
-def preprocess_instance(instance, categories):
+def preprocess_instance(instance):
 
     # Outputs
     transaction_total = int(instance["valid total"])
@@ -23,26 +24,26 @@ def preprocess_instance(instance, categories):
     output_tensor = torch.tensor([float(transaction_total), float(num_of_transactions), float(could_continue)])
     # Inputs
     average_duration = int(instance["average duration"])
-    category = instance["Business Type"]
+    category = float(instance["type id"])
     isHighschool = instance["Middle/High School"] == "High"
     launch_month = int(instance["launch month"])
     desired_operating_time = int(instance["valid duration"])
 
     average_duration_tensor = torch.tensor([int(bit) for bit in format(average_duration, '032b')])
     desired_operating_time_tensor = torch.tensor([int(bit) for bit in format(desired_operating_time, '032b')])
-    category_tensor = torch.tensor([(1.0 if category == c else 0.0) for c in categories])
+    #category_tensor = torch.tensor([(1.0 if category==c else 0.0) for c in categories])
     launch_month_tensor = torch.tensor([(1.0 if launch_month == num else 0.0) for num in range(1,13)])
     isHighschool_tensor = torch.tensor([1.0 if isHighschool else 0.0])
 
     #input_tensor = torch.cat((average_duration_tensor, desired_operating_time_tensor, category_tensor, launch_month_tensor, isHighschool_tensor), dim=0)
-    input_tensor = torch.tensor([float(average_duration), float(desired_operating_time), float(categories.index(category)/len(categories)), float(isHighschool), float(launch_month), float(desired_operating_time)])
+    input_tensor = torch.tensor([float(average_duration), float(desired_operating_time), float(category), float(isHighschool), float(launch_month), float(desired_operating_time)])
 
     return input_tensor, output_tensor
 
 
 def extract_output(output_tensor):
 
-    return (output_tensor[0].item(), output_tensor[1].item(), output_tensor[2].item())
+    return (output_tensor[0].item(), output_tensor[1].item(), output_tensor[2].item()>0.5)
 
     data_tensor = torch.tensor([(1.0 if idx.item() > 0.5 else 0.0) for idx in output_tensor])
     output_arguments = [[int(x) for x in tensor.tolist()] for tensor in torch.tensor_split(data_tensor, [32,64], dim=0)]
@@ -80,20 +81,15 @@ if __name__ == "__main__":
     LEARNING_RATE = 1e-5
     device = 'cuda'
 
-    with open("preprocessed_dataset.json", 'r') as f: categories, dataset = json.load(f)
+    with open("preprocessed_dataset.json", 'r') as f: dataset = json.load(f)
 
-    instantiated_dataset = []
-    for school, data in dataset.items():
-        instantiated_dataset += data["instances"]
-
-    dataset = instantiated_dataset
     print(f"Dataset contains {len(dataset)} instances")
 
     train_dataset = [x for idx, x in enumerate(dataset) if idx%2]
     test_dataset = [x for idx, x in enumerate(dataset) if not idx%2]
 
-    train_tensor_dataset = [preprocess_instance(instance, categories) for instance in train_dataset]
-    test_tensor_dataset = [preprocess_instance(instance, categories) for instance in test_dataset]
+    train_tensor_dataset = [preprocess_instance(instance) for instance in train_dataset]
+    test_tensor_dataset = [preprocess_instance(instance) for instance in test_dataset]
 
 
     scores = [0,0,0]
@@ -136,8 +132,8 @@ if __name__ == "__main__":
                 output_data = extract_output(output)
                 expected_data = extract_output(expected_tensor)
 
-                scores[0] += 1/(abs(expected_data[0] - output_data[0]) + 1)
-                scores[1] += 1/(abs(expected_data[1] - output_data[1]) + 1)
+                scores[0] += 1/math.log((abs(expected_data[0] - output_data[0]) + 1))
+                scores[1] += 1/math.log((abs(expected_data[1] - output_data[1]) + 1))
                 scores[2] += 1 if expected_data[2] == output_data[2] else 0
 
                 if not iteration % 50:
