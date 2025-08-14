@@ -1,55 +1,56 @@
-School,Location (PK),Location2,Location3,City,State,Middle/High School,Business Type
-The Brennen School,Goods N' Goodies,,,,Delaware,High,Concessions
-Cantwell's Bridge MS,CBMS JACPs,,,,Delaware,Middle,Concessions
-Alexis I duPont High School,AIHS School Store - Tigers Den,,,,Delaware,High,School Store
-Middletown HS,Cavs Mart,,,,Delaware,High,School Store
-McKean HS Horticulture,McKean Horticulture,,,,Delaware,High,Plant & Flower Fundraiser
-Sussex Central HS,SCHS CTE Store,,,,Delaware,High,School Store
-Appoquinimink HS,The Jag Shack,,,,Delaware,High,School Store
-Everett Meredith MS,EMMS Crusader's Corner,,,,Delaware,Middle,School Store
-McKean High School - Culinary,Highlander Cafe,,,,Delaware,High,Culinary shop
-Newark High School,BPA,DECA,TSA,,Delaware,High,Club Fundraiser
-Delaware SkillsUSA,Delaware SkillsUSA,,,,Delaware,High,Club Fundraiser
-Delaware HOSA,Delaware HOSA,,,,Delaware,High,Club Fundraiser
-McKean High School - HE,Highlander Essentials,Online Sales,McKean Brew & Bake,,Delaware,High,School Store & Snack Shop
-Concord High School-AB,Concord Cares,Concord High School,,,Delaware,High,Prom & Homecoming Tickets
-Christina High School,Christiana High School School Store,,,,Delaware,High,Club Fundraiser
-Odyssey Charter School,Odyssey Charter School (BPA/StudentCouncil),,,,Delaware,High,School Store
-Advanced Technical Center-DC,Zksj53iga8hYgcS6RbXd,,,"Washington, D.C.",,High,Concessions
-AHS Cat Cafe,dzPgMMEnQga6UCpB8j0n,AHS Cafe,AHS Old Cafe,,Delaware,High,Culinary shop
-Alexis I DuPont Middle School,8ycBDniz3y718OR7vcGC,AIMS cooks,,,Delaware,Middle,Culinary shop
-Alexis I. du Pont Athletics,pxHqonc3GnsDsI6xtHg2,,,,Delaware,High,Concessions
-Alexis I. duPont Tiger's Den School Store,GUbGeXSERprDdBCjUwxc,,,,Delaware,Middle,School Store & Snack Shop
-Cab Calloway Concessions,nKrHtvDJ5LgTSudQE0WS,,,,Delaware,High,Concessions
-Cab Comm Arts Merch,HrRh9J8WDIKGP3GA78bO,Cab Calloway Comm Arts,,,Delaware,High,School Store & Snack Shop
-Caesar Rodney High School,RHxWxQUHtKJUKw4RCKeP,CRHS RiderZone,,,Delaware,High,School Store
-Concord High School,tarmkhRvGw2m20XqKzvC,Raider Industries,Snack Shop,,Delaware,High,School Store & Snack Shop
-Conrad Schools Of Science,33eqJTGmen4RGiW8E1rk,Conrad Blue-Gold Club,Allen's Conrad Square Stores,,Delaware,High,Club Fundraiser
-Delaware FFA,vlXwjpaazTebPxLTwsdY,,,,Delaware,High,Club Fundraiser
-Delaware HOSA,AmtkFTwy3nJ7LjBvnHfM,,,,Delaware,High,Club Fundraiser
-Delcastle Technical High School,pUUu6pAswzsYTaHo7gI8,,,,Delaware,High,School Store
-Financial Manifest Foundation,oSJHzIy8CwsB8cI4fRJi,Financial Manifest Foundation,,,Delaware,n/a,School Store
-Howard High School,eC4RmRMA6yx7FSHd1mOD,WildCat Merch,,,Delaware,High,School Store
-John Dickinson High School,f3J9AbtboECED7mCSdPE,TJDS Coffee Bar,,,Delaware,High,School Store & Snack Shop
-Odyssey Charter Middle School BPA,RskEsi9YT7ssfLnYXPRJ,OCS Middle School BPA,,,Delaware,Middle,Club Fundraiser
-Odyssey Charter School - TSA,1DL8nQZboyp5PgPh6EJo,Odyssey Charter TSA Club,,,Delaware,High,Club Fundraiser
-S.I.T.E. Inclusivi-Tees,BERsSI5y2p9E7UE52cWi,,,,Delaware,High,Club Fundraiser
-Warrenton High School,IQSe9z4AlmCY9MoLKJQA,Warrenton Auto & Welding,,Warrenton,OR,High,School Store
-Woodbridge High School,cqH570OcwymEkUkhAlYV,,,,Delaware,High,Club Fundraiser
-Woodbridge School District,3CrfdneHuzrTP0p8V284,,,,Delaware,n/a,Club Fundraiser
-ASPIRA Charter High School,ASPIRA Charter High School- Store,ASPIRA Charter High School - Cafe,,,Delaware,High,School Store & Snack Shop
-Seaford High School,Seaford Blue Jays,,,,Delaware,High,School Store
-Woodstown High School,Woodstown Student Store,,,,Delaware,High,School Store
-Glasgow High School,Glasgow High School,,,,Delaware,High,School Store
-Mount Pleasant HS,MPHS Knights,,,,Delaware,High,Concessions
-Mount Pleasant HS,Advisors and Clubs,Athletics,School Programs,,Delaware,High,School Store
-Mount Pleasant HS,Veronica D'Amico (School Store Manager),Veronica D'Amico (Special Programs),,,Delaware,High,Concessions
-Odyssey Charter HS,Odyssey Charter FFA,,,,Delaware,High,Plant & Flower Fundraiser
-International School,DCI HOSA,,,"Washington, D.C.",,High,Club Fundraiser
-Delaware BPA,rQf1G4ffLSR7yhRasr7J,,,,Delaware,High,Club Fundraiser
-Sparty Box,DBM3y5pTClpRimE1VAVS,,,,Delaware,High,Concessions
-JAGB - Faunara,0HR9NtCECcy9nAVxVZWf,,,,Massachusettes,High,Club Fundraiser
-JAGB - Happy Back,xrgKlpj4eLHqoegqWH8i,,,,Massachusettes,High,Club Fundraiser
-JAGB - Harmony,MD9XTSd9TYlwTHU91Guu,,,,Massachusettes,High,Club Fundraiser
-JAGB - Soothing Stars,IlTHeAkjxwwh5Tk23asy,,,,Massachusettes,High,Club Fundraiser
-JAGB - The Geni,iKsPMfXHpb72ufGUuJLo,,,,Massachusettes,High,Club Fundraiser
+School,Location (PK),Location2,Location3,City,State,Middle/High School,Business Type,Subject Area,# of store items,Average Yearly Income per Household,Urban/Rural
+The Brennen School,Goods N' Goodies,,,Townsend,Delaware,High,Concessions,Students with Autism,,65000,
+Cantwell's Bridge MS,CBMS JACPs,,,Townsend,Delaware,Middle,Concessions,Business,,85000,
+Alexis I duPont High School,AIHS School Store - Tigers Den,,,Greenville,Delaware,High,School Store,Business,84,130000,
+Middletown HS,Cavs Mart,,,Middletown,Delaware,High,School Store,Business,,95000,
+McKean HS Horticulture,McKean Horticulture,,,Wilmington,Delaware,High,Plant & Flower Fundraiser,Agriculture,213,55000,
+Sussex Central HS,SCHS CTE Store,,,Georgetown,Delaware,High,School Store,Business,,52000,
+Everett Meredith MS,EMMS Crusader's Corner,,,Middletown,Delaware,Middle,School Store,Business,,95000,
+McKean High School - Culinary,Highlander Cafe,,,Wilmington,Delaware,High,Culinary shop,Culinary,100,55000,
+Newark High School,BPA,DECA,TSA,Newark,Delaware,High,Club Fundraiser,Business,,70000,
+Delaware SkillsUSA,Delaware SkillsUSA,,,Dover,Delaware,High,Club Fundraiser,Student Accounts,,58000,
+Delaware HOSA,Delaware HOSA,,,Dover,Delaware,High,Club Fundraiser,Future Health Professionals,,58000,
+McKean High School - HE,Highlander Essentials,Online Sales,McKean Brew & Bake,Wilmington,Delaware,High,School Store & Snack Shop,Students with Autism,88,55000,
+Concord High School-AB,Concord Cares,Concord High School,,Brandywine,Delaware,High,Prom & Homecoming Tickets,Student Accounts,25,105000,
+Christina High School,Christiana High School School Store,,,Newark,Delaware,High,Club Fundraiser,Business,0,70000,
+Odyssey Charter School,Odyssey Charter School (BPA/StudentCouncil),,,Wilmington,Delaware,High,School Store,Business,87,55000,
+Advanced Technical Center-DC,Zksj53iga8hYgcS6RbXd,,,"Washington, D.C.",,High,Concessions,Business,,91000,
+Appoquinimink HS,dzPgMMEnQga6UCpB8j0n,AHS Cafe,AHS Old Cafe,Middletown,Delaware,High,Culinary shop,Culinary,27,95000,
+Alexis I DuPont Middle School,8ycBDniz3y718OR7vcGC,AIMS cooks,,Greenville,Delaware,Middle,Culinary shop,Culinary,58,130000,
+Alexis I. du Pont Athletics,pxHqonc3GnsDsI6xtHg2,,,Greenville,Delaware,High,Concessions,Athletic Director,,130000,
+Alexis I. duPont Tiger's Den School Store,GUbGeXSERprDdBCjUwxc,,,Greenville,Delaware,Middle,School Store & Snack Shop,Business,,130000,
+Cab Calloway Concessions,nKrHtvDJ5LgTSudQE0WS,,,Wilmington,Delaware,High,Concessions,Communication Arts,,55000,
+Cab Comm Arts Merch,HrRh9J8WDIKGP3GA78bO,Cab Calloway Comm Arts,,Wilmington,Delaware,High,School Store & Snack Shop,Communication Arts,,55000,
+Caesar Rodney High School,RHxWxQUHtKJUKw4RCKeP,CRHS RiderZone,,Camden,Delaware,High,School Store,Business,,60000,
+Concord High School,tarmkhRvGw2m20XqKzvC,Raider Industries,Snack Shop,Brandywine,Delaware,High,School Store & Snack Shop,Business,,105000,
+Conrad Schools Of Science,33eqJTGmen4RGiW8E1rk,Conrad Blue-Gold Club,Allen's Conrad Square Stores,Wilmington,Delaware,High,Club Fundraiser,Future Health Professionals,,55000,
+Delaware FFA,vlXwjpaazTebPxLTwsdY,,,Delaware,Delaware,High,Club Fundraiser,Agriculture,,60000,
+Delaware HOSA,AmtkFTwy3nJ7LjBvnHfM,,,Dover,Delaware,High,Club Fundraiser,Future Health Professionals,,58000,
+Delcastle Technical High School,pUUu6pAswzsYTaHo7gI8,,,Wilmington,Delaware,High,School Store,Student Accounts,,55000,
+Financial Manifest Foundation,oSJHzIy8CwsB8cI4fRJi,Financial Manifest Foundation,,Delaware,Delaware,n/a,School Store,Nonprofit,,60000,
+Howard High School,eC4RmRMA6yx7FSHd1mOD,WildCat Merch,,Wilmington,Delaware,High,School Store,Business,,55000,
+John Dickinson High School,f3J9AbtboECED7mCSdPE,TJDS Coffee Bar,,Wilmington,Delaware,High,School Store & Snack Shop,Business,,55000,
+Odyssey Charter Middle School BPA,RskEsi9YT7ssfLnYXPRJ,OCS Middle School BPA,,Wilmington,Delaware,Middle,Club Fundraiser,Business,,55000,
+Odyssey Charter School - TSA,1DL8nQZboyp5PgPh6EJo,Odyssey Charter TSA Club,,Wilmington,Delaware,High,Club Fundraiser,Technology,7,55000,
+Brandywine S.I.T.E.,BERsSI5y2p9E7UE52cWi,S.I.T.E. Inclusivi-Tees,,Wilmington,Delaware,High,Club Fundraiser,Students with Autism,4,55000,
+Warrenton High School,IQSe9z4AlmCY9MoLKJQA,Warrenton Auto & Welding,,Warrenton,OR,High,School Store,Auto body,118,,
+Woodbridge High School,cqH570OcwymEkUkhAlYV,,,Bridgeville,Delaware,High,Club Fundraiser,Principal,5,50000,
+Woodbridge School District,3CrfdneHuzrTP0p8V284,,,Bridgeville,Delaware,n/a,Club Fundraiser,School District,14,50000,
+ASPIRA Charter High School,ASPIRA Charter High School- Store,ASPIRA Charter High School - Cafe,,Newark,Delaware,High,School Store & Snack Shop,Business,43,68000,
+Seaford High School,Seaford Blue Jays,,,Seaford,Delaware,High,School Store,Business,,48000,
+Woodstown High School,Woodstown Student Store,,,Woodstown,Delaware,High,School Store,Business,,85000,
+Glasgow High School,Glasgow High School,,,Newark,Delaware,High,School Store,Business,,68000,
+Mount Pleasant HS,MPHS Knights,,,Wilmington,Delaware,High,Concessions,Business,40,52000,
+Mount Pleasant HS,Advisors and Clubs,Athletics,School Programs,Wilmington,Delaware,High,School Store,Principal,140,52000,
+Mount Pleasant HS,Veronica D'Amico (School Store Manager),Veronica D'Amico (Special Programs),,Wilmington,Delaware,High,Concessions,Students with Autism,44,52000,
+Odyssey Charter HS,Odyssey Charter FFA,,,Wilmington,Delaware,High,Plant & Flower Fundraiser,Agriculture,4,52000,
+International School,DCI HOSA,,,"Washington, D.C.",,High,Club Fundraiser,Future Health Professionals,3,95000,
+Delaware BPA,rQf1G4ffLSR7yhRasr7J,,,Dover,Delaware,High,Club Fundraiser,Business,,58000,
+Lake Forest HS,DBM3y5pTClpRimE1VAVS,Sparty Box,,Felton,Delaware,High,Concessions,Business,,70000,
+Junior Achievement of Greater Boston,0HR9NtCECcy9nAVxVZWf,JAGB - Faunara,,Boston,Massachusettes,High,Club Fundraiser,Business,,85000,
+Junior Achievement of Greater Boston,xrgKlpj4eLHqoegqWH8i,JAGB - Happy Back,,Boston,Massachusettes,High,Club Fundraiser,Business,,85000,
+Junior Achievement of Greater Boston,MD9XTSd9TYlwTHU91Guu,JAGB - Harmony,,Boston,Massachusettes,High,Club Fundraiser,Business,,85000,
+Junior Achievement of Greater Boston,IlTHeAkjxwwh5Tk23asy,JAGB - Soothing Stars,,Boston,Massachusettes,High,Club Fundraiser,Business,,85000,
+Junior Achievement of Greater Boston,iKsPMfXHpb72ufGUuJLo,JAGB - The Geni,,Boston,Massachusettes,High,Club Fundraiser,Business,,85000,
+Odessa High School School Store,Odessa High School School Store,Sips,Sweet Escape Candy Company,Odessa,Delaware,High,Club Fundraiser,Business,140,78000,
+Odessa High School School Store,Brewtopia,,,Odessa,Delaware,High,Club Fundraiser,Business,23,65000,
