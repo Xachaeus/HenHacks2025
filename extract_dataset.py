@@ -30,7 +30,7 @@ ALTERNATIVE_LOCATION_NAMES = {
 def print_dataset(dataset):
     print("")
     for company in dataset.keys():
-        print(f"{company}: ${dataset[company]["metadata"]["valid total"]}, {len(dataset[company]["transactions"])} transactions, ${dataset[company]["metadata"]["total profit"]:.2f} made in {dataset[company]["metadata"]["duration"]} days starting in {dataset[company]["metadata"]["launch month"]}")
+        print(f"{company}: {len(dataset[company]['instances'])} instances, {len(dataset[company]["transactions"])} transactions, ${dataset[company]["metadata"]["total profit"]:.2f} made in {dataset[company]["metadata"]["duration"]} days starting in {dataset[company]["metadata"]["launch month"]}")
     print("")
 
 
@@ -153,6 +153,7 @@ with open(DATASET_SAVETO, 'r') as f: dataset = json.load(f)
 
 business_data = {}
 for location, data in dataset.items():
+
     dates = []
     potential_transactions = []
     for transaction in data["transactions"]:
@@ -171,19 +172,36 @@ for location, data in dataset.items():
     latest = max(dates)
     dataset[location]["metadata"].update({"duration": (latest-earliest).days})
 
-    valid_dates = [date for date in dates if date < (earliest + timedelta(days=365))]
-    dataset[location]["metadata"].update({"valid duration": (latest-earliest).days})
-
-    valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date < (earliest + timedelta(days=365))]
-    valid_total = sum([float(x["amount"].replace('$','').replace(',','')) for x in valid_transactions])
-    dataset[location]["metadata"].update({"valid total": valid_total})
-    dataset[location]["metadata"].update({"num valid transactions": len(valid_transactions)})
-
     total = sum([float(x["amount"].replace('$','').replace(',','')) for x in data["transactions"]])
     dataset[location]["metadata"].update({"total profit": total})
 
     launch_month = int(earliest.strftime("%m"))
     dataset[location]["metadata"].update({"launch month": launch_month})
+    
+    instances = []
+    time_window = 30
+    could_continue = True
+    while could_continue:    
+
+        current_instance = {"Business Type": dataset[location]["metadata"]["Business Type"],
+                            "Middle/High School": dataset[location]["metadata"]["Middle/High School"]}
+
+        valid_dates = [date for date in dates if date < (earliest + timedelta(days=time_window))]
+        if max(valid_dates) == latest: could_continue = False
+        current_instance.update({"valid duration": (latest-earliest).days})
+        current_instance.update({"could continue": could_continue})
+
+        valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date < (earliest + timedelta(days=time_window))]
+        valid_total = sum([float(x["amount"].replace('$','').replace(',','')) for x in valid_transactions])
+        current_instance.update({"valid total": valid_total})
+        current_instance.update({"num valid transactions": len(valid_transactions)})
+
+        current_instance.update({"launch month": launch_month})
+
+        time_window += 30
+        instances.append(current_instance)
+
+    dataset[location].update({"instances": instances})
 
     if dataset[location]["metadata"]["Business Type"] not in business_data.keys(): business_data.update({dataset[location]["metadata"]["Business Type"]: [(latest-earliest).days]})
     else: business_data[dataset[location]["metadata"]["Business Type"]].append((latest-earliest).days)
@@ -193,13 +211,14 @@ for category, duration in business_data.items():
     business_average_times.update({category: float(sum(duration))/float(len(duration))})
 
 for school, data in dataset.items():
-    dataset[school]["metadata"].update({"average duration": business_average_times[data["metadata"]["Business Type"]]})
+    for idx, instance in enumerate(dataset[school]['instances']):
+        dataset[school]["instances"][idx].update({"average duration": business_average_times[data["metadata"]["Business Type"]]})
 
 for transaction in dataset["EMMS Crusader's Corner"]["transactions"]:
     if abs(float(transaction["amount"].replace('$', '').replace(',',''))) > 100000: 
         dataset["EMMS Crusader's Corner"]["transactions"].remove(transaction)
 
-with open('preprocessed_dataset.json', 'w') as f: json.dump([list(business_average_times.keys()), dataset], f)
+with open('preprocessed_dataset_human.json', 'w') as f: json.dump([list(business_average_times.keys()), dataset], f, indent=4)
 print("Done!")
 
 print(len(business_average_times))
