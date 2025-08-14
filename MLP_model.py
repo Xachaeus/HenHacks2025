@@ -4,17 +4,15 @@ import torch.optim as optim
 import numpy as np
 import pandas as pd
 import json
-from datetime import datetime
+from dateutil import parser
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
-from dateutil import parser
 import joblib
 
-
+# ---------------- Load JSON ----------------
 def parse_amount(a):
     return float(a.replace("$","").replace(",","").strip())
 
-# ----- Load JSON & preprocess -----
 def load_data(filename):
     data = json.load(open(filename))
     rows = []
@@ -25,26 +23,21 @@ def load_data(filename):
         if not transactions:
             continue
 
-        # Parse amounts and dates
-        # amounts = np.array([parse_amount(t["amount"]) for t in transactions if parse_amount(t["amount"]) < 100000])
         amounts = np.array([parse_amount(t["amount"]) for t in transactions])
-        
-        dates = [parser.parse(t["date"]) for t in transactions] 
+        dates = [parser.parse(t["date"]) for t in transactions]
 
         total_revenue = amounts.sum()
         first_date, last_date = min(dates), max(dates)
         avg_operating_time = (last_date - first_date).days + 1
 
-        # Annualize revenue
         annual_revenue = total_revenue / (avg_operating_time / 365)
-
         months_active = len(set((d.year, d.month) for d in dates))
+
         survive_1mo = float(months_active >= 1)
         survive_3mo = float(months_active >= 3)
         survive_1yr = float(months_active >= 12)
-        
-        
-        if annual_revenue < 1000000:
+
+        if annual_revenue < 1_000_000:
             rows.append({
                 "school_level": meta.get("Middle/High School", "High").lower(),
                 "business_type": meta.get("Business Type", "Other").lower(),
@@ -56,17 +49,16 @@ def load_data(filename):
             })
 
     df = pd.DataFrame(rows)
-    df = df[df["school_level"].str.lower().isin(["middle", "high"])]
+    df = df[df["school_level"].isin(["middle","high"])]
     df.reset_index(drop=True, inplace=True)
     return df
 
-# Load your real JSON
 df = load_data("raw_dataset.json")
 
-# ----- Features and targets -----
+# ---------------- Features ----------------
 X_cat = df[["school_level", "business_type"]].values
 X_num = df[["avg_operating_time"]].values.astype(float)
-y_revenue = df["annual_revenue"].values.astype(float).reshape(-1,1)
+y_revenue = df["annual_revenue"].values.reshape(-1,1).astype(float)
 y_survival = df[["survive_1mo","survive_3mo","survive_1yr"]].values.astype(float)
 
 # Normalize revenue
@@ -78,12 +70,15 @@ encoder = OneHotEncoder(sparse_output=False)
 X_cat_enc = encoder.fit_transform(X_cat)
 X = np.hstack([X_cat_enc, X_num])
 
-# Split train/test
+# Save encoder and min/max for inference
+joblib.dump(encoder, "encoder.pkl")
+joblib.dump((rev_min, rev_max), "rev_min_max.pkl")
+
+# ---------------- Train/Test Split ----------------
 X_train, X_test, y_rev_train, y_rev_test, y_surv_train, y_surv_test = train_test_split(
-    X, y_revenue_norm, y_survival, test_size=0.2, random_state=42
+    X, y_revenue_norm, y_survival, test_size=0.5, random_state=42
 )
 
-# Convert to tensors
 X_train = torch.tensor(X_train, dtype=torch.float32)
 X_test = torch.tensor(X_test, dtype=torch.float32)
 y_rev_train = torch.tensor(y_rev_train, dtype=torch.float32)
@@ -91,7 +86,7 @@ y_rev_test = torch.tensor(y_rev_test, dtype=torch.float32)
 y_surv_train = torch.tensor(y_surv_train, dtype=torch.float32)
 y_surv_test = torch.tensor(y_surv_test, dtype=torch.float32)
 
-# ----- Multi-task model -----
+# ---------------- Multi-task Model ----------------
 class MultiTaskModel(nn.Module):
     def __init__(self, input_dim):
         super().__init__()
@@ -113,18 +108,11 @@ class MultiTaskModel(nn.Module):
 
 model = MultiTaskModel(input_dim=X_train.shape[1])
 
-# ----- Training -----
+# ---------------- Training ----------------
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-loss_weight_rev = 0.1
-
-# ----- Training with Cosine Annealing -----
-optimizer = optim.Adam(model.parameters(), lr=0.001)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
-    optimizer, T_max=1000, eta_min=1e-4
-)
-
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=1000, eta_min=1e-4)
 loss_weight_rev = 0.1
 num_epochs = 1000
 
@@ -136,12 +124,11 @@ for epoch in range(num_epochs):
     optimizer.step()
     scheduler.step()
 
-    if (epoch + 1) % 10 == 0:
+    if (epoch+1) % 50 == 0:
         with torch.no_grad():
             rev_test, surv_test = model(X_test)
             test_loss = loss_weight_rev * criterion_rev(rev_test, y_rev_test) + criterion_surv(surv_test, y_surv_test)
-        print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {loss.item():.4f}, "
-              f"Test Loss: {test_loss.item():.4f}, LR: {scheduler.get_last_lr()[0]:.6f}")
+        print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {loss.item():.4f}, Test Loss: {test_loss.item():.4f}")
 
 # ----- Generate predictions table -----
 rows = []
@@ -169,5 +156,6 @@ with torch.no_grad():
 pred_df = pd.DataFrame(rows)
 print(pred_df)
 
-joblib.dump(model, "model.pkl")
-print("Model saved to model.pkl")
+# ---------------- Save Model ----------------
+torch.save(model.state_dict(), "model.pth")
+print("Saved model to model.pth")

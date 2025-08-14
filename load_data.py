@@ -15,7 +15,7 @@ def load_data(filename):
             continue
         
         # Convert amounts and dates
-        amounts = np.array([float(t["amount"]) for t in transactions])
+        amounts = np.array([float(t["amount"]) for t in transactions if (t["amount"]) < 1000 and (t["amount"]) > -1000])
         dates = [datetime.strptime(t["date"], "%m/%d/%Y") for t in transactions]
         
         total_revenue = amounts.sum()
@@ -28,15 +28,16 @@ def load_data(filename):
         survive_3mo = bool(months_active >= 3)
         survive_1yr = bool(months_active >= 12)
         
-        rows.append({
-            "school_level": meta.get("Middle/High School", "High"),
-            "business_type": meta.get("Business Type", "Other"),
-            "avg_operating_time": avg_operating_time,
-            "annual_revenue": total_revenue,
-            "survive_1mo": survive_1mo,
-            "survive_3mo": survive_3mo,
-            "survive_1yr": survive_1yr
-        })
+        if total_revenue < 1000000:
+            rows.append({
+                "school_level": meta.get("Middle/High School", "High"),
+                "business_type": meta.get("Business Type", "Other"),
+                "avg_operating_time": avg_operating_time,
+                "annual_revenue": total_revenue,
+                "survive_1mo": survive_1mo,
+                "survive_3mo": survive_3mo,
+                "survive_1yr": survive_1yr
+            })
 
     # df = pd.DataFrame(rows)
     # print(df.head())
