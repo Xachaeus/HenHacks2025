@@ -1,0 +1,6 @@
+torch
+torchvision
+xgboost
+numpy
+pandas
+joblib
