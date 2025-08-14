@@ -117,6 +117,8 @@ if DO_SCRAPING:
     print("Organizing data...")
     dataset = {business_data[location]['Location (PK)']: {'metadata': business_data[location], 'transactions': []} for location in business_data.keys()}
     for data in extracted_data:
+
+        if abs(float(data["amount"].replace('$','').replace(',',''))) > 10000: continue
         
         # Check for mislabeled locations
         if data["location"] in ALTERNATIVE_LOCATION_NAMES.keys(): data["location"] = ALTERNATIVE_LOCATION_NAMES[data["location"]]
@@ -138,7 +140,8 @@ if DO_SCRAPING:
     good_data = {}
     for location in dataset.keys():
         if len(dataset[location]['transactions']) == 0: 
-            print(f"{dataset[location]['metadata']['School']}: {dataset[location]['metadata']['Location2']}")
+            #print(f"{dataset[location]['metadata']['School']}: {dataset[location]['metadata']['Location2']}")
+            pass
         else:
             good_data.update({location: dataset[location]})
     
@@ -179,7 +182,8 @@ for location, data in dataset.items():
     dataset[location]["metadata"].update({"launch month": launch_month})
     
     instances = []
-    time_window = 30
+    period = 7
+    time_window = 7
     could_continue = True
     while could_continue:    
 
@@ -188,7 +192,7 @@ for location, data in dataset.items():
 
         valid_dates = [date for date in dates if date < (earliest + timedelta(days=time_window))]
         if max(valid_dates) == latest: could_continue = False
-        current_instance.update({"valid duration": (latest-earliest).days})
+        current_instance.update({"valid duration": time_window})
         current_instance.update({"could continue": could_continue})
 
         valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date < (earliest + timedelta(days=time_window))]
@@ -198,7 +202,7 @@ for location, data in dataset.items():
 
         current_instance.update({"launch month": launch_month})
 
-        time_window += 30
+        time_window += period
         instances.append(current_instance)
 
     dataset[location].update({"instances": instances})
@@ -206,19 +210,33 @@ for location, data in dataset.items():
     if dataset[location]["metadata"]["Business Type"] not in business_data.keys(): business_data.update({dataset[location]["metadata"]["Business Type"]: [(latest-earliest).days]})
     else: business_data[dataset[location]["metadata"]["Business Type"]].append((latest-earliest).days)
 
+print("Done!")
+print("Formatting into usable datasets...")
+
 business_average_times = {}
 for category, duration in business_data.items():
     business_average_times.update({category: float(sum(duration))/float(len(duration))})
 
+business_types = list(business_average_times.keys())
 for school, data in dataset.items():
     for idx, instance in enumerate(dataset[school]['instances']):
-        dataset[school]["instances"][idx].update({"average duration": business_average_times[data["metadata"]["Business Type"]]})
+        dataset[school]["instances"][idx].update({"type id": business_types.index(dataset[school]["instances"][idx]["Business Type"])/len(business_average_times)})
 
-for transaction in dataset["EMMS Crusader's Corner"]["transactions"]:
-    if abs(float(transaction["amount"].replace('$', '').replace(',',''))) > 100000: 
-        dataset["EMMS Crusader's Corner"]["transactions"].remove(transaction)
+instantiated_dataset = [data["instances"] for school, data in dataset.items()]
 
-with open('preprocessed_dataset_human.json', 'w') as f: json.dump([list(business_average_times.keys()), dataset], f, indent=4)
+labeled_instantiated_dataset_components = [(data["metadata"]["School"], data["instances"]) for school, data in dataset.items()]
+labeled_instantiated_dataset = []
+for school, instances in labeled_instantiated_dataset_components:
+    for instance in instances:
+        instance.update({"School": school})
+    labeled_instantiated_dataset += instances
+
+human_readable_dataset = [data["metadata"] for school, data in dataset.items()]
+
+with open('human_readable_dataset.json', 'w') as f: json.dump(human_readable_dataset, f, indent=4)
+with open('labeled_instantiated_dataset.json', 'w') as f: json.dump(labeled_instantiated_dataset, f, indent=4)
+with open('preprocessed_dataset.json', 'w') as f: json.dump([list(business_average_times.keys()), dataset], f)
+with open('preprocessed_dataset_instances.json', 'w') as f: json.dump(instantiated_dataset, f)
 print("Done!")
 
 print(len(business_average_times))
