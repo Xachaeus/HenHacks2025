@@ -45,8 +45,8 @@ if st.button("Predict"):
             rev_pred = model(x_tensor)
             rev_rescaled = rev_pred.item() * (rev_max - rev_min) + rev_min
 
-        st.write(f"**Predicted Overall Revenue:** ${rev_rescaled:,.2f}")
-        st.write(f"**Predicted Daily Revenue:** ${rev_rescaled/avg_operating_time:,.2f}")
+        st.write(f"**Predicted Overall Revenue ($):** {rev_rescaled * avg_operating_time:,.2f}")
+        st.write(f"**Predicted Daily Revenue ($):** {rev_rescaled:,.2f}")
         # st.write(f"**Survival ≥1 month:** {surv_pred[0,0].item()*100:.1f}%")
         # st.write(f"**Survival ≥3 months:** {surv_pred[0,1].item()*100:.1f}%")
         # st.write(f"**Survival ≥1 year:** {surv_pred[0,2].item()*100:.1f}%")'
@@ -68,7 +68,6 @@ if st.button("Predict"):
         # Predict
         rev_pred_norm = xgb_model.predict(x_tensor)[0]
         rev_pred = rev_pred_norm * (rev_max - rev_min) + rev_min
-        daily_pred = rev_pred / 365
 
-        st.write(f"**Predicted Annual Revenue ($):** {rev_pred:,.2f}")
-        st.write(f"**Predicted Daily Revenue ($):** {daily_pred:,.2f}")
+        st.write(f"**Predicted Overall Revenue ($):** {rev_pred * avg_operating_time:,.2f}")
+        st.write(f"**Predicted Daily Revenue ($):** {rev_pred:,.2f}")

@@ -4,15 +4,16 @@ import joblib
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
-from load_json import load_data
+from load_json import load_preprocessed_data
 
 # ---------------- Load dataset ----------------
-df = load_data("raw_dataset.json")
+# df = load_data("raw_dataset.json")
+df = load_preprocessed_data("preprocessed_dataset_instances_7.json")
 
 # ---------------- Features ----------------
 X_cat = df[["school_level", "business_type"]].values
 X_num = df[["avg_operating_time"]].values.astype(float)
-y_revenue = df["annual_revenue"].values.astype(float).reshape(-1,1)
+y_revenue = df["daily_revenue"].values.astype(float).reshape(-1,1)
 
 # Encode categorical features
 encoder = OneHotEncoder(sparse_output=False)
@@ -29,13 +30,13 @@ joblib.dump((rev_min, rev_max), "XGB_model\\rev_min_max.pkl")
 
 # ---------------- Train/Test Split ----------------
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y_revenue_norm, test_size=0.5, random_state=42
+    X, y_revenue_norm, test_size=0.2, random_state=42
 )
 
 # ---------------- Train XGBoost ----------------
 xgb_model = xgb.XGBRegressor(
     n_estimators=1000,
-    learning_rate=0.001,
+    learning_rate=0.01,
     max_depth=5,
     subsample=0.5,
     colsample_bytree=0.5,
@@ -69,8 +70,8 @@ for school in df["school_level"].unique():
         rows.append({
             "School": school,
             "Business Type": btype,
-            "Predicted Annual Revenue ($)": rev_pred_rescaled,
-            "Predicted Daily Revenue ($)": daily_pred
+            "Predicted Annual Revenue ($)": rev_pred_rescaled * 365,
+            "Predicted Daily Revenue ($)": rev_pred_rescaled 
         })
 
 pred_df = pd.DataFrame(rows)
