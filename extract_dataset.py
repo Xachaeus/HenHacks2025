@@ -28,7 +28,7 @@ ALTERNATIVE_LOCATION_NAMES = {
 def print_dataset(dataset):
     print("")
     for company in dataset.keys():
-        print(f"{dataset[company]["metadata"]["School"]}: {len(dataset[company]["transactions"])} transactions, ${dataset[company]["metadata"]["total profit"]:.2f} made in {dataset[company]["metadata"]["duration"]} days starting in {dataset[company]["metadata"]["launch month"]}")
+        print(f"{company}: ${dataset[company]["metadata"]["total profit"]}, {len(dataset[company]["transactions"])} transactions, ${dataset[company]["metadata"]["total profit"]:.2f} made in {dataset[company]["metadata"]["duration"]} days starting in {dataset[company]["metadata"]["launch month"]}")
     print("")
 
 
@@ -84,6 +84,7 @@ if DO_SCRAPING:
                     "location": data["Location"],
                     "amount": data["Net Total"],
                     "date": data["Date"],
+                    "src": data["src"]
                 })
 
                 # Debugging print statements for erroneous location ids
@@ -97,13 +98,15 @@ if DO_SCRAPING:
                     extracted_data.append({
                         "location": data["locationId (metadata)"],
                         "amount": data["Amount"],
-                        "date": data["Created date (UTC)"].split(' ')[0]
+                        "date": data["Created date (UTC)"].split(' ')[0],
+                        "src": data["src"]
                     })
                 except:
                     extracted_data.append({
                         "location": data["altId (metadata)"],
                         "amount": data["Amount"],
-                        "date": data["Created date (UTC)"].split(' ')[0]
+                        "date": data["Created date (UTC)"].split(' ')[0],
+                        "src": data["src"]
                     })
 
     print("Done!")
@@ -164,10 +167,14 @@ business_average_times = {}
 for category, duration in business_data.items():
     business_average_times.update({category: float(sum(duration))/float(len(duration))})
 
-for school, data in dataset:
+for school, data in dataset.items():
     dataset[school]["metadata"].update({"average duration": business_average_times[data["metadata"]["Business Type"]]})
 
-with open('preprocessed_dataset.json', 'w') as f: json.dump(dataset, f)
+for transaction in dataset["EMMS Crusader's Corner"]["transactions"]:
+    if abs(float(transaction["amount"].replace('$', '').replace(',',''))) > 100000: 
+        dataset["EMMS Crusader's Corner"]["transactions"].remove(transaction)
+
+with open('preprocessed_dataset.json', 'w') as f: json.dump([list(business_average_times.keys()), dataset], f)
 print("Done!")
 
 print(business_average_times)
