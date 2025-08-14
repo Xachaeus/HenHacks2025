@@ -10,7 +10,7 @@ import xgboost as xgb
 
 st.title("School-Business Revenue & Survival Predictor")
 
-school_level = st.selectbox("Select School Type", ["Middle", "High"])
+school_level = st.selectbox("Select School Type", ["High", "Middle"])
 business_type = st.selectbox("Select Business Type", [
     "Club Fundraiser", "School Store & Snack Shop", "Concessions",
     "School Store", "Culinary Shop", "Plant & Flower Fundraiser",
@@ -52,7 +52,18 @@ if st.button("Predict"):
         # st.write(f"**Survival ≥1 year:** {surv_pred[0,2].item()*100:.1f}%")'
         
     if predictive_model == "Linear Regression":
-        st.write(f"Currently Not Implemented")
+        model = joblib.load("LR_model\\school_revenue_model.pkl")
+        
+        df = pd.DataFrame(
+            [[school_level.lower(), business_type.lower()]],
+            columns=["school_level", "business_type"]
+        )
+        
+        print(df.shape)
+        daily_rev = model.predict(df)[0]
+        
+        st.write(f"**Predicted Overall Revenue ($):** {daily_rev * avg_operating_time:,.2f}")
+        st.write(f"**Predicted Daily Revenue ($):** {daily_rev:,.2f}")
         
     if predictive_model == "XGBoost":
         encoder = joblib.load("XGB_model/encoder.pkl")
