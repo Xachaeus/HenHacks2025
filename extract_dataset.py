@@ -187,8 +187,10 @@ for location, data in dataset.items():
     could_continue = True
     while could_continue:    
 
+        # All school-associated metadata should be grandfathered in here
         current_instance = {"Business Type": dataset[location]["metadata"]["Business Type"],
-                            "Middle/High School": dataset[location]["metadata"]["Middle/High School"]}
+                            "Middle/High School": dataset[location]["metadata"]["Middle/High School"],
+                            "average income": dataset[location]["metadata"]["Average Yearly Income per Household"]}
 
         valid_dates = [date for date in dates if date < (earliest + timedelta(days=time_window))]
         if max(valid_dates) == latest: could_continue = False
