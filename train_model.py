@@ -135,6 +135,8 @@ if __name__ == "__main__":
                 #print(f"Expected: {extract_output(expected_tensor)}")
                 num_tested += 1
 
+        print(output_data)
+        print(expected_data)
         print("Done!")
         #[print(loss) for idx, loss in enumerate(losses) if not idx%50]
         [print(num_correct/num_tested) for num_correct in scores]
