@@ -3,3 +3,6 @@ model.pkl
 encoder.pkl
 model.pth
 rev_min_max.pkl
+__pycache__
+XGB_model/*
+MLP_model/*
