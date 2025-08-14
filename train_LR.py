@@ -4,22 +4,20 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 import joblib
-from load_json import load_data
+from load_json import load_preprocessed_data
 import pandas as pd
 
 # Load dataset
-df = load_data("raw_dataset.json")
+df = load_preprocessed_data("preprocessed_dataset_instances_7.json")
 
 # Only categorical features
-# X = df[["school_level", "business_type"]]
-X = df[["school_level"]]
-y = df["annual_revenue"]
+X = df[["school_level", "business_type"]]
+y = df["daily_revenue"]
 
 # Build preprocessing + regression pipeline
 preprocessor = ColumnTransformer(
     transformers=[
-        # ('cat', OneHotEncoder(drop='first'), ["school_level", "business_type"])
-        ('cat', OneHotEncoder(drop='first'), ["school_level"])
+        ('cat', OneHotEncoder(drop='first'), ["school_level", "business_type"])
     ]
 )
 
@@ -30,7 +28,7 @@ model = Pipeline(steps=[
 
 # Train/test split
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.5, random_state=40
+    X, y, test_size=0.7, random_state=40
 )
 
 model.fit(X_train, y_train)
@@ -39,18 +37,22 @@ print("Train R²:", model.score(X_train, y_train))
 print("Test R²:", model.score(X_test, y_test))
 
 # Save model for Streamlit
-joblib.dump(model, "school_revenue_model.pkl")
+joblib.dump(model, "LR_model\\school_revenue_model.pkl")
 
-# Get unique categories from the original dataframe
+# Get unique values from the dataset
 school_levels = df["school_level"].unique()
+business_types = df["business_type"].unique()
 
-# Create all combinations (just one column in this case)
-combinations_df = pd.DataFrame({"school_level": school_levels})
+# Create all combinations
+combinations_df = pd.DataFrame(
+    [(sl, bt) for sl in school_levels for bt in business_types],
+    columns=["school_level", "business_type"]
+)
 
-# Predict expected revenue
+# Predict
 predictions = model.predict(combinations_df)
 
-# Show results
+# Results
 result_df = combinations_df.copy()
 result_df["expected_revenue"] = predictions
 print(result_df)
