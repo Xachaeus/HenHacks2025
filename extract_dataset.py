@@ -189,7 +189,7 @@ for location, data in dataset.items():
 
     earliest = min(dates)
     latest = max(dates)
-    dataset[location]["metadata"].update({"duration": (latest-earliest).days})
+    dataset[location]["metadata"].update({"duration": (latest-earliest).days+1})
 
     total = sum([float(x["amount"].replace('$','').replace(',','')) for x in data["transactions"]])
     dataset[location]["metadata"].update({"total profit": total})
@@ -210,7 +210,7 @@ for location, data in dataset.items():
 
         valid_dates = [date for date in dates if date < (earliest + timedelta(days=time_window))]
         if max(valid_dates) == latest: could_continue = False
-        current_instance.update({"valid duration": (max(valid_dates)-earliest).days})
+        current_instance.update({"valid duration": (max(valid_dates)-earliest).days+1})
         current_instance.update({"could continue": could_continue})
 
         valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date < (earliest + timedelta(days=time_window))]
