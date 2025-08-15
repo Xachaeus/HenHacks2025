@@ -6,7 +6,7 @@ from tqdm import tqdm
 DATASET_SRC_DIR = "./dataset/Data/"
 DATASET_SAVETO = "./raw_dataset.json"
 DO_SCRAPING = True
-INSTANCE_GRANULARITY = 8
+INSTANCE_GRANULARITY = 1
 
 # Below are some identified uncategorized location ids and their manually-determined valid alternatives
 # All misnamed transactions come from the files:
@@ -223,7 +223,11 @@ for location, data in tqdm(dataset.items()):
         for transaction, transaction_date in potential_transactions:
             amount = float(transaction["amount"].replace('$','').replace(',',''))
             dist = (abs(((earliest + timedelta(days=prev_time_window))-transaction_date).days)) / (INSTANCE_GRANULARITY/2)
+<<<<<<< HEAD
             if dist > 1: scale = 1.0/float(dist*dist*dist)
+=======
+            if dist > 1: scale = 1.0/float(dist)
+>>>>>>> 61d30c2b6e96791ed52971c805fd0514dba49730
             else: scale = 1.0
             scaled_total += amount * scale
         current_instance.update({"scaled total": scaled_total})

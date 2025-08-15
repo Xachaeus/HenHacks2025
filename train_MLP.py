@@ -19,12 +19,12 @@ Generalizes best to test data, best model, probably super overfit
 """
 
 # df = load_raw_data("raw_dataset.json")
-df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_7.json")
+df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_8.json")
 print(df.shape)
 
 # ---------------- Features ----------------
-X_cat = df[["school_level", "business_type"]].values
-X_num = df[["operating_time"]].values.astype(float)
+X_cat = df[["school_level", "business_type", "school_type"]].values
+X_num = df[["operating_time", "num_teachers", "num_students", "average_income"]].values.astype(float)
 y_revenue = df["daily_revenue"].values.reshape(-1,1).astype(float)
 
 # Normalize revenue
@@ -42,7 +42,7 @@ joblib.dump((rev_min, rev_max), "MLP_model\\rev_min_max.pkl")
 
 # ---------------- Train/Test Split ----------------
 X_train, X_test, y_rev_train, y_rev_test = train_test_split(
-    X, y_revenue_norm, test_size=0.2, random_state=42
+    X, y_revenue_norm, test_size=0.1, random_state=42
 )
 
 X_train = torch.tensor(X_train, dtype=torch.float32)
@@ -58,9 +58,9 @@ model = MLP(input_dim=X_train.shape[1])
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=1000, eta_min=1e-4)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=10000, eta_min=1e-4)
 loss_weight_rev = 1
-num_epochs = 1000
+num_epochs = 10000
 
 for epoch in range(num_epochs):
     optimizer.zero_grad()
@@ -78,28 +78,28 @@ for epoch in range(num_epochs):
         print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {loss.item():.4f}, Test Loss: {test_loss.item():.4f}")
 
 # ----- Generate predictions table -----
-rows = []
-with torch.no_grad():
-    for school in df["school_level"].unique():
-        for btype in df["business_type"].unique():
-            avg_time = df["operating_time"].mean()  # average operating time for predictions
-            ex_cat = encoder.transform([[school, btype]])
-            ex_num = np.array([[avg_time]])
-            ex_feat = np.hstack([ex_cat, ex_num])
-            ex_tensor = torch.tensor(ex_feat, dtype=torch.float32)
+# rows = []
+# with torch.no_grad():
+#     for school in df["school_level"].unique():
+#         for btype in df["business_type"].unique():
+#             avg_time = df["operating_time"].mean()  # average operating time for predictions
+#             ex_cat = encoder.transform([[school, btype]])
+#             ex_num = np.array([[avg_time]])
+#             ex_feat = np.hstack([ex_cat, ex_num])
+#             ex_tensor = torch.tensor(ex_feat, dtype=torch.float32)
 
-            rev_pred = model(ex_tensor)
-            rev_rescaled = rev_pred.item() * (rev_max - rev_min) + rev_min
+#             rev_pred = model(ex_tensor)
+#             rev_rescaled = rev_pred.item() * (rev_max - rev_min) + rev_min
 
-            rows.append({
-                "School": school,
-                "Business Type": btype,
-                "Predicted Annual Revenue ($)": rev_rescaled * 365,
-                "Predicted Daily Revenue ($)": rev_rescaled 
-            })
+#             rows.append({
+#                 "School": school,
+#                 "Business Type": btype,
+#                 "Predicted Annual Revenue ($)": rev_rescaled * 365,
+#                 "Predicted Daily Revenue ($)": rev_rescaled 
+#             })
 
-pred_df = pd.DataFrame(rows)
-print(pred_df)
+# pred_df = pd.DataFrame(rows)
+# print(pred_df)
 
 # ---------------- Save Model ----------------
 torch.save(model.state_dict(), "MLP_model\\model.pth")
