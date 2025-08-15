@@ -30,7 +30,13 @@ ALTERNATIVE_LOCATION_NAMES = {
 def print_dataset(dataset):
     print("")
     for company in dataset.keys():
-        print(f"{company}: {len(dataset[company]['instances'])} instances, {len(dataset[company]["transactions"])} transactions, ${dataset[company]["metadata"]["total profit"]:.2f} made in {dataset[company]["metadata"]["duration"]} days starting in {dataset[company]["metadata"]["launch month"]}")
+        print(
+            f"{company}: {len(dataset[company]['instances'])} instances, "
+            f"{len(dataset[company]['transactions'])} transactions, "
+            f"${dataset[company]['metadata']['total profit']:.2f} made in "
+            f"{dataset[company]['metadata']['duration']} days starting in "
+            f"{dataset[company]['metadata']['launch month']}"
+        )
     print("")
 
 
@@ -253,4 +259,4 @@ print("Done!")
 
 print(len(business_average_times))
 print(len(dataset))
-print_dataset(dataset)
+# print_dataset(dataset)

@@ -6,13 +6,18 @@ from sklearn.model_selection import train_test_split
 import xgboost as xgb
 from load_json import load_preprocessed_data
 
+"""
+Best model is trained on weekly intervals with a test_size of 0.1 ###
+Generalizes to ~40% of test data, not great 
+"""
+
 # ---------------- Load dataset ----------------
 # df = load_data("raw_dataset.json")
-df = load_preprocessed_data("preprocessed_dataset_instances_7.json")
+df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_30.json")
 
 # ---------------- Features ----------------
 X_cat = df[["school_level", "business_type"]].values
-X_num = df[["avg_operating_time"]].values.astype(float)
+X_num = df[["operating_time"]].values.astype(float)
 y_revenue = df["daily_revenue"].values.astype(float).reshape(-1,1)
 
 # Encode categorical features
@@ -30,7 +35,7 @@ joblib.dump((rev_min, rev_max), "XGB_model\\rev_min_max.pkl")
 
 # ---------------- Train/Test Split ----------------
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y_revenue_norm, test_size=0.2, random_state=42
+    X, y_revenue_norm, test_size=0.1, random_state=42
 )
 
 # ---------------- Train XGBoost ----------------
@@ -54,7 +59,7 @@ print("Test R²:", xgb_model.score(X_test, y_test))
 
 # ---------------- Generate predictions table ----------------
 rows = []
-avg_time = df["avg_operating_time"].mean()  # average operating time for predictions
+avg_time = df["operating_time"].mean()  # average operating time for predictions
 
 for school in df["school_level"].unique():
     for btype in df["business_type"].unique():

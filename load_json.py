@@ -18,10 +18,10 @@ def load_preprocessed_data(filename):
     for instance in data:
         # Convert amounts and dates
         total_revenue = instance['valid total']
-        avg_operating_time = instance['valid duration']
+        operating_time = instance['valid duration']
         
-        annual_revenue = total_revenue / (avg_operating_time / 365)
-        daily_revenue = total_revenue / avg_operating_time
+        annual_revenue = total_revenue / (operating_time / 365)
+        daily_revenue = total_revenue / operating_time
         
         # Survival flags
         # months_active = len(set((d.year, d.month) for d in dates))
@@ -33,7 +33,7 @@ def load_preprocessed_data(filename):
             rows.append({
                 "school_level": instance["Middle/High School"].lower(),
                 "business_type": instance["Business Type"].lower(),
-                "avg_operating_time": avg_operating_time,
+                "operating_time": operating_time,
                 "annual_revenue": annual_revenue,
                 "daily_revenue": daily_revenue,
                 # "survive_1mo": survive_1mo,
