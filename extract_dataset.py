@@ -190,8 +190,10 @@ for location, data in tqdm(dataset.items()):
     dataset[location]["metadata"].update({"launch month": launch_month})
     
     instances = []
+
     prev_time_window = 0
     time_window = INSTANCE_GRANULARITY
+
     could_continue = True
     while could_continue:
 
