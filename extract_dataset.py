@@ -53,6 +53,16 @@ if DO_SCRAPING:
             for header, value in zip(column_headers, row):
                 curr_data.update({header: value})
             business_data.update({curr_data["Location (PK)"]: curr_data})
+    
+    with open("./school-data/us-private-schools.json",'r') as f: private_school_data = json.load(f)
+    with open("./school-data/us-public-schools.json",'r') as f: public_school_data = json.load(f)
+
+    combined_school_data = public_school_data + private_school_data
+    for school in combined_school_data:
+        print(school['name'])
+    for location, school_data in business_data.items():
+        if school_data["School"].lower() not in [x['name'].lower() for x in combined_school_data]:
+            print(school_data["School"])
 
     print("Searching for CSVs...")
 
@@ -200,7 +210,7 @@ for location, data in dataset.items():
 
         valid_dates = [date for date in dates if date < (earliest + timedelta(days=time_window))]
         if max(valid_dates) == latest: could_continue = False
-        current_instance.update({"valid duration": time_window})
+        current_instance.update({"valid duration": (max(valid_dates)-earliest).days})
         current_instance.update({"could continue": could_continue})
 
         valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date < (earliest + timedelta(days=time_window))]
