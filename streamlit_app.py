@@ -42,6 +42,7 @@ if predictive_model == "XGBoost":
 
         # Run model
         pred = (xgb_model.predict(x_tensor)[0]) * (rev_max - rev_min) + rev_min
+        pred /= 10
         rev_predictions['time'].append(operating_time)
         rev_predictions['rev'].append(pred)
 
