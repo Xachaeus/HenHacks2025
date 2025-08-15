@@ -6,7 +6,7 @@ from tqdm import tqdm
 DATASET_SRC_DIR = "./dataset/Data/"
 DATASET_SAVETO = "./raw_dataset.json"
 DO_SCRAPING = True
-INSTANCE_GRANULARITY = 7
+INSTANCE_GRANULARITY = 8
 
 # Below are some identified uncategorized location ids and their manually-determined valid alternatives
 # All misnamed transactions come from the files:
