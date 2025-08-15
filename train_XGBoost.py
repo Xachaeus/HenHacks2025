@@ -19,11 +19,11 @@ Generalizes to ~40% of test data, not great
 
 # ---------------- Load dataset ----------------
 # df = load_data("raw_dataset.json")
-df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_1.json")
+df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_8.json")
 
 # ---------------- Features ----------------
-X_cat = df[["school_level", "business_type"]].values
-X_num = df[["operating_time"]].values.astype(float)
+X_cat = df[["school_level", "business_type", "school_type"]].values
+X_num = df[["operating_time", "num_teachers", "num_students", "average_income"]].values.astype(float)
 y_revenue = df["daily_revenue"].values.astype(float).reshape(-1,1)
 
 # Encode categorical features
@@ -41,14 +41,14 @@ joblib.dump((rev_min, rev_max), "XGB_model\\rev_min_max.pkl")
 
 # ---------------- Train/Test Split ----------------
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y_revenue_norm, test_size=0.5, random_state=42
+    X, y_revenue_norm, test_size=0.2, random_state=42
 )
 
 # ---------------- Train XGBoost ----------------
 xgb_model = xgb.XGBRegressor(
-    n_estimators=1000,
-    learning_rate=0.01,
-    max_depth=5,
+    n_estimators=10000,
+    learning_rate=0.001,
+    max_depth=20,
     subsample=0.5,
     colsample_bytree=0.5,
     random_state=42
@@ -64,33 +64,33 @@ print("Train R²:", xgb_model.score(X_train, y_train))
 print("Test R²:", xgb_model.score(X_test, y_test))
 
 # ---------------- Generate predictions table ----------------
-rows = []
-avg_time = df["operating_time"].mean()  # average operating time for predictions
+# rows = []
+# avg_time = df["operating_time"].mean()  # average operating time for predictions
 
-for school in df["school_level"].unique():
-    for btype in df["business_type"].unique():
-        # Encode categorical features
-        ex_cat = encoder.transform([[school, btype]])
-        ex_feat = np.hstack([ex_cat, [[avg_time]]])
+# for school in df["school_level"].unique():
+#     for btype in df["business_type"].unique():
+#         # Encode categorical features
+#         ex_cat = encoder.transform([[school, btype]])
+#         ex_feat = np.hstack([ex_cat, [[avg_time]]])
 
-        # Predict annual revenue
-        rev_pred = xgb_model.predict(ex_feat)[0]
-        rev_pred_rescaled = rev_pred * (rev_max - rev_min) + rev_min
-        daily_pred = rev_pred_rescaled / 365
+#         # Predict annual revenue
+#         rev_pred = xgb_model.predict(ex_feat)[0]
+#         rev_pred_rescaled = rev_pred * (rev_max - rev_min) + rev_min
+#         daily_pred = rev_pred_rescaled / 365
 
-        rows.append({
-            "School": school,
-            "Business Type": btype,
-            "Predicted Annual Revenue ($)": rev_pred_rescaled * 365,
-            "Predicted Daily Revenue ($)": rev_pred_rescaled 
-        })
+#         rows.append({
+#             "School": school,
+#             "Business Type": btype,
+#             "Predicted Annual Revenue ($)": rev_pred_rescaled * 365,
+#             "Predicted Daily Revenue ($)": rev_pred_rescaled 
+#         })
 
-pred_df = pd.DataFrame(rows)
-print(pred_df)
+# pred_df = pd.DataFrame(rows)
+# print(pred_df)
 
-# ---------------- Save Model ----------------
-xgb_model.save_model("XGB_model\\model.json")
-print("Saved XGBoost model to XGB_model\\model.json")
+# # ---------------- Save Model ----------------
+# xgb_model.save_model("XGB_model\\model.json")
+# print("Saved XGBoost model to XGB_model\\model.json")
 
 
 # VALIDATION METRICS #
