@@ -4,6 +4,7 @@ import numpy as np
 
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error, root_mean_squared_error
 import numpy as np
+from math import ceil
 
 # --- Helper to unnormalize back to dollars ---
 def denorm(y, rev_min, rev_max):
@@ -26,15 +27,19 @@ def parse_amount(a):
 def load_preprocessed_data(filename):
     # Load JSON
     data = json.load(open(filename))
+    granularity = int(filename[-6])
 
     rows = []
     for instance in data:
+        average_income = instance['average income']
+        num_students = instance['Number of Students']
+        num_teachers = instance['Number of Teachers']
         # Convert amounts and dates
-        total_revenue = instance['valid total']
-        operating_time = instance['valid duration'] + 1
+        total_revenue = instance['scaled total']
+        operating_time = ceil(instance['search window'])
         
-        annual_revenue = total_revenue / (operating_time / 365)
-        daily_revenue = total_revenue / operating_time
+        annual_revenue = total_revenue / (granularity / 365)
+        daily_revenue = total_revenue / granularity
         
         # Survival flags
         # months_active = len(set((d.year, d.month) for d in dates))
