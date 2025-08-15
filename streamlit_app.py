@@ -30,7 +30,7 @@ if predictive_model == "MLP":
     encoder = joblib.load("./MLP_model/encoder.pkl")
 
     # Input dimension from encoder + numeric feature
-    input_dim = encoder.transform([["middle", "club fundraiser"]]).shape[1] + 1
+    input_dim = encoder.transform([["middle", "club fundraiser", "public"]]).shape[1] + 1
     model = MLP(input_dim=input_dim)
     model.load_state_dict(torch.load("./MLP_model/model.pth"))
     model.eval()
