@@ -18,7 +18,7 @@ def load_preprocessed_data(filename):
     for instance in data:
         # Convert amounts and dates
         total_revenue = instance['valid total']
-        operating_time = instance['valid duration']
+        operating_time = instance['valid duration'] + 1
         
         annual_revenue = total_revenue / (operating_time / 365)
         daily_revenue = total_revenue / operating_time
@@ -59,15 +59,15 @@ def load_raw_data(filename):
         dates = [parser.parse(t["date"]) for t in transactions]        
         total_revenue = amounts.sum()
         first_date, last_date = min(dates), max(dates)
-        avg_operating_time = (last_date - first_date).days + 1
+        operating_time = (last_date - first_date).days + 1
         
-        annual_revenue = total_revenue / (avg_operating_time / 365)
-        daily_revenue = total_revenue / avg_operating_time
+        annual_revenue = total_revenue / (operating_time / 365)
+        daily_revenue = total_revenue / operating_time
         
         rows.append({
             "school_level": meta.get("Middle/High School", "High").lower(),
             "business_type": meta.get("Business Type", "Other").lower(),
-            "avg_operating_time": avg_operating_time,
+            "avg_operating_time": operating_time,
             "annual_revenue": annual_revenue,
             "daily_revenue": daily_revenue,
             # "survive_1mo": survive_1mo,
@@ -83,3 +83,13 @@ def load_raw_data(filename):
         
 # load_preprocessed_data("preprocessed_dataset_instances_7.json")
 # load_raw_data("raw_dataset.json")
+
+
+### Look for negatives in culinary ###
+# df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_30.json")
+# print(df["business_type"].unique)
+# df = df[df["business_type"].isin(["culinary shop"])]
+# df.reset_index(drop=True, inplace=True)
+# X = df[["school_level", "business_type", "operating_time", "daily_revenue"]]
+
+# print(X)

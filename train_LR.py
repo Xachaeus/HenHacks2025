@@ -7,13 +7,16 @@ import joblib
 from load_json import load_preprocessed_data
 import pandas as pd
 
+from skl2onnx import convert_sklearn
+from skl2onnx.common.data_types import StringTensorType, FloatTensorType
+
 """
 Best model is trained on weekly intervals with a test_size of 0.1 ###
 Generalizes to ~12% of test data, worst model
 """
 
 # ---------------- Load dataset ----------------
-df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_30.json")
+df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_7.json")
 
 # Include categorical + numeric feature
 X = df[["school_level", "business_type", "operating_time"]]
@@ -66,3 +69,18 @@ result_df["predicted_daily_revenue"] = predictions
 result_df["predicted_total_revenue"] = result_df["predicted_daily_revenue"] * result_df["operating_time"]
 
 print(result_df)
+
+
+# ---------------- Convert to ONNX ----------------
+# Define the input types for ONNX
+initial_types = [
+    ('school_level', StringTensorType([None, 1])),
+    ('business_type', StringTensorType([None, 1])),
+    ('operating_time', FloatTensorType([None, 1]))
+]
+
+onnx_model = convert_sklearn(model, initial_types=initial_types)
+with open("ONNX_models/LR.onnx", "wb") as f:
+    f.write(onnx_model.SerializeToString())
+
+print("ONNX model saved to ONNX_models/LR.onnx")

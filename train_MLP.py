@@ -10,6 +10,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 from load_json import load_raw_data, load_preprocessed_data
 from MLP import MLP
+import os
 
 
 """
@@ -18,7 +19,7 @@ Generalizes best to test data, best model, probably super overfit
 """
 
 # df = load_raw_data("raw_dataset.json")
-df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_30.json")
+df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_7.json")
 print(df.shape)
 
 # ---------------- Features ----------------
@@ -56,10 +57,10 @@ model = MLP(input_dim=X_train.shape[1])
 # ---------------- Training ----------------
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.01)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=1000, eta_min=1e-4)
+optimizer = optim.Adam(model.parameters(), lr=0.001)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=2000, eta_min=1e-4)
 loss_weight_rev = 1
-num_epochs = 1000
+num_epochs = 2000
 
 for epoch in range(num_epochs):
     optimizer.zero_grad()
@@ -103,3 +104,24 @@ print(pred_df)
 # ---------------- Save Model ----------------
 torch.save(model.state_dict(), "MLP_model\\model.pth")
 print("Saved model to model.pth")
+
+# ---------------- Export to ONNX ----------------
+onnx_path = "ONNX_models/MLP.onnx"
+os.makedirs(os.path.dirname(onnx_path), exist_ok=True)
+
+# Dummy input: same feature count as training data
+dummy_input = torch.randn(1, X_train.shape[1], dtype=torch.float32)
+
+torch.onnx.export(
+    model, 
+    dummy_input, 
+    onnx_path,
+    export_params=True,             # store trained weights
+    opset_version=17,               # ONNX opset (17 is latest stable)
+    do_constant_folding=True,       # optimize constants
+    input_names=['input'], 
+    output_names=['predicted_revenue'],
+    dynamic_axes={'input': {0: 'batch_size'}, 'predicted_revenue': {0: 'batch_size'}},
+)
+
+print(f"Exported MLP model to {onnx_path}")

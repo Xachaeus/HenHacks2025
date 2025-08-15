@@ -6,6 +6,12 @@ from sklearn.model_selection import train_test_split
 import xgboost as xgb
 from load_json import load_preprocessed_data
 
+from skl2onnx import convert_sklearn
+from skl2onnx.common.data_types import FloatTensorType
+import onnxmltools
+import onnx
+
+
 """
 Best model is trained on weekly intervals with a test_size of 0.1 ###
 Generalizes to ~40% of test data, not great 
@@ -85,3 +91,19 @@ print(pred_df)
 # ---------------- Save Model ----------------
 xgb_model.save_model("XGB_model\\model.json")
 print("Saved XGBoost model to XGB_model\\model.json")
+
+
+# ---------------- Export XGBoost to ONNX ----------------
+# Convert XGBRegressor directly using onnxmltools
+# NOTE: The model input here is the already-encoded + numeric features
+initial_types = [
+    ("input", FloatTensorType([None, X.shape[1]]))  # number of columns after one-hot + numeric
+]
+
+onnx_model = onnxmltools.convert_xgboost(xgb_model, initial_types=initial_types)
+
+# Save the ONNX file
+with open("XGB_model/XGB.onnx", "wb") as f:
+    f.write(onnx_model.SerializeToString())
+
+print("ONNX model saved to ONNX_models/XGB.onnx")
