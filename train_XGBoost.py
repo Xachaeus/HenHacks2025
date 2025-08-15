@@ -6,9 +6,14 @@ from sklearn.model_selection import train_test_split
 import xgboost as xgb
 from load_json import load_preprocessed_data
 
+"""
+Best model is trained on weekly intervals with a test_size of 0.1 ###
+Generalizes to ~40% of test data, not great 
+"""
+
 # ---------------- Load dataset ----------------
 # df = load_data("raw_dataset.json")
-df = load_preprocessed_data("preprocessed_dataset_instances_7.json")
+df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_30.json")
 
 # ---------------- Features ----------------
 X_cat = df[["school_level", "business_type"]].values
