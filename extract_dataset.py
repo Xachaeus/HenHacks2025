@@ -30,7 +30,13 @@ ALTERNATIVE_LOCATION_NAMES = {
 def print_dataset(dataset):
     print("")
     for company in dataset.keys():
-        print(f"{company}: {len(dataset[company]['instances'])} instances, {len(dataset[company]["transactions"])} transactions, ${dataset[company]["metadata"]["total profit"]:.2f} made in {dataset[company]["metadata"]["duration"]} days starting in {dataset[company]["metadata"]["launch month"]}")
+        print(
+            f"{company}: {len(dataset[company]['instances'])} instances, "
+            f"{len(dataset[company]['transactions'])} transactions, "
+            f"${dataset[company]['metadata']['total profit']:.2f} made in "
+            f"{dataset[company]['metadata']['duration']} days starting in "
+            f"{dataset[company]['metadata']['launch month']}"
+        )
     print("")
 
 
@@ -182,8 +188,8 @@ for location, data in dataset.items():
     dataset[location]["metadata"].update({"launch month": launch_month})
     
     instances = []
-    period = 1
-    time_window = 1
+    period = 7
+    time_window = 7
     could_continue = True
     while could_continue:    
 
@@ -235,12 +241,12 @@ for school, instances in labeled_instantiated_dataset_components:
 
 human_readable_dataset = [data["metadata"] for school, data in dataset.items()]
 
-with open('human_readable_dataset_1.json', 'w') as f: json.dump(human_readable_dataset, f, indent=4)
-with open('labeled_instantiated_dataset_1.json', 'w') as f: json.dump(labeled_instantiated_dataset, f, indent=4)
-with open('preprocessed_dataset_1.json', 'w') as f: json.dump([list(business_average_times.keys()), dataset], f)
-with open('preprocessed_dataset_instances_1.json', 'w') as f: json.dump(instantiated_dataset, f)
+with open('human_readable_dataset.json', 'w') as f: json.dump(human_readable_dataset, f, indent=4)
+with open('labeled_instantiated_dataset.json', 'w') as f: json.dump(labeled_instantiated_dataset, f, indent=4)
+with open('preprocessed_dataset.json', 'w') as f: json.dump([list(business_average_times.keys()), dataset], f)
+with open('preprocessed_dataset_instances.json', 'w') as f: json.dump(instantiated_dataset, f)
 print("Done!")
 
 print(len(business_average_times))
 print(len(dataset))
-print_dataset(dataset)
+# print_dataset(dataset)

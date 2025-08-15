@@ -11,15 +11,20 @@ import joblib
 from load_json import load_raw_data, load_preprocessed_data
 from MLP import MLP
 
+
+"""
+Best model is trained on daily intervals with a test_size of 0.2 ###
+Generalizes best to test data, best model, probably super overfit
+"""
+
 # df = load_raw_data("raw_dataset.json")
-df = load_preprocessed_data("preprocessed_dataset_instances_7.json")
+df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_30.json")
 print(df.shape)
 
 # ---------------- Features ----------------
 X_cat = df[["school_level", "business_type"]].values
 X_num = df[["operating_time"]].values.astype(float)
 y_revenue = df["daily_revenue"].values.reshape(-1,1).astype(float)
-# y_survival = df[["survive_1mo","survive_3mo","survive_1yr"]].values.astype(float)
 
 # Normalize revenue
 rev_min, rev_max = y_revenue.min(), y_revenue.max()
@@ -51,10 +56,10 @@ model = MLP(input_dim=X_train.shape[1])
 # ---------------- Training ----------------
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=5000, eta_min=1e-4)
+optimizer = optim.Adam(model.parameters(), lr=0.01)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=1000, eta_min=1e-4)
 loss_weight_rev = 1
-num_epochs = 5000
+num_epochs = 1000
 
 for epoch in range(num_epochs):
     optimizer.zero_grad()
