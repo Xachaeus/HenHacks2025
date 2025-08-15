@@ -21,7 +21,7 @@ business_type = st.selectbox("Select Business Type", [
     "Prom & Homecoming tickets"
 ])
 maximum_operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=365)
-granularity = st.number_input("Time Period per Prediction (days)", min_value=1, value=7)
+granularity = 8 #st.number_input("Time Period per Prediction (days)", min_value=1, value=7)
 predictive_model = "XGBoost"
 
 #if st.button("Predict"):
