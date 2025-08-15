@@ -8,7 +8,7 @@ from dateutil import parser
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 import joblib
-from load_json import load_raw_data, load_preprocessed_data
+from helpers import load_preprocessed_data, metrics, denorm
 from MLP import MLP
 import os
 
@@ -58,9 +58,9 @@ model = MLP(input_dim=X_train.shape[1])
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=2000, eta_min=1e-4)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=1000, eta_min=1e-4)
 loss_weight_rev = 1
-num_epochs = 2000
+num_epochs = 1000
 
 for epoch in range(num_epochs):
     optimizer.zero_grad()
@@ -105,23 +105,19 @@ print(pred_df)
 torch.save(model.state_dict(), "MLP_model\\model.pth")
 print("Saved model to model.pth")
 
-# ---------------- Export to ONNX ----------------
-onnx_path = "ONNX_models/MLP.onnx"
-os.makedirs(os.path.dirname(onnx_path), exist_ok=True)
+# VALIDATION METRICS #
+y_pred_train_norm = model(X_train)
+y_pred_test_norm  = model(X_test)
 
-# Dummy input: same feature count as training data
-dummy_input = torch.randn(1, X_train.shape[1], dtype=torch.float32)
+y_train = denorm(y_rev_train, rev_min, rev_max).detach().numpy()
+y_test  = denorm(y_rev_test, rev_min, rev_max).detach().numpy()
+y_pred_train = denorm(y_pred_train_norm, rev_min, rev_max).detach().numpy()
+y_pred_test  = denorm(y_pred_test_norm, rev_min, rev_max).detach().numpy()
 
-torch.onnx.export(
-    model, 
-    dummy_input, 
-    onnx_path,
-    export_params=True,             # store trained weights
-    opset_version=17,               # ONNX opset (17 is latest stable)
-    do_constant_folding=True,       # optimize constants
-    input_names=['input'], 
-    output_names=['predicted_revenue'],
-    dynamic_axes={'input': {0: 'batch_size'}, 'predicted_revenue': {0: 'batch_size'}},
-)
+tr_r2, tr_rmse, tr_mae, tr_mape = metrics(y_train, y_pred_train)
+te_r2, te_rmse, te_mae, te_mape = metrics(y_test,  y_pred_test)
 
-print(f"Exported MLP model to {onnx_path}")
+print(f"TRAIN -> R²: {tr_r2:.3f} | RMSE: ${tr_rmse:,.2f} | MAE: ${tr_mae:,.2f} | MAPE: {tr_mape:.2f}%")
+print(f"TEST  -> R²: {te_r2:.3f} | RMSE: ${te_rmse:,.2f} | MAE: ${te_mae:,.2f} | MAPE: {te_mape:.2f}%")
+
+print("Generalization gap (RMSE test/train):", round(te_rmse / tr_rmse, 2))

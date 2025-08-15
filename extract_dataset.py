@@ -1,10 +1,12 @@
 import os, csv, pickle
 from datetime import datetime, timedelta
 import json
+from tqdm import tqdm
 
 DATASET_SRC_DIR = "./dataset/Data/"
 DATASET_SAVETO = "./raw_dataset.json"
 DO_SCRAPING = True
+INSTANCE_GRANULARITY = 7
 
 # Below are some identified uncategorized location ids and their manually-determined valid alternatives
 # All misnamed transactions come from the files:
@@ -53,16 +55,6 @@ if DO_SCRAPING:
             for header, value in zip(column_headers, row):
                 curr_data.update({header: value})
             business_data.update({curr_data["Location (PK)"]: curr_data})
-    
-    with open("./school-data/us-private-schools.json",'r') as f: private_school_data = json.load(f)
-    with open("./school-data/us-public-schools.json",'r') as f: public_school_data = json.load(f)
-
-    combined_school_data = public_school_data + private_school_data
-    for school in combined_school_data:
-        print(school['name'])
-    for location, school_data in business_data.items():
-        if school_data["School"].lower() not in [x['name'].lower() for x in combined_school_data]:
-            print(school_data["School"])
 
     print("Searching for CSVs...")
 
@@ -171,7 +163,7 @@ with open(DATASET_SAVETO, 'r') as f: dataset = json.load(f)
 
 
 business_data = {}
-for location, data in dataset.items():
+for location, data in tqdm(dataset.items()):
 
     dates = []
     potential_transactions = []
@@ -198,30 +190,38 @@ for location, data in dataset.items():
     dataset[location]["metadata"].update({"launch month": launch_month})
     
     instances = []
-    period = 30
-    time_window = 30
+
+    prev_time_window = 0
+    time_window = INSTANCE_GRANULARITY
+
     could_continue = True
-    while could_continue:    
+    while could_continue:
+
+        if (earliest + timedelta(time_window)) >= latest: could_continue = False
 
         # All school-associated metadata should be grandfathered in here
         current_instance = {"Business Type": dataset[location]["metadata"]["Business Type"],
                             "Middle/High School": dataset[location]["metadata"]["Middle/High School"],
                             "average income": dataset[location]["metadata"]["Average Yearly Income per Household"]}
 
-        valid_dates = [date for date in dates if date < (earliest + timedelta(days=time_window))]
-        if max(valid_dates) == latest: could_continue = False
-        current_instance.update({"valid duration": (max(valid_dates)-earliest).days+1})
-        current_instance.update({"could continue": could_continue})
+        valid_dates = [date for date in dates if date >= (earliest + timedelta(days=prev_time_window)) and date <= (earliest + timedelta(days=time_window))]
+        if len(valid_dates) != 0:
+            current_instance.update({"valid duration": (max(valid_dates)-min(valid_dates)).days+1})
+            current_instance.update({"could continue": could_continue})
 
-        valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date < (earliest + timedelta(days=time_window))]
-        valid_total = sum([float(x["amount"].replace('$','').replace(',','')) for x in valid_transactions])
-        current_instance.update({"valid total": valid_total})
-        current_instance.update({"num valid transactions": len(valid_transactions)})
+            valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date >= (earliest + timedelta(days=prev_time_window)) and transaction_date <= (earliest + timedelta(days=time_window))]
+            valid_total = sum([float(x["amount"].replace('$','').replace(',','')) for x in valid_transactions])
+            current_instance.update({"valid total": valid_total})
+            current_instance.update({"num valid transactions": len(valid_transactions)})
 
-        current_instance.update({"launch month": launch_month})
+            current_instance.update({"launch month": launch_month})
+            current_instance.update({"search window": time_window})
 
-        time_window += period
-        instances.append(current_instance)
+            instances.append(current_instance)
+
+        prev_time_window = time_window
+        time_window += INSTANCE_GRANULARITY
+        
 
     dataset[location].update({"instances": instances})
 
@@ -257,6 +257,4 @@ with open('preprocessed_dataset.json', 'w') as f: json.dump([list(business_avera
 with open('preprocessed_dataset_instances.json', 'w') as f: json.dump(instantiated_dataset, f)
 print("Done!")
 
-print(len(business_average_times))
-print(len(dataset))
 # print_dataset(dataset)
