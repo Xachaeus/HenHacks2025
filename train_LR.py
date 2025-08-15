@@ -16,10 +16,11 @@ Generalizes to ~12% of test data, worst model
 """
 
 # ---------------- Load dataset ----------------
-df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_1.json")
+df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_8.json")
 
 # Include categorical + numeric feature
-X = df[["school_level", "business_type", "operating_time"]]
+X = df[["school_level", "business_type", "school_type", 
+        "operating_time", "num_teachers", "num_students", "average_income"]]
 y = df["daily_revenue"]
 
 # ---------------- Preprocessor ----------------

@@ -32,11 +32,14 @@ def load_preprocessed_data(filename):
     rows = []
     for instance in data:
         average_income = instance['average income']
-        num_students = instance['Number of Students']
-        num_teachers = instance['Number of Teachers']
+        if average_income == '':
+            average_income = 50000
+        num_students = int(instance['Number of Students'])
+        num_teachers = int(instance['Number of Teachers'])
+        school_type = instance['Public/ Private']
         # Convert amounts and dates
-        total_revenue = instance['scaled total']
-        operating_time = ceil(instance['search window'])
+        total_revenue = int(instance['scaled total'])
+        operating_time = int(ceil(instance['search window']))
         
         annual_revenue = total_revenue / (granularity / 365)
         daily_revenue = total_revenue / granularity
@@ -54,6 +57,10 @@ def load_preprocessed_data(filename):
                 "operating_time": operating_time,
                 "annual_revenue": annual_revenue,
                 "daily_revenue": daily_revenue,
+                "average_income": average_income,
+                "num_students": num_students,
+                "num_teachers": num_teachers,
+                "school_type": school_type
                 # "survive_1mo": survive_1mo,
                 # "survive_3mo": survive_3mo,
                 # "survive_1yr": survive_1yr
