@@ -223,7 +223,7 @@ for location, data in tqdm(dataset.items()):
         for transaction, transaction_date in potential_transactions:
             amount = float(transaction["amount"].replace('$','').replace(',',''))
             dist = (abs(((earliest + timedelta(days=prev_time_window))-transaction_date).days)) / (INSTANCE_GRANULARITY/2)
-            if dist > 1: scale = 1.0/float(dist*dist*dist)
+            if dist > 1: scale = 1.0/float(dist)
             else: scale = 1.0
             scaled_total += amount * scale
         current_instance.update({"scaled total": scaled_total})
