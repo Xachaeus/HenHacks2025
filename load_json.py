@@ -18,7 +18,7 @@ def load_preprocessed_data(filename):
     for instance in data:
         # Convert amounts and dates
         total_revenue = instance['valid total']
-        operating_time = instance['valid duration']
+        operating_time = instance['valid duration'] + 1
         
         annual_revenue = total_revenue / (operating_time / 365)
         daily_revenue = total_revenue / operating_time
@@ -86,10 +86,10 @@ def load_raw_data(filename):
 
 
 ### Look for negatives in culinary ###
-df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances.json")
-print(df["business_type"].unique)
-df = df[df["business_type"].isin(["culinary shop"])]
-df.reset_index(drop=True, inplace=True)
-X = df[["school_level", "business_type", "operating_time", "daily_revenue"]]
+# df = load_preprocessed_data("JSONs\\labeled_instantiated_dataset_30.json")
+# print(df["business_type"].unique)
+# df = df[df["business_type"].isin(["culinary shop"])]
+# df.reset_index(drop=True, inplace=True)
+# X = df[["school_level", "business_type", "operating_time", "daily_revenue"]]
 
-print(X)
+# print(X)

@@ -16,7 +16,7 @@ Generalizes to ~12% of test data, worst model
 """
 
 # ---------------- Load dataset ----------------
-df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_30.json")
+df = load_preprocessed_data("JSONs\\preprocessed_dataset_instances_7.json")
 
 # Include categorical + numeric feature
 X = df[["school_level", "business_type", "operating_time"]]
@@ -80,7 +80,7 @@ initial_types = [
 ]
 
 onnx_model = convert_sklearn(model, initial_types=initial_types)
-with open("LR_model/school_revenue_model.onnx", "wb") as f:
+with open("ONNX_models/LR.onnx", "wb") as f:
     f.write(onnx_model.SerializeToString())
 
-print("ONNX model saved to LR_model/school_revenue_model.onnx")
+print("ONNX model saved to ONNX_models/LR.onnx")

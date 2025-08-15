@@ -198,8 +198,8 @@ for location, data in dataset.items():
     dataset[location]["metadata"].update({"launch month": launch_month})
     
     instances = []
-    period = 1000000
-    time_window = 1000000
+    period = 30
+    time_window = 30
     could_continue = True
     while could_continue:    
 
