@@ -36,7 +36,6 @@ if predictive_model == "MLP":
     daily_rev_min, daily_rev_max = joblib.load("./MLP_model/rev_min_max.pkl")
     
     rev_predictions = {"time":[],"rev":[]}
-    rev_rescaled = []
     for operating_time in range(1, maximum_operating_time):
         # Encode categorical inputs
         cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
@@ -51,7 +50,7 @@ if predictive_model == "MLP":
             rev_predictions['rev'].append(pred)
             #rev_rescaled = pred * (rev_max - rev_min) + rev_min
 
-    st.area_chart(rev_predictions, x="time", y="rev", x_label="Operating Time", y_label="Revenue")
+    st.area_chart(rev_predictions, x="time", y="rev", x_label="Operating Time (Days)", y_label="Revenue ($)")
     #st.write(f"**Predicted Overall Revenue ($):** {rev_rescaled * operating_time:,.2f}")
     #st.write(f"**Predicted Daily Revenue ($):** {rev_rescaled:,.2f}")
     # st.write(f"**Survival ≥1 month:** {surv_pred[0,0].item()*100:.1f}%")
@@ -64,8 +63,8 @@ if predictive_model == "Linear Regression":
     model = joblib.load("LR_model/school_revenue_model.pkl")
     
     df = pd.DataFrame(
-        [[school_level.lower(), business_type.lower()]],
-        columns=["school_level", "business_type"]
+        [[school_level.lower(), business_type.lower(), operating_time]],
+        columns=["school_level", "business_type", "operating_time"]
     )
     
     print(df.shape)
@@ -75,8 +74,7 @@ if predictive_model == "Linear Regression":
     st.write(f"**Predicted Daily Revenue ($):** {daily_rev:,.2f}")
     
 if predictive_model == "XGBoost":
-    operating_time = maximum_operating_time
-    
+
     encoder = joblib.load("XGB_model/encoder.pkl")
     rev_min, rev_max = joblib.load("XGB_model/rev_min_max.pkl")
     xgb_model = xgb.XGBRegressor()
@@ -91,5 +89,21 @@ if predictive_model == "XGBoost":
     rev_pred_norm = xgb_model.predict(x_tensor)[0]
     rev_pred = rev_pred_norm * (rev_max - rev_min) + rev_min
 
-    st.write(f"**Predicted Overall Revenue ($):** {rev_pred * operating_time:,.2f}")
-    st.write(f"**Predicted Daily Revenue ($):** {rev_pred:,.2f}")
+
+    rev_predictions = {"time":[],"rev":[]}
+    for operating_time in range(1, maximum_operating_time):
+        # Encode categorical inputs
+        cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
+        num_input = np.array([[operating_time]])
+        x_input = np.hstack([cat_input, num_input])
+        x_tensor = torch.tensor(x_input, dtype=torch.float32)
+
+        # Run model
+        pred = (xgb_model.predict(x_tensor)[0]) * (rev_max - rev_min) + rev_min
+        rev_predictions['time'].append(operating_time)
+        rev_predictions['rev'].append(pred)
+
+    st.area_chart(rev_predictions, x="time", y="rev", x_label="Operating Time (Days)", y_label="Revenue ($)")
+
+    #st.write(f"**Predicted Overall Revenue ($):** {rev_pred * operating_time:,.2f}")
+    #st.write(f"**Predicted Daily Revenue ($):** {rev_pred:,.2f}")
