@@ -10,7 +10,7 @@ import xgboost as xgb
 
 st.title("School-Business Revenue Predictor")
 
-school_level = st.selectbox("Select School Level", ["High", "Middle"])
+school_level = st.selectbox("Select School Level", ["High School", "Middle School"])
 school_type = st.selectbox("Select School Type", ["Public", "Private"])
 enrollment_amount = st.number_input("Number of Enrolled Students", min_value=1, value=600)
 teacher_amount = st.number_input("Number of Teaching Staff", min_value=1, value=50)
@@ -26,6 +26,8 @@ predictive_model = "XGBoost"
 
 #if st.button("Predict"):
 if predictive_model == "XGBoost":
+
+    school_level = "High" if school_level == "High School" else "Middle"
 
     encoder = joblib.load("XGB_model/encoder.pkl")
     rev_min, rev_max = joblib.load("XGB_model/rev_min_max.pkl")
