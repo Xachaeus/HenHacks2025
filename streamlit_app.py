@@ -20,7 +20,7 @@ business_type = st.selectbox("Select Business Type", [
     "Concessions", "Culinary Shop", "Plant & Flower Fundraiser",
     "Prom & Homecoming tickets"
 ])
-maximum_operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=180)
+maximum_operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=365)
 predictive_model = "XGBoost"
 
 #if st.button("Predict"):
