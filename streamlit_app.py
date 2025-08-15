@@ -10,7 +10,10 @@ import xgboost as xgb
 
 st.title("School-Business Revenue Predictor")
 
-school_level = st.selectbox("Select School Type", ["High", "Middle"])
+school_level = st.selectbox("Select School Level", ["High", "Middle"])
+school_type = st.selectbox("Select School Type", ["Public", "Private"])
+enrollment_amount = st.number_input("Number of Enrolled Students", min_value=1, value=600)
+teacher_amount = st.number_input("Number of Teaching Staff", min_value=1, value=50)
 business_type = st.selectbox("Select Business Type", [
     "Club Fundraiser", "School Store & Snack Shop", "School Store",
     "Concessions", "Culinary Shop", "Plant & Flower Fundraiser",
