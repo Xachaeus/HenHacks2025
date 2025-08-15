@@ -22,17 +22,17 @@ predictive_model = st.selectbox("Select Predictive Model", ["MLP", "Linear Regre
 if st.button("Predict"):
     if predictive_model == "MLP":
         # Load saved encoder and model
-        encoder = joblib.load(".\\MLP_model\\encoder.pkl")
+        encoder = joblib.load("./MLP_model/encoder.pkl")
 
         # Input dimension from encoder + numeric feature
         input_dim = encoder.transform([["middle", "club fundraiser"]]).shape[1] + 1
         model = MLP(input_dim=input_dim)
-        model.load_state_dict(torch.load(".\\MLP_model\\model.pth"))
+        model.load_state_dict(torch.load("./MLP_model/model.pth"))
         model.eval()
 
         # Load revenue scaling
-        rev_min, rev_max = joblib.load(".\\MLP_model\\rev_min_max.pkl")
-        daily_rev_min, daily_rev_max = joblib.load(".\\MLP_model\\rev_min_max.pkl")
+        rev_min, rev_max = joblib.load("./MLP_model/rev_min_max.pkl")
+        daily_rev_min, daily_rev_max = joblib.load("./MLP_model/rev_min_max.pkl")
         
         # Encode categorical inputs
         cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
@@ -52,7 +52,7 @@ if st.button("Predict"):
         # st.write(f"**Survival ≥1 year:** {surv_pred[0,2].item()*100:.1f}%")'
         
     if predictive_model == "Linear Regression":
-        model = joblib.load("LR_model\\school_revenue_model.pkl")
+        model = joblib.load("LR_model/school_revenue_model.pkl")
         
         df = pd.DataFrame(
             [[school_level.lower(), business_type.lower()]],
