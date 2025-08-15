@@ -21,6 +21,7 @@ business_type = st.selectbox("Select Business Type", [
     "Prom & Homecoming tickets"
 ])
 maximum_operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=365)
+granularity = st.number_input("Time Period per Prediction (days)", min_value=1, value=7)
 predictive_model = "XGBoost"
 
 #if st.button("Predict"):
@@ -33,7 +34,7 @@ if predictive_model == "XGBoost":
     
 
     rev_predictions = {"time":[],"rev":[]}
-    for operating_time in range(1, maximum_operating_time, 4):
+    for operating_time in range(1, maximum_operating_time, granularity):
         # Encode categorical inputs
         cat_input = encoder.transform([[school_level.lower(), business_type.lower(), school_type.lower()]])
         num_input = np.array([[operating_time, teacher_amount, enrollment_amount, average_income]])
