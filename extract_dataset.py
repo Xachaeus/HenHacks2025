@@ -42,124 +42,122 @@ def print_dataset(dataset):
     print("")
 
 
-if DO_SCRAPING:
-    extracted_files = []
+extracted_files = []
 
-    # Begin by fetching location data from provided XLSX (converted to csv for ease of use)
-    with open("./dataset/School_Location_ID_Mapping.csv", 'r', encoding="UTF-8") as business_csv:
-        business_file = csv.reader(business_csv)
-        column_headers = next(business_file)
-        business_data = {}
-        for row in business_file:
-            curr_data = {}
-            for header, value in zip(column_headers, row):
-                curr_data.update({header: value})
-            business_data.update({curr_data["Location (PK)"]: curr_data})
+# Begin by fetching location data from provided XLSX (converted to csv for ease of use)
+with open("./dataset/School_Location_ID_Mapping.csv", 'r', encoding="UTF-8") as business_csv:
+    business_file = csv.reader(business_csv)
+    column_headers = next(business_file)
+    business_data = {}
+    for row in business_file:
+        curr_data = {}
+        for header, value in zip(column_headers, row):
+            curr_data.update({header: value})
+        business_data.update({curr_data["Location (PK)"]: curr_data})
 
-    print("Searching for CSVs...")
+print("Searching for CSVs... ", end="")
 
-    # Find all csv files in the Data subdirectory
-    for (root, dirs, files) in os.walk(DATASET_SRC_DIR):
-        for filepath in files:
+# Find all csv files in the Data subdirectory
+for (root, dirs, files) in os.walk(DATASET_SRC_DIR):
+    for filepath in files:
 
-            if filepath.endswith(".csv"):
-                
-                with open(os.path.join(root, filepath), 'r', encoding="UTF-8") as csv_file: 
+        if filepath.endswith(".csv"):
+            
+            with open(os.path.join(root, filepath), 'r', encoding="UTF-8") as csv_file: 
 
 
-                    csv_reader = csv.reader(csv_file)
-                    fields = next(csv_reader)
+                csv_reader = csv.reader(csv_file)
+                fields = next(csv_reader)
 
-                    file_data = []
+                file_data = []
 
-                    # Create a dictionary for every transaction found
-                    for row in csv_reader:
-                        data = {title:None for title in fields}
-                        for column, field in zip(row, fields):
-                            data[field] = column
-                        data.update({"src": os.path.join(root, filepath)})
-                        file_data.append(data)
+                # Create a dictionary for every transaction found
+                for row in csv_reader:
+                    data = {title:None for title in fields}
+                    for column, field in zip(row, fields):
+                        data[field] = column
+                    data.update({"src": os.path.join(root, filepath)})
+                    file_data.append(data)
 
-                    extracted_files.append(file_data)
+                extracted_files.append(file_data)
 
-    print("Done!\nReformatting transaction data...")
+print("Done!\nReformatting transaction data... ", end="")
 
-    # Reformat the data into one universal format that can be easily accessed later
-    extracted_data = []
-    for file_data in extracted_files:
-        for data in file_data:
+# Reformat the data into one universal format that can be easily accessed later
+extracted_data = []
+for file_data in extracted_files:
+    for data in file_data:
+        try:
+            # Format to use for Square data
+            extracted_data.append({
+                "location": data["Location"],
+                "amount": data["Net Total"],
+                "date": data["Date"],
+                "src": data["src"]
+            })
+
+            # Debugging print statements for erroneous location ids
+            #if data["Location"] == "Exotic Eats and Treats": print(data["src"])
+            #if data["Location"] in ALTERNATIVE_LOCATION_NAMES.keys(): 
+                #if ALTERNATIVE_LOCATION_NAMES[data["Location"]] == "": print(f"{data['src']}")
+
+        except:
+            # Format to use for Stripe data
             try:
-                # Format to use for Square data
                 extracted_data.append({
-                    "location": data["Location"],
-                    "amount": data["Net Total"],
-                    "date": data["Date"],
+                    "location": data["locationId (metadata)"],
+                    "amount": data["Amount"],
+                    "date": data["Created date (UTC)"].split(' ')[0],
+                    "src": data["src"]
+                })
+            except:
+                extracted_data.append({
+                    "location": data["altId (metadata)"],
+                    "amount": data["Amount"],
+                    "date": data["Created date (UTC)"].split(' ')[0],
                     "src": data["src"]
                 })
 
-                # Debugging print statements for erroneous location ids
-                #if data["Location"] == "Exotic Eats and Treats": print(data["src"])
-                #if data["Location"] in ALTERNATIVE_LOCATION_NAMES.keys(): 
-                    #if ALTERNATIVE_LOCATION_NAMES[data["Location"]] == "": print(f"{data['src']}")
+print("Done!")
 
-            except:
-                # Format to use for Stripe data
-                try:
-                    extracted_data.append({
-                        "location": data["locationId (metadata)"],
-                        "amount": data["Amount"],
-                        "date": data["Created date (UTC)"].split(' ')[0],
-                        "src": data["src"]
-                    })
-                except:
-                    extracted_data.append({
-                        "location": data["altId (metadata)"],
-                        "amount": data["Amount"],
-                        "date": data["Created date (UTC)"].split(' ')[0],
-                        "src": data["src"]
-                    })
+# Conglomerate the transaction data into something useful
+print("Organizing data... ", end="")
 
-    print("Done!")
+dataset = {business_data[location]['Location (PK)']: {'metadata': business_data[location], 'transactions': []} for location in business_data.keys()}
+for data in extracted_data:
 
-    # Conglomerate the transaction data into something useful
-    print("Organizing data...")
-    dataset = {business_data[location]['Location (PK)']: {'metadata': business_data[location], 'transactions': []} for location in business_data.keys()}
-    for data in extracted_data:
-
-        if abs(float(data["amount"].replace('$','').replace(',',''))) > 10000: continue
-        
-        # Check for mislabeled locations
-        if data["location"] in ALTERNATIVE_LOCATION_NAMES.keys(): data["location"] = ALTERNATIVE_LOCATION_NAMES[data["location"]]
-
-        # Skip empty location values
-        if data["location"] == '': continue
-
-        # If an alternative location was provided, detect this and substitute the primary location
-        for profile in business_data.values():
-            if data["location"] == profile["Location2"] or data["location"] == profile["Location3"]:
-                data["location"] = profile["Location (PK)"]
-        # Add the transaction to the corresponding location's collection
-        if data["location"] not in dataset.keys(): # Remove schools with no transaction data
-            continue
-        dataset[data["location"]]["transactions"].append(data)
-
-    print("Done!")
-
-    good_data = {}
-    for location in dataset.keys():
-        if len(dataset[location]['transactions']) == 0: 
-            #print(f"{dataset[location]['metadata']['School']}: {dataset[location]['metadata']['Location2']}")
-            pass
-        else:
-            good_data.update({location: dataset[location]})
+    if abs(float(data["amount"].replace('$','').replace(',',''))) > 10000: continue
     
-    dataset = good_data
+    # Check for mislabeled locations
+    if data["location"] in ALTERNATIVE_LOCATION_NAMES.keys(): data["location"] = ALTERNATIVE_LOCATION_NAMES[data["location"]]
 
-    with open(DATASET_SAVETO, 'w') as f: json.dump(dataset, f)
+    # Skip empty location values
+    if data["location"] == '': continue
 
+    # If an alternative location was provided, detect this and substitute the primary location
+    for profile in business_data.values():
+        if data["location"] == profile["Location2"] or data["location"] == profile["Location3"]:
+            data["location"] = profile["Location (PK)"]
+    # Add the transaction to the corresponding location's collection
+    if data["location"] not in dataset.keys(): # Remove schools with no transaction data
+        continue
+    dataset[data["location"]]["transactions"].append(data)
 
+print("Done!")
+print("Filtering out locations with no transactions... ", end="")
+
+good_data = {}
+for location in dataset.keys():
+    if len(dataset[location]['transactions']) == 0: 
+        #print(f"{dataset[location]['metadata']['School']}: {dataset[location]['metadata']['Location2']}")
+        pass
+    else:
+        good_data.update({location: dataset[location]})
+
+dataset = good_data
+
+print("Done!")
 print("Preprocessing data and extracting cumulative features...")
-with open(DATASET_SAVETO, 'r') as f: dataset = json.load(f)
 
 
 business_data = {}
@@ -202,7 +200,10 @@ for location, data in tqdm(dataset.items()):
         # All school-associated metadata should be grandfathered in here
         current_instance = {"Business Type": dataset[location]["metadata"]["Business Type"],
                             "Middle/High School": dataset[location]["metadata"]["Middle/High School"],
-                            "average income": dataset[location]["metadata"]["Average Yearly Income per Household"]}
+                            "average income": dataset[location]["metadata"]["Average Yearly Income per Household"],
+                            "Public/ Private": dataset[location]["metadata"]["Public/ Private"],
+                            "Number of Students": dataset[location]["metadata"]["Number of Students"],
+                            "Number of Teachers": dataset[location]["metadata"]["Number of Teachers"]}
 
         valid_dates = [date for date in dates if date >= (earliest + timedelta(days=prev_time_window)) and date <= (earliest + timedelta(days=time_window))]
         if len(valid_dates) != 0:
@@ -229,7 +230,7 @@ for location, data in tqdm(dataset.items()):
     else: business_data[dataset[location]["metadata"]["Business Type"]].append((latest-earliest).days)
 
 print("Done!")
-print("Formatting into usable datasets...")
+print("Formatting into usable datasets... ", end="")
 
 business_average_times = {}
 for category, duration in business_data.items():
