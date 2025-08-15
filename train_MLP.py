@@ -17,7 +17,7 @@ print(df.shape)
 
 # ---------------- Features ----------------
 X_cat = df[["school_level", "business_type"]].values
-X_num = df[["avg_operating_time"]].values.astype(float)
+X_num = df[["operating_time"]].values.astype(float)
 y_revenue = df["daily_revenue"].values.reshape(-1,1).astype(float)
 # y_survival = df[["survive_1mo","survive_3mo","survive_1yr"]].values.astype(float)
 
@@ -52,9 +52,9 @@ model = MLP(input_dim=X_train.shape[1])
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=2000, eta_min=1e-4)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=5000, eta_min=1e-4)
 loss_weight_rev = 1
-num_epochs = 1000
+num_epochs = 5000
 
 for epoch in range(num_epochs):
     optimizer.zero_grad()
@@ -76,7 +76,7 @@ rows = []
 with torch.no_grad():
     for school in df["school_level"].unique():
         for btype in df["business_type"].unique():
-            avg_time = df["avg_operating_time"].mean()  # average operating time for predictions
+            avg_time = df["operating_time"].mean()  # average operating time for predictions
             ex_cat = encoder.transform([[school, btype]])
             ex_num = np.array([[avg_time]])
             ex_feat = np.hstack([ex_cat, ex_num])

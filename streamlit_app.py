@@ -8,12 +8,12 @@ import xgboost as xgb
 
 
 
-st.title("School-Business Revenue & Survival Predictor")
+st.title("School-Business Revenue Predictor")
 
 school_level = st.selectbox("Select School Type", ["High", "Middle"])
 business_type = st.selectbox("Select Business Type", [
-    "Club Fundraiser", "School Store & Snack Shop", "Concessions",
-    "School Store", "Culinary Shop", "Plant & Flower Fundraiser",
+    "Club Fundraiser", "School Store & Snack Shop", "School Store",
+    "Concessions", "Culinary Shop", "Plant & Flower Fundraiser",
     "Prom & Homecoming tickets"
 ])
 avg_operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=180)
@@ -22,17 +22,17 @@ predictive_model = st.selectbox("Select Predictive Model", ["MLP", "Linear Regre
 if st.button("Predict"):
     if predictive_model == "MLP":
         # Load saved encoder and model
-        encoder = joblib.load("./MLP_model\\encoder.pkl")
+        encoder = joblib.load(".\\MLP_model\\encoder.pkl")
 
         # Input dimension from encoder + numeric feature
         input_dim = encoder.transform([["middle", "club fundraiser"]]).shape[1] + 1
         model = MLP(input_dim=input_dim)
-        model.load_state_dict(torch.load("./MLP_model\\model.pth"))
+        model.load_state_dict(torch.load(".\\MLP_model\\model.pth"))
         model.eval()
 
         # Load revenue scaling
-        rev_min, rev_max = joblib.load("./MLP_model\\rev_min_max.pkl")
-        daily_rev_min, daily_rev_max = joblib.load("./MLP_model\\rev_min_max.pkl")
+        rev_min, rev_max = joblib.load(".\\MLP_model\\rev_min_max.pkl")
+        daily_rev_min, daily_rev_max = joblib.load(".\\MLP_model\\rev_min_max.pkl")
         
         # Encode categorical inputs
         cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
