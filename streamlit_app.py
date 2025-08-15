@@ -16,7 +16,7 @@ business_type = st.selectbox("Select Business Type", [
     "Concessions", "Culinary Shop", "Plant & Flower Fundraiser",
     "Prom & Homecoming tickets"
 ])
-operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=180)
+maximum_operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=180)
 predictive_model = st.selectbox("Select Predictive Model", ["MLP", "Linear Regression", "XGBoost"])
 
 #if st.button("Predict"):
@@ -35,24 +35,32 @@ if predictive_model == "MLP":
     rev_min, rev_max = joblib.load("./MLP_model/rev_min_max.pkl")
     daily_rev_min, daily_rev_max = joblib.load("./MLP_model/rev_min_max.pkl")
     
-    # Encode categorical inputs
-    cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
-    num_input = np.array([[operating_time]])
-    x_input = np.hstack([cat_input, num_input])
-    x_tensor = torch.tensor(x_input, dtype=torch.float32)
+    rev_predictions = {"time":[],"rev":[]}
+    rev_rescaled = []
+    for operating_time in range(1, maximum_operating_time):
+        # Encode categorical inputs
+        cat_input = encoder.transform([[school_level.lower(), business_type.lower()]])
+        num_input = np.array([[operating_time]])
+        x_input = np.hstack([cat_input, num_input])
+        x_tensor = torch.tensor(x_input, dtype=torch.float32)
 
-    # Run model
-    with torch.no_grad():
-        rev_pred = model(x_tensor)
-        rev_rescaled = rev_pred.item() * (rev_max - rev_min) + rev_min
+        # Run model
+        with torch.no_grad():
+            pred = (model(x_tensor).item() * (rev_max - rev_min) + rev_min)
+            rev_predictions['time'].append(operating_time)
+            rev_predictions['rev'].append(pred)
+            #rev_rescaled = pred * (rev_max - rev_min) + rev_min
 
-    st.write(f"**Predicted Overall Revenue ($):** {rev_rescaled * operating_time:,.2f}")
-    st.write(f"**Predicted Daily Revenue ($):** {rev_rescaled:,.2f}")
+    st.area_chart(rev_predictions, x="time", y="rev", x_label="Operating Time", y_label="Revenue")
+    #st.write(f"**Predicted Overall Revenue ($):** {rev_rescaled * operating_time:,.2f}")
+    #st.write(f"**Predicted Daily Revenue ($):** {rev_rescaled:,.2f}")
     # st.write(f"**Survival ≥1 month:** {surv_pred[0,0].item()*100:.1f}%")
     # st.write(f"**Survival ≥3 months:** {surv_pred[0,1].item()*100:.1f}%")
     # st.write(f"**Survival ≥1 year:** {surv_pred[0,2].item()*100:.1f}%")'
     
 if predictive_model == "Linear Regression":
+    operating_time = maximum_operating_time
+
     model = joblib.load("LR_model/school_revenue_model.pkl")
     
     df = pd.DataFrame(
@@ -67,6 +75,8 @@ if predictive_model == "Linear Regression":
     st.write(f"**Predicted Daily Revenue ($):** {daily_rev:,.2f}")
     
 if predictive_model == "XGBoost":
+    operating_time = maximum_operating_time
+    
     encoder = joblib.load("XGB_model/encoder.pkl")
     rev_min, rev_max = joblib.load("XGB_model/rev_min_max.pkl")
     xgb_model = xgb.XGBRegressor()
