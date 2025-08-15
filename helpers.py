@@ -1,14 +1,27 @@
 import json
 import pandas as pd
 import numpy as np
-from datetime import datetime
-from dateutil import parser
 
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error, root_mean_squared_error
+import numpy as np
+
+# --- Helper to unnormalize back to dollars ---
+def denorm(y, rev_min, rev_max):
+    return y.ravel() * (rev_max - rev_min) + rev_min
+
+# --- Metrics ---
+def metrics(y_true, y_pred):
+    rmse = root_mean_squared_error(y_true, y_pred)
+    mae  = mean_absolute_error(y_true, y_pred)
+    r2   = r2_score(y_true, y_pred)
+    # Safe MAPE (ignores zeros)
+    mask = y_true != 0
+    mape = np.mean(np.abs((y_true[mask] - y_pred[mask]) / y_true[mask])) * 100 if mask.any() else np.nan
+    return r2, rmse, mae, mape
 
 # ---------------- Load JSON ----------------
 def parse_amount(a):
     return float(a.replace("$","").replace(",","").strip())
-
 
 def load_preprocessed_data(filename):
     # Load JSON
@@ -47,39 +60,6 @@ def load_preprocessed_data(filename):
     
     return df
 
-def load_raw_data(filename):
-    # categories, data = json.load(open(filename))
-    dataset = json.load(filename)
-
-    rows = []
-    for data in dataset.values():
-        meta = data["metadata"]
-        transactions = data["transactions"]
-        amounts = np.array([parse_amount(t["amount"]) for t in transactions if parse_amount(t["amount"]) < 1000 and parse_amount(t["amount"]) > -1000])
-        dates = [parser.parse(t["date"]) for t in transactions]        
-        total_revenue = amounts.sum()
-        first_date, last_date = min(dates), max(dates)
-        operating_time = (last_date - first_date).days + 1
-        
-        annual_revenue = total_revenue / (operating_time / 365)
-        daily_revenue = total_revenue / operating_time
-        
-        rows.append({
-            "school_level": meta.get("Middle/High School", "High").lower(),
-            "business_type": meta.get("Business Type", "Other").lower(),
-            "avg_operating_time": operating_time,
-            "annual_revenue": annual_revenue,
-            "daily_revenue": daily_revenue,
-            # "survive_1mo": survive_1mo,
-            # "survive_3mo": survive_3mo,
-            # "survive_1yr": survive_1yr
-        })
- 
-    df = pd.DataFrame(rows)
-    df = df[df["school_level"].isin(["middle","high"])]
-    df.reset_index(drop=True, inplace=True)
-    
-    return df
         
 # load_preprocessed_data("preprocessed_dataset_instances_7.json")
 # load_raw_data("raw_dataset.json")
