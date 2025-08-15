@@ -42,7 +42,7 @@ joblib.dump((rev_min, rev_max), "MLP_model\\rev_min_max.pkl")
 
 # ---------------- Train/Test Split ----------------
 X_train, X_test, y_rev_train, y_rev_test = train_test_split(
-    X, y_revenue_norm, test_size=0.5, random_state=42
+    X, y_revenue_norm, test_size=0.1, random_state=42
 )
 
 X_train = torch.tensor(X_train, dtype=torch.float32)
@@ -58,9 +58,9 @@ model = MLP(input_dim=X_train.shape[1])
 criterion_rev = nn.MSELoss()
 criterion_surv = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=1000, eta_min=1e-4)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=10000, eta_min=1e-4)
 loss_weight_rev = 1
-num_epochs = 1000
+num_epochs = 10000
 
 for epoch in range(num_epochs):
     optimizer.zero_grad()

@@ -26,8 +26,8 @@ y = df["daily_revenue"]
 # ---------------- Preprocessor ----------------
 preprocessor = ColumnTransformer(
     transformers=[
-        ('cat', OneHotEncoder(drop='first'), ["school_level", "business_type"]),
-        ('num', 'passthrough', ["operating_time"])  # numeric feature passthrough
+        ('cat', OneHotEncoder(drop='first'), ["school_level", "business_type", "school_type"]),
+        ('num', 'passthrough', ["operating_time", "num_teachers", "num_students", "average_income"])
     ]
 )
 
@@ -62,14 +62,14 @@ combinations_df = pd.DataFrame(
 )
 
 # Predict
-predictions = model.predict(combinations_df)
+# predictions = model.predict(combinations_df)
 
-# Results table
-result_df = combinations_df.copy()
-result_df["predicted_daily_revenue"] = predictions
-result_df["predicted_total_revenue"] = result_df["predicted_daily_revenue"] * result_df["operating_time"]
+# # Results table
+# result_df = combinations_df.copy()
+# result_df["predicted_daily_revenue"] = predictions
+# result_df["predicted_total_revenue"] = result_df["predicted_daily_revenue"] * result_df["operating_time"]
 
-print(result_df)
+# print(result_df)
 
 # VALIDATION METRICS #
 y_pred_train = model.predict(X_train)

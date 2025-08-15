@@ -47,8 +47,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 # ---------------- Train XGBoost ----------------
 xgb_model = xgb.XGBRegressor(
     n_estimators=10000,
-    learning_rate=0.01,
-    max_depth=7,
+    learning_rate=0.001,
+    max_depth=20,
     subsample=0.5,
     colsample_bytree=0.5,
     random_state=42
