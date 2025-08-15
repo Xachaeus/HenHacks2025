@@ -46,9 +46,9 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # ---------------- Train XGBoost ----------------
 xgb_model = xgb.XGBRegressor(
-    n_estimators=10000,
-    learning_rate=0.001,
-    max_depth=20,
+    n_estimators=1000,
+    learning_rate=0.01,
+    max_depth=15,
     subsample=0.5,
     colsample_bytree=0.5,
     random_state=42
@@ -89,8 +89,8 @@ print("Test R²:", xgb_model.score(X_test, y_test))
 # print(pred_df)
 
 # # ---------------- Save Model ----------------
-# xgb_model.save_model("XGB_model\\model.json")
-# print("Saved XGBoost model to XGB_model\\model.json")
+xgb_model.save_model("XGB_model\\model.json")
+print("Saved XGBoost model to XGB_model\\model.json")
 
 
 # VALIDATION METRICS #

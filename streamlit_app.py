@@ -21,47 +21,9 @@ business_type = st.selectbox("Select Business Type", [
     "Prom & Homecoming tickets"
 ])
 maximum_operating_time = st.number_input("Expected Operating Time (days)", min_value=1, value=180)
-predictive_model = st.selectbox("Select Predictive Model", ["MLP", "XGBoost"])
+predictive_model = "XGBoost"
 
 #if st.button("Predict"):
-
-if predictive_model == "MLP":
-    # Load saved encoder and model
-    encoder = joblib.load("./MLP_model/encoder.pkl")
-
-    # Input dimension from encoder + numeric feature
-    input_dim = encoder.transform([["middle", "club fundraiser", "public"]]).shape[1] + 1
-    model = MLP(input_dim=input_dim)
-    model.load_state_dict(torch.load("./MLP_model/model.pth"))
-    model.eval()
-
-    # Load revenue scaling
-    rev_min, rev_max = joblib.load("./MLP_model/rev_min_max.pkl")
-    daily_rev_min, daily_rev_max = joblib.load("./MLP_model/rev_min_max.pkl")
-    
-    rev_predictions = {"time":[],"rev":[]}
-    for operating_time in range(1, maximum_operating_time):
-        # Encode categorical inputs
-        cat_input = encoder.transform([[school_level.lower(), business_type.lower(), school_type.lower()]])
-        num_input = np.array([[operating_time, teacher_amount, enrollment_amount, average_income]])
-        x_input = np.hstack([cat_input, num_input])
-        x_tensor = torch.tensor(x_input, dtype=torch.float32)
-
-        # Run model
-        with torch.no_grad():
-            pred = (model(x_tensor).item() * (rev_max - rev_min) + rev_min)
-            rev_predictions['time'].append(operating_time)
-            rev_predictions['rev'].append(pred)
-            #rev_rescaled = pred * (rev_max - rev_min) + rev_min
-
-    st.area_chart(rev_predictions, x="time", y="rev", x_label="Operating Time (Days)", y_label="Revenue ($)")
-    #st.write(f"**Predicted Overall Revenue ($):** {rev_rescaled * operating_time:,.2f}")
-    #st.write(f"**Predicted Daily Revenue ($):** {rev_rescaled:,.2f}")
-    # st.write(f"**Survival ≥1 month:** {surv_pred[0,0].item()*100:.1f}%")
-    # st.write(f"**Survival ≥3 months:** {surv_pred[0,1].item()*100:.1f}%")
-    # st.write(f"**Survival ≥1 year:** {surv_pred[0,2].item()*100:.1f}%")'
-    
-
 if predictive_model == "XGBoost":
 
     encoder = joblib.load("XGB_model/encoder.pkl")
