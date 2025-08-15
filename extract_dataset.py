@@ -6,7 +6,7 @@ from tqdm import tqdm
 DATASET_SRC_DIR = "./dataset/Data/"
 DATASET_SAVETO = "./raw_dataset.json"
 DO_SCRAPING = True
-INSTANCE_GRANULARITY = 7
+INSTANCE_GRANULARITY = 8
 
 # Below are some identified uncategorized location ids and their manually-determined valid alternatives
 # All misnamed transactions come from the files:
@@ -190,7 +190,7 @@ for location, data in tqdm(dataset.items()):
     instances = []
 
     prev_time_window = 0
-    time_window = INSTANCE_GRANULARITY
+    time_window = INSTANCE_GRANULARITY/2.0
 
     could_continue = True
     while could_continue:
@@ -206,19 +206,33 @@ for location, data in tqdm(dataset.items()):
                             "Number of Teachers": dataset[location]["metadata"]["Number of Teachers"]}
 
         valid_dates = [date for date in dates if date >= (earliest + timedelta(days=prev_time_window)) and date <= (earliest + timedelta(days=time_window))]
-        if len(valid_dates) != 0:
+        #if len(valid_dates) != 0:
+        if (len(valid_dates) != 0):
             current_instance.update({"valid duration": (max(valid_dates)-min(valid_dates)).days+1})
-            current_instance.update({"could continue": could_continue})
+        else:
+            current_instance.update({"valid duration": 0})
+        current_instance.update({"could continue": could_continue})
 
-            valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date >= (earliest + timedelta(days=prev_time_window)) and transaction_date <= (earliest + timedelta(days=time_window))]
-            valid_total = sum([float(x["amount"].replace('$','').replace(',','')) for x in valid_transactions])
-            current_instance.update({"valid total": valid_total})
-            current_instance.update({"num valid transactions": len(valid_transactions)})
+        valid_transactions = [transaction for transaction, transaction_date in potential_transactions if transaction_date >= (earliest + timedelta(days=prev_time_window)) and transaction_date <= (earliest + timedelta(days=time_window))]
+        #valid_total = sum([float(x["amount"].replace('$','').replace(',','')) for x in valid_transactions])
+        #current_instance.update({"valid total": valid_total})
+        current_instance.update({"num valid transactions": len(valid_transactions)})
 
-            current_instance.update({"launch month": launch_month})
-            current_instance.update({"search window": time_window})
+        #scaled_transactions = [ (float(transaction["amount"].replace('$','').replace(',',''))) * (1/abs((earliest + timedelta(days=prev_time_window))-transaction_date)) for transaction, transaction_date in potential_transactions]
+        scaled_total = 0
+        for transaction, transaction_date in potential_transactions:
+            amount = float(transaction["amount"].replace('$','').replace(',',''))
+            dist = (abs(((earliest + timedelta(days=prev_time_window))-transaction_date).days)) / (INSTANCE_GRANULARITY/2)
+            if dist > 1: scale = 1.0/float(dist*dist*dist)
+            else: scale = 1.0
+            scaled_total += amount * scale
+        current_instance.update({"scaled total": scaled_total})
 
-            instances.append(current_instance)
+
+        current_instance.update({"launch month": launch_month})
+        current_instance.update({"search window": time_window})
+
+        instances.append(current_instance)
 
         prev_time_window = time_window
         time_window += INSTANCE_GRANULARITY
