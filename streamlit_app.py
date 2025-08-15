@@ -33,7 +33,7 @@ if predictive_model == "XGBoost":
     
 
     rev_predictions = {"time":[],"rev":[]}
-    for operating_time in range(1, maximum_operating_time):
+    for operating_time in range(1, maximum_operating_time, 4):
         # Encode categorical inputs
         cat_input = encoder.transform([[school_level.lower(), business_type.lower(), school_type.lower()]])
         num_input = np.array([[operating_time, teacher_amount, enrollment_amount, average_income]])
